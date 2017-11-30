@@ -1,17 +1,27 @@
 html{
-    font-size: 62.5%;
     overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
 }
 
 .box .box-header .box-tit-eng{
     padding-bottom: 0;
-    color: #ccc;
+    color: #828282;
+    font-size: 20px;
     text-align: center;
 }
 .box .box-header .box-tit{
     margin-top: 0;
+    font-size: 27px;
     text-align: center;
+    color: #000000;
+    font-weight: bold;
 }
+
 
 #nav{
     padding: 15px 0;
@@ -30,7 +40,6 @@ html{
 
 
 #banner{
-    height: 60rem;
     position: relative;
     padding: 0;
 }
@@ -38,8 +47,8 @@ html{
     position: absolute;
     top: 26%;
     left: 50%;
-    width: 325px;
-    height: 84px;
+    width: 320px;
+    height: 75px;
     background: linear-gradient(to left, #fff, #fff) left top no-repeat,
     linear-gradient(to bottom, #fff, #fff) left top no-repeat,
     linear-gradient(to left, #BFB5B1, #BFB5B1) right top no-repeat,
@@ -48,8 +57,7 @@ html{
     linear-gradient(to bottom, #BFB5B1, #BFB5B1) left bottom no-repeat,
     linear-gradient(to left, #fff, #fff) right bottom no-repeat,
     linear-gradient(to left, #fff, #fff) right bottom no-repeat;
-    background-size: 4px 28px, 72px 4px, 4px 28px, 72px 4px;
-    /*4.5比例  3比例*/
+    background-size: 4px 30px, 70px 4px, 4px 30px, 70px 4px;
 
     transform: translate(-50%,0);
     -moz-transform: translate(-50%,0);
@@ -59,13 +67,13 @@ html{
 
     color: #ffffff;
     text-align: center;
-    line-height: 88px;
-    font-size: 46px;
+    line-height: 75px;
+    font-size: 45px;
     font-weight: 300;
 }
 #banner .eng{
-    color: #BFB5B1;
-    font-size: 34px;
+    color: #c9c9c9;
+    font-size: 30px;
     position: absolute;
     top: -80%;
     width: 100%;
@@ -78,14 +86,12 @@ html{
     position: absolute;
     bottom: 30%;
     color: #f0f0f0;
-    font-size: 32px;
-    letter-spacing: 4px;
+    font-size: 40px;
+    letter-spacing: 5px;
 }
 #banner .desc span{
     font-weight: bold;
 }
-
-
 
 
 #company{
@@ -95,7 +101,10 @@ html{
     margin-top: 30px;
 }
 #company .word p{
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 16px;
+    text-indent: 10%;
 }
 #company .pull-left{
     margin-top: 5px;
@@ -122,13 +131,18 @@ html{
     text-align: center;
 }
 
+#culture .c-box p{
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    line-height: 22px;
+    color: #535353;
+}
+
 
 
 #help{
     position: relative;
-}
-#help img{
-    width: 100%;
 }
 #help p.t1{
     width: 100%;
@@ -137,18 +151,19 @@ html{
     left: 0;
     display: block;
     text-align: center;
-    font-size: 36px;
+    font-size: 56px;
     letter-spacing: 5px;
     color: #f0f0f0;
 }
 #help p.t2{
-    width: 100%;
+    width: 70%;
+    margin-left: 15%;
     position: absolute;
-    top: 55%;
+    top: 52%;
     left: 0;
     display: block;
     text-align: center;
-    font-size: 22px;
+    font-size: 28px;
     letter-spacing: 3px;
     color: #f0f0f0;
 }
@@ -156,7 +171,7 @@ html{
 
 #message{
     background-color: #F6F6F6;
-    padding: 80px 0 30px 0;
+    padding: 50px 0;
     margin: 0;
 }
 #message .container{
@@ -201,14 +216,14 @@ html{
 
 
 #location{
-    padding: 60px 0;
+    padding: 50px 0;
 }
 #location .row > div:first-child{
     margin-top: 8%;
 }
 #location h4{
     margin-bottom: 30px;
-    font-weight: 500;
+    font-weight: bold;
 }
 #location .info{
     width: 100%;
@@ -234,8 +249,9 @@ html{
 }
 
 
+/*bot*/
 #bot{
-    background-color: #F6F6F6;
+    background-color: #f1f1f1;
     padding: 12px 0;
 }
 #bot h5{
@@ -250,17 +266,14 @@ html{
 
 /*媒体查询*/
 @media (max-width: 480px){
-    #banner{
-        height: 12rem;
-    }
+
     #banner .border-box{
-        position: absolute;
         top: 25%;
         width: 160px;
-        height: 39px;
-        line-height: 39px;
-        font-size: 20px;
-        background-size: 2px 14px, 36px 2px, 2px 14px, 36px 2px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 19px;
+        background-size: 2px 12px, 32px 2px, 2px 12px, 32px 2px;
     }
     #banner .eng{
         font-size: 17px;
@@ -269,7 +282,7 @@ html{
     #banner .desc{
         font-size: 16px;
         letter-spacing: 1px;
-        bottom: 15%;
+        bottom: 18%;
     }
     #banner .desc span{
         font-weight: normal;
@@ -280,23 +293,27 @@ html{
         padding: 10px 0;
     }
     #company .row{
-        margin-top: 20px;
+        margin-top: 10px;
     }
     #company .word p{
         letter-spacing: 1px;
-        margin: 5px 0;
+        line-height: 22px;
+        font-size: 14px;
     }
-    #company .pull-left{
-        margin-top: 8px;
+    #company .pull-left:first-child{
+        margin-top: 12px;
+    }
+    #company .pull-left:last-child{
+        margin-top: 0;
     }
 
 
     #culture{
-        padding: 20px 0;
+        padding: 10px 0;
     }
     #culture .row p{
-        line-height: 20px;
-        margin-top: 10px;
+        line-height: 22px;
+        margin-top: 12px;
     }
 
     #culture .c-box{
@@ -307,20 +324,19 @@ html{
 
 
     #help p.t1{
-
         top: 10%;
         font-size: 22px;
         letter-spacing: 3px;
     }
     #help p.t2{
-        top: 50%;
-        font-size: 16px;
-        letter-spacing: 2px;
+        top: 52%;
+        font-size: 12px;
+        letter-spacing: 1px;
     }
 
 
     #message{
-        padding: 30px 0 20px 0;
+        padding: 20px 0;
     }
     #message .container{
         margin-top: 8px;
@@ -348,16 +364,14 @@ html{
     }
 
 
-
     #location{
-        padding: 30px 0;
+        padding: 20px 0 0 0;
     }
     #location .row > div:first-child{
         margin-top: 0;
         text-align: center;
     }
     #location h4{
-        font-weight: 600;
         text-align: center;
         margin-bottom: 10px;
     }
@@ -365,21 +379,16 @@ html{
         padding: 3px 0 10px 24%;
     }
 
-
 }
 
 
 @media (min-width: 480px){
-    #banner{
-        height: 19rem;
-    }
     #banner .border-box{
-        position: absolute;
         top: 30%;
         width: 182px;
         height: 43px;
         line-height: 43px;
-        font-size: 20px;
+        font-size: 22px;
         background-size: 2px 14px, 36px 2px, 2px 14px, 36px 2px;
     }
     #banner .eng{
@@ -387,9 +396,9 @@ html{
         top: -80%;
     }
     #banner .desc{
-        font-size: 18px;
+        font-size: 17px;
         letter-spacing: 2px;
-        bottom: 15%;
+        bottom: 20%;
     }
     #banner .desc span{
         font-weight: normal;
@@ -398,20 +407,20 @@ html{
 
     #company{
         padding: 25px 0;
-        margin-top: 10px;
-    }
-    #company .row{
-        margin-top: 20px;
     }
     #company .word p{
         letter-spacing: 1px;
-        margin: 5px 0;
+        font-size: 14px;
+        line-height: 22px;
     }
     #company .pull-left{
         margin-top: 8px;
     }
     #company .pull-left:first-child{
-        margin-top: 12px;
+        margin-top: 15px;
+    }
+    #company .pull-left:last-child{
+        margin-top: 5px;
     }
     #company .c-img{
         float: none;
@@ -419,24 +428,24 @@ html{
         display: block;
     }
 
-    #culture{
-        padding: 30px 0;
-    }
 
+    #culture{
+        padding: 25px 0;
+    }
     #help p.t1{
-        top: 20%;
+        top: 15%;
         font-size: 25px;
         letter-spacing: 3px;
     }
     #help p.t2{
         top: 52%;
-        font-size: 18px;
+        font-size: 14px;
         letter-spacing: 2px;
     }
 
 
     #message{
-        padding: 30px 0;
+        padding: 25px 0;
     }
     #message .container{
         margin-top: 8px;
@@ -484,42 +493,38 @@ html{
 
 
 @media (min-width: 768px){
-    #banner{
-        height: 23rem;
-    }
     #banner .border-box{
-        position: absolute;
         top: 30%;
         width: 190px;
         height: 48px;
         line-height: 48px;
-        font-size: 22px;
+        font-size: 23px;
         background-size: 2px 16px, 40px 2px, 2px 16px, 40px 2px;
     }
     #banner .eng{
-        font-size: 19px;
+        font-size: 20px;
         top: -80%;
     }
     #banner .desc{
         font-size: 19px;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
         bottom: 20%;
     }
     #banner .desc span{
-        font-weight: 600;
+        font-weight: bold;
     }
 
 
     #company{
-        padding: 32px 0;
-        margin-top: 0;
+        padding: 35px 0;
     }
     #company .row{
         margin-top: 20px;
     }
     #company .word p{
         letter-spacing: 1px;
-        margin: 5px 0;
+        font-size: 14px;
+        line-height: 18px;
     }
     #company .pull-left{
         margin-top: 8px;
@@ -527,11 +532,10 @@ html{
     #company .pull-left:first-child{
         margin-top: 0;
     }
-    #company .c-img{
-        float: none;
-        margin: 0 auto;
-        display: block;
+    #company .pull-left:last-child{
+        margin-top: 5px;
     }
+
 
     #culture{
         padding: 35px 0;
@@ -544,7 +548,7 @@ html{
     }
     #help p.t2{
         top: 52%;
-        font-size: 19px;
+        font-size: 18px;
         letter-spacing: 2px;
     }
 
@@ -585,7 +589,7 @@ html{
         margin-top: 7%;
     }
     #location h4{
-        font-weight: 600;
+        font-weight: bold;
         text-align: left;
         margin-bottom: 15px;
     }
@@ -597,40 +601,63 @@ html{
 
 
 @media (min-width: 992px){
-    #banner{
-        height: 34rem;
-    }
     #banner .border-box{
-        position: absolute;
         top: 30%;
         width: 240px;
         height: 60px;
         line-height: 60px;
-        font-size: 25px;
+        font-size: 30px;
         background-size: 2px 16px, 40px 2px, 2px 16px, 40px 2px;
     }
     #banner .eng{
-        font-size: 22px;
+        font-size: 24px;
         top: -80%;
     }
     #banner .desc{
-        font-size: 24px;
-        letter-spacing: 2px;
+        font-size: 26px;
+        letter-spacing: 4px;
         bottom: 20%;
     }
     #banner .desc span{
-        font-weight: 600;
+        font-weight: bold;
     }
 
 
+    #company{
+        padding: 40px 0;
+    }
+    #company .word p{
+        letter-spacing: 1px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #company .pull-left{
+        margin-top: 8px;
+    }
+    #company .pull-left:first-child{
+        margin-top: 0;
+    }
+    #company .pull-left:last-child{
+        margin-top: 5px;
+    }
+
+    #culture{
+        padding: 40px 0;
+    }
+    #culture .row p{
+        font-size: 16px;
+    }
+
+
+
     #help p.t1{
-        top: 25%;
-        font-size: 32px;
+        top: 22%;
+        font-size: 36px;
         letter-spacing: 3px;
     }
     #help p.t2{
         top: 52%;
-        font-size: 24px;
+        font-size: 26px;
         letter-spacing: 2px;
     }
 
@@ -660,12 +687,12 @@ html{
     }
     #submit{
         margin-top: 25px;
-        font-size: 16px;
+        font-size: 17px;
     }
 
 
     #location{
-        padding: 35px 0;
+        padding: 40px 0;
     }
     #location .row > div:first-child{
         margin-top: 8%;
@@ -685,47 +712,55 @@ html{
 
 @media (min-width: 1200px){
 
-    #banner{
-        height: 42rem;
-    }
     #banner .border-box{
-        position: absolute;
         top: 30%;
         width: 280px;
         height: 70px;
         line-height: 70px;
-        font-size: 32px;
+        font-size: 38px;
         background-size: 2px 16px, 40px 2px, 2px 16px, 40px 2px;
     }
     #banner .eng{
-        font-size: 24px;
+        font-size: 28px;
         top: -80%;
     }
     #banner .desc{
-        font-size: 28px;
-        letter-spacing: 2px;
+        font-size: 34px;
+        letter-spacing: 5px;
         bottom: 25%;
     }
     #banner .desc span{
-        font-weight: 600;
+        font-weight: bold;
+    }
+
+
+    #company .word p{
+        letter-spacing: 1px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    #culture .row p{
+        font-size: 16px;
     }
 
 
     #help p.t1{
         top: 25%;
-        font-size: 32px;
+        font-size: 38px;
         letter-spacing: 3px;
     }
     #help p.t2{
+        width: 100%;
+        left: 0;
+        margin-left: 0;
         top: 52%;
         font-size: 24px;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
     }
 
 
-    #message{
-        padding: 40px 0;
-    }
     #message .container{
         margin-top: 12px;
     }
@@ -748,7 +783,7 @@ html{
     }
     #submit{
         margin-top: 25px;
-        font-size: 16px;
+        font-size: 17px;
     }
 
 
@@ -772,12 +807,10 @@ html{
 
 
 @media (min-width: 1440px){
-    #banner{
-        height: 48rem;
-    }
+
     #banner .border-box{
         position: absolute;
-        top: 26%;
+        top: 28%;
         left: 50%;
         width: 325px;
         height: 84px;
@@ -795,7 +828,7 @@ html{
         letter-spacing: 4px;
     }
     #banner .desc span{
-        font-weight: 600;
+        font-weight: bold;
     }
 
 
@@ -835,50 +868,27 @@ html{
     }
 
 
-
-    #help{
-        position: relative;
-    }
-    #help img{
-        width: 100%;
-    }
     #help p.t1{
-        width: 100%;
-        position: absolute;
         top: 25%;
         left: 0;
-        display: block;
-        text-align: center;
-        font-size: 36px;
+        font-size: 45px;
         letter-spacing: 5px;
-        color: #f0f0f0;
     }
     #help p.t2{
-        width: 100%;
-        position: absolute;
         top: 55%;
         left: 0;
-        display: block;
-        text-align: center;
-        font-size: 22px;
+        font-size: 28px;
         letter-spacing: 3px;
-        color: #f0f0f0;
     }
 
 
     #message{
-        background-color: #F6F6F6;
-        padding: 80px 0 30px 0;
-        margin: 0;
+        padding: 50px 0;
     }
     #message .container{
         margin-top: 30px;
     }
-    #message h3{
-        font-weight: bold;
-        letter-spacing: 2px;
-        text-align: center;
-    }
+
     #message input{
         width: 100%;
         height: 48px;
@@ -900,20 +910,14 @@ html{
         border: 1px solid #000000;
     }
     #submit{
-        margin-top: 50px;
-        padding: 9px 30px;
-        border-radius: 4px;
-        letter-spacing: 3px;
-        font-size: 17px;
-        border: 1px solid rgb(23,101,182);
-        background-color: rgb(23,101,182);
-        color: #f0f0f0;
+        margin-top: 30px;
+        font-size: 18px;
     }
 
 
 
     #location{
-        padding: 60px 0;
+        padding: 50px 0;
     }
     #location .row > div:first-child{
         margin-top: 8%;
@@ -923,14 +927,14 @@ html{
         font-weight: 500;
     }
     #location .info{
-        width: 100%;
-        text-align: left;
-        padding: 15px 0;
+        padding: 18px 0;
     }
     #location .info img{
-        display: inline-block;
         width: 15%;
         max-width: 34px;
+    }
+    #location h4{
+        font-weight: bold;
     }
     #location .info span{
         display: inline-block;
@@ -941,28 +945,17 @@ html{
         white-space: nowrap;
         vertical-align: middle;
     }
-    #location .map{
-        width: 100%;
-    }
 
-
-    #bot{
-        background-color: #F6F6F6;
-        padding: 12px 0;
-    }
-    #bot h5{
-        padding: 0;
-        margin: 0;
-        vertical-align: middle;
-        text-align: center;
-        letter-spacing: 1px;
-    }
 }
 
 
-@media (min-width: 1600px) {
-    #banner{
-        height: 56rem;
+@media (min-width: 1920px){
+    html,body{
+        width: 1920px;
+        margin: 0 auto;
+        overflow-x: hidden;
     }
+
 }
+
 

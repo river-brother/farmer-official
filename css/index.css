@@ -1,10 +1,19 @@
 html,body{
-
 	overflow-x: hidden;
 }
-.con-header h2{
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.con-header .sort-tit{
 	text-align: center;
 	font-weight: bold;
+	font-size: 26px;
+}
+.con-header .small-tit{
+	font-size: 17px;
 }
 .con-header img{
 	padding: 5px 0;
@@ -69,6 +78,7 @@ html,body{
 #main-content{
 	padding-top: 50px;
 	padding-bottom: 50px;
+	margin-top: 30px;
 }
 #main-content .con-con > div{
 	margin-top: 30px;
@@ -81,19 +91,22 @@ html,body{
 	text-decoration: none;
 }
 #main-content .con-con .box-tit{
-	font-size: 17px;
+	font-size: 21px;
 	padding: 5px 0;
 	font-weight: bold;
 	text-align: center;
+	color: #000000;
 }
 #main-content .con-con .box-desc{
-	font-size: 15px;
+	font-size: 16px;
 	text-align: center;
+	color: #767676;
 }
 #main-content .con-con .tell{
-	font-size: 15px;
+	font-size: 16px;
 	text-align: center;
 	padding-top: 10px;
+	color: #000000;
 }
 
 /*content1*/
@@ -123,6 +136,15 @@ html,body{
 	margin: 40px 0;
 }
 
+#service .media-heading{
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+}
+#service .media-body{
+	font-size: 12px;
+	color: #787878;
+}
 
 /*example*/
 #example{
@@ -139,34 +161,35 @@ html,body{
 #example .row div a{
 	text-align: center;
 	display: block;
-	padding: 8px 0;
+	margin-top: 10px;
+	font-size: 16px;
+	color: #000;
 }
-
 
 /*help*/
 #help{
 	position: relative;
 }
-#help p.t1{
+#help .t1{
 	width: 100%;
 	position: absolute;
 	top: 20%;
 	left: 0;
 	display: block;
 	text-align: center;
-	font-size: 32px;
-	letter-spacing: 5px;
-	color: #f0f0f0;
+	font-size: 44px;
+	letter-spacing: 10px;
+	color: #ffffff;
 }
-#help p.t2{
+#help .t2{
 	width: 100%;
 	position: absolute;
 	top: 35%;
 	left: 0;
 	display: block;
 	text-align: center;
-	font-size: 21px;
-	color: #f0f0f0;
+	font-size: 22px;
+	color: #ffffff;
 }
 
 
@@ -179,6 +202,7 @@ html,body{
 	width: 100%;
 	text-align: left;
 	padding: 15px 0;
+	margin-top: 5px;
 }
 #contact .row h4{
 	font-weight: bold;
@@ -228,7 +252,7 @@ html,body{
 
 /*bot*/
 #bot{
-	background-color: #F6F6F6;
+	background-color: #f1f1f1;
 	padding: 12px 0;
 }
 #bot h5{
@@ -262,9 +286,11 @@ html,body{
 
 	#main-content{
 		padding: 10px 0 20px 0;
+		margin-top: 5px;
 	}
 	#main-content .con-con .box-tit{
 		padding: 2px 0;
+
 	}
 	#main-content .con-con .box-desc{
 		font-size: 14px;
@@ -306,23 +332,22 @@ html,body{
 		padding: 20px 0;
 	}
 	#example .row div a{
-		text-align: center;
-		display: block;
-		padding: 5px 0;
+		margin-top: 6px;
+		font-size: 12px;
 	}
 
 
 
 	#help p.t1{
-		top: 15%;
+		top: 8%;
 		left: 0;
-		font-size: 22px;
-		letter-spacing: 3px;
+		font-size: 17px;
+		letter-spacing: 2px;
 	}
 	#help p.t2{
-		top: 55%;
+		top: 40%;
 		left: 0;
-		font-size: 16px;
+		font-size: 12px;
 		letter-spacing: 1px;
 	}
 
@@ -381,6 +406,7 @@ html,body{
 
 	#main-content{
 		padding: 5px 0 30px 0;
+		margin-top: 10px;
 	}
 	#main-content .con-con .box-tit{
 		padding: 2px 0;
@@ -431,17 +457,16 @@ html,body{
 	}
 
 
-
 	#help p.t1{
-		top: 20%;
+		top: 8%;
 		left: 0;
-		font-size: 24px;
-		letter-spacing: 3px;
+		font-size: 19px;
+		letter-spacing: 2px;
 	}
 	#help p.t2{
-		top: 50%;
+		top: 40%;
 		left: 0;
-		font-size: 18px;
+		font-size: 14px;
 		letter-spacing: 1px;
 	}
 
@@ -476,6 +501,7 @@ html,body{
 
 
 @media (min-width: 768px){
+
 	#carousel .b-bot h1{
 		margin-top: 10%;
 		font-size: 24px;
@@ -710,6 +736,7 @@ html,body{
 		font-size: 17px;
 	}
 
+
 }
 
 
@@ -735,9 +762,23 @@ html,body{
 
 
 @media (min-width: 1920px){
-    html,body{
-        width: 1920px;
-        margin: 0 auto;
-        overflow-x: hidden;
-    }
+	html,body{
+		width: 1920px;
+		margin: 0 auto;
+		overflow-x: hidden;
+	}
+
+	#help .t1{
+		top: 20%;
+		left: 0;
+		font-size: 44px;
+		letter-spacing: 10px;
+	}
+	#help .t2{
+		top: 45%;
+		left: 0;
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+
 }
