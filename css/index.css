@@ -1,0 +1,743 @@
+html,body{
+
+	overflow-x: hidden;
+}
+.con-header h2{
+	text-align: center;
+	font-weight: bold;
+}
+.con-header img{
+	padding: 5px 0;
+}
+/*nav*/
+#nav{
+	padding: 15px 0;
+	margin:0;
+}
+#nav .tel{
+	color:rgb(35,108,185);
+	font-size: 24px;
+}
+#nav .logo{
+	display: inline-block;
+	margin-top: -13px;
+	box-sizing: border-box;
+}
+
+/*carousel*/
+#carousel{
+	position: relative;
+}
+#carousel .b-bot{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#carousel .b-bot h1{
+	margin-top: 10%;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 5px;
+}
+#carousel .main-btn{
+	width: 300px;
+	height: 55px;
+	margin-top: 5%;
+}
+#carousel .main-btn button{
+	width: 130px;
+	height: 55px;
+	line-height: 55px;
+	border: 1px solid #f0f0f0;
+	background-color: rgba(255,255,255,0.13);
+	color: #f0f0f0;
+	font-size: 17px;
+	text-align: center;
+}
+#carousel .main-btn button.current{
+	background-color: rgb(23,101,182);
+	border: 1px solid rgb(23,101,182);
+}
+/*#banner .b-bot .b-btn .main-btn button:hover{*/
+	/*background-color: rgb(23,101,182);*/
+	/*border: 1px solid rgb(23,101,182);*/
+/*}*/
+
+
+/*main-content*/
+#main-content{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#main-content .con-con > div{
+	margin-top: 30px;
+}
+#main-content .con-con .small-tit{
+	text-align: center;
+	margin-top: 10px;
+}
+#main-content .con-con a:hover{
+	text-decoration: none;
+}
+#main-content .con-con .box-tit{
+	font-size: 17px;
+	padding: 5px 0;
+	font-weight: bold;
+	text-align: center;
+}
+#main-content .con-con .box-desc{
+	font-size: 15px;
+	text-align: center;
+}
+#main-content .con-con .tell{
+	font-size: 15px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+/*content1*/
+#content1{
+	padding-top: 50px;
+	background-color: rgb(249,249,249);
+}
+#content1 .con-con .small-tit{
+	text-align: center;
+	margin-top: 10px;
+}
+#content1 .content1-img{
+	position: relative;
+	top: 50px;
+}
+
+
+/*service*/
+#service{
+	padding: 50px 0;
+}
+#service .media-heading{
+	padding-top: 7px;
+	font-weight: bold;
+}
+#service .row > div{
+	margin: 40px 0;
+}
+
+
+/*example*/
+#example{
+	padding: 50px 0;
+	background-color: rgb(249,249,249);
+}
+#example .con-con .small-tit{
+	text-align: center;
+	margin-top: 10px;
+}
+#example .row > div{
+	padding: 50px 0;
+}
+#example .row div a{
+	text-align: center;
+	display: block;
+	padding: 8px 0;
+}
+
+
+/*help*/
+#help{
+	position: relative;
+}
+#help p.t1{
+	width: 100%;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	display: block;
+	text-align: center;
+	font-size: 32px;
+	letter-spacing: 5px;
+	color: #f0f0f0;
+}
+#help p.t2{
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	left: 0;
+	display: block;
+	text-align: center;
+	font-size: 21px;
+	color: #f0f0f0;
+}
+
+
+/*contact*/
+#contact{
+	padding: 50px 0;
+	overflow: hidden;
+}
+#contact .icon-info{
+	width: 100%;
+	text-align: left;
+	padding: 15px 0;
+}
+#contact .row h4{
+	font-weight: bold;
+}
+#contact .icon-info img{
+	display: inline-block;
+	width: 15%;
+	max-width: 34px;
+}
+#contact .icon-info span{
+	display: inline-block;
+	width: 82%;
+	margin-left: 3px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+#contact input{
+	width: 100%;
+	height: 40px;
+	text-indent: 1em;
+	letter-spacing: 2px;
+	border: 1px solid #cccccc;
+}
+#contact input:focus{
+	border: 1px solid #000000;
+}
+#contact textarea{
+	width: 100%;
+	margin-top: 20px;
+	padding: 1em;
+	resize: none;
+}
+#contact textarea:focus{
+	border: 1px solid #000000;
+}
+#submit{
+	margin-top: 12px;
+	padding: 7px 25px;
+	border-radius: 4px;
+	border: 1px solid rgb(23,101,182);
+	background-color: rgb(23,101,182);
+	color: #f0f0f0;
+}
+
+
+/*bot*/
+#bot{
+	background-color: #F6F6F6;
+	padding: 12px 0;
+}
+#bot h5{
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+
+/*媒体查询*/
+@media (max-width: 480px){
+	#carousel .b-bot h1{
+		margin-top: 10%;
+		font-size: 18px;
+		letter-spacing: 0;
+	}
+	#carousel .main-btn{
+		width: 180px;
+		height: 30px;
+		margin-top: 5%;
+	}
+	#carousel .main-btn button{
+		width: 80px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 12px;
+	}
+
+
+	#main-content{
+		padding: 10px 0 20px 0;
+	}
+	#main-content .con-con .box-tit{
+		padding: 2px 0;
+	}
+	#main-content .con-con .box-desc{
+		font-size: 14px;
+	}
+	#main-content .con-con .tell{
+		font-size: 14px;
+		padding-top: 5px;
+	}
+	#main-content .con-con > div{
+		margin-top: 20px;
+	}
+
+
+	#content1{
+		padding-top: 20px;
+	}
+	#content1 .content1-img{
+		top: 15px;
+	}
+
+
+	#service{
+		padding: 15px 0;
+	}
+	#service .row{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#service .row > div{
+		margin: 20px auto;
+	}
+
+
+	#example{
+		padding: 20px 0;
+	}
+	#example .row > div{
+		padding: 20px 0;
+	}
+	#example .row div a{
+		text-align: center;
+		display: block;
+		padding: 5px 0;
+	}
+
+
+
+	#help p.t1{
+		top: 15%;
+		left: 0;
+		font-size: 22px;
+		letter-spacing: 3px;
+	}
+	#help p.t2{
+		top: 55%;
+		left: 0;
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+
+
+	#contact{
+		padding: 20px 0 10px 0;
+	}
+	#contact .row h4{
+		text-align: center;
+	}
+
+	#contact .icon-info{
+		width: 100%;
+		text-align: center;
+		padding: 3px 0 0 75px;
+		margin-top: 5px;
+	}
+	#contact .icon-info span{
+		text-align: left;
+	}
+	#contact form{
+		margin-top: 25px;
+	}
+	#tel{
+		margin-top: 15px;
+	}
+	#contact textarea{
+		padding: 1em;
+		margin-top: 15px;
+	}
+	#submit{
+		display: block;
+		margin: 15px auto;
+	}
+}
+
+
+@media (min-width: 480px){
+	#carousel .b-bot h1{
+		margin-top: 10%;
+		font-size: 24px;
+		letter-spacing: 2px;
+	}
+	#carousel .main-btn{
+		width: 230px;
+		height: 36px;
+		margin-top: 5%;
+	}
+	#carousel .main-btn button{
+		width: 95px;
+		height: 36px;
+		line-height: 36px;
+		font-size: 14px;
+	}
+
+
+	#main-content{
+		padding: 5px 0 30px 0;
+	}
+	#main-content .con-con .box-tit{
+		padding: 2px 0;
+	}
+	#main-content .con-con .box-desc{
+		font-size: 14px;
+	}
+	#main-content .con-con .tell{
+		font-size: 14px;
+		padding-top: 5px;
+	}
+	#main-content .con-con > div{
+		margin-top: 20px;
+	}
+
+
+	#content1{
+		padding-top: 20px;
+	}
+	#content1 .content1-img{
+		top: 20px;
+	}
+
+
+	#service{
+		padding: 20px 0;
+	}
+	#service .row{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#service .row > div{
+		margin: 20px auto;
+	}
+
+
+	#example{
+		padding: 20px 0;
+	}
+	#example .row > div{
+		padding: 20px 0;
+	}
+	#example .row div a{
+		text-align: center;
+		display: block;
+		padding: 5px 0;
+	}
+
+
+
+	#help p.t1{
+		top: 20%;
+		left: 0;
+		font-size: 24px;
+		letter-spacing: 3px;
+	}
+	#help p.t2{
+		top: 50%;
+		left: 0;
+		font-size: 18px;
+		letter-spacing: 1px;
+	}
+
+
+	#contact{
+		padding: 20px 0 10px 0;
+	}
+	#contact .row h4{
+		text-align: center;
+	}
+	#contact .icon-info{
+		width: 100%;
+		text-align: left;
+		padding: 3px 0 0 32%;
+		margin-top: 5px;
+	}
+	#contact form{
+		margin-top: 25px;
+	}
+	#tel{
+		margin-top: 15px;
+	}
+	#contact textarea{
+		padding: 1em;
+		margin-top: 15px;
+	}
+	#submit{
+		display: block;
+		margin: 15px auto;
+	}
+}
+
+
+@media (min-width: 768px){
+	#carousel .b-bot h1{
+		margin-top: 10%;
+		font-size: 24px;
+		letter-spacing: 2px;
+	}
+	#carousel .main-btn{
+		width: 270px;
+		height: 40px;
+		margin-top: 5%;
+	}
+	#carousel .main-btn button{
+		width: 110px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+	}
+
+	#main-content{
+		padding: 15px 0 30px 0;
+	}
+	#main-content .con-con .box-tit{
+		padding: 2px 0;
+	}
+	#main-content .con-con .box-desc{
+		font-size: 14px;
+	}
+	#main-content .con-con .tell{
+		font-size: 14px;
+		padding-top: 5px;
+	}
+	#main-content .con-con > div{
+		margin-top: 20px;
+	}
+
+
+	#content1{
+		padding-top: 20px;
+	}
+	#content1 .content1-img{
+		top: 24px;
+	}
+
+
+	#service{
+		padding: 28px 0;
+	}
+	#service .row{
+		display: block;
+	}
+
+
+	#example{
+		padding: 28px 0;
+	}
+	#example .row > div{
+		padding: 20px 0;
+	}
+	#example .row div a{
+		text-align: center;
+		display: block;
+		padding: 5px 0;
+	}
+
+
+
+	#help p.t1{
+		top: 20%;
+		left: 0;
+		font-size: 26px;
+		letter-spacing: 3px;
+	}
+	#help p.t2{
+		top: 45%;
+		left: 0;
+		font-size: 18px;
+		letter-spacing: 1px;
+	}
+
+
+	#contact{
+		padding: 20px 0 10px 0;
+	}
+	#contact .row h4{
+		text-align: left;
+	}
+	#contact .icon-info{
+		width: 100%;
+		text-align: left;
+		padding: 3px 0;
+	}
+	#contact form{
+		margin-top: 20px;
+	}
+	#tel{
+		margin-top: 0;
+	}
+	#contact textarea{
+		padding: 1em;
+		margin-top: 15px;
+	}
+	#submit{
+		display: inline-block;
+	}
+}
+
+
+@media (min-width: 992px){
+
+	#carousel .b-bot h1{
+		margin-top: 10%;
+		font-size: 26px;
+		letter-spacing: 2px;
+	}
+	#carousel .main-btn{
+		width: 300px;
+		height: 42px;
+		margin-top: 5%;
+	}
+	#carousel .main-btn button{
+		width: 110px;
+		height: 42px;
+		line-height: 42px;
+		font-size: 16px;
+	}
+
+
+	#main-content{
+		padding: 20px 0 35px 0;
+	}
+	#main-content .con-con .box-tit{
+		padding: 2px 0;
+	}
+	#main-content .con-con .box-desc{
+		font-size: 14px;
+	}
+	#main-content .con-con .tell{
+		font-size: 14px;
+		padding-top: 5px;
+	}
+	#main-content .con-con > div{
+		margin-top: 20px;
+	}
+
+
+	#content1{
+		padding-top: 25px;
+	}
+	#content1 .content1-img{
+		top: 28px;
+	}
+
+
+	#service{
+		padding: 35px 0;
+	}
+	#service .row{
+		display: block;
+	}
+
+
+	#example{
+		padding: 35px 0;
+	}
+	#example .row > div{
+		padding: 20px 0;
+	}
+	#example .row div a{
+		text-align: center;
+		display: block;
+		padding: 5px 0;
+	}
+
+
+
+	#help p.t1{
+		top: 20%;
+		left: 0;
+		font-size: 28px;
+		letter-spacing: 3px;
+	}
+	#help p.t2{
+		top: 45%;
+		left: 0;
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+
+
+	#contact{
+		padding: 35px 0 10px 0;
+	}
+	#contact .row h4{
+		text-align: left;
+	}
+	#contact .icon-info{
+		width: 100%;
+		text-align: left;
+		padding: 3px 0;
+	}
+	#contact form{
+		margin-top: 20px;
+	}
+	#tel{
+		margin-top: 0;
+	}
+	#contact textarea{
+		padding: 1em;
+		margin-top: 15px;
+	}
+	#submit{
+		display: inline-block;
+	}
+
+}
+
+
+@media (min-width: 1200px){
+	#carousel .b-bot h1{
+		margin-top: 10%;
+		font-size: 32px;
+		letter-spacing: 2px;
+	}
+	#carousel .main-btn{
+		width: 340px;
+		height: 52px;
+		margin-top: 5%;
+	}
+	#carousel .main-btn button{
+		width: 120px;
+		height: 52px;
+		line-height: 52px;
+		font-size: 17px;
+	}
+
+}
+
+
+@media (min-width: 1440px){
+
+	#carousel .b-bot h1{
+		margin-top: 10%;
+		font-size: 32px;
+		letter-spacing: 3px;
+	}
+	#carousel .main-btn{
+		width: 340px;
+		height: 55px;
+		margin-top: 5%;
+	}
+	#carousel .main-btn button{
+		width: 120px;
+		height: 55px;
+		line-height: 55px;
+		font-size: 17px;
+	}
+}
+
+
+@media (min-width: 1920px){
+    html,body{
+        width: 1920px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+}
