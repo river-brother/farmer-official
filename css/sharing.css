@@ -5,9 +5,9 @@
         overflow-x: hidden;
     }
 }
-html,body{
-    overflow-x: hidden;
-}
+/*html,body{*/
+    /*overflow-x: hidden;*/
+/*}*/
 li{
     list-style: none;
 }
@@ -78,74 +78,159 @@ li{
     margin-top: 50px;
 }
 #box1 .center-block{
-    padding: 10px 0;
+    margin-top: 20px;
 }
 
-#box1 .gx{
-    position: relative;
-    width: 100%;
-    height: 300px;
-    min-height: 300px;
-    margin: 50px 0;
-}
-#box1 .xian{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 140px;
-}
 #box1 .benj{
-    position: absolute;
-    top: 29%;
-    left: 0;
-    margin: 0px 0px;
+    margin-top: 70px;
+    margin-bottom: 200px;
 }
-/*#box1 .benj{*/
-    /*width: 100%;*/
-/*}*/
-/*#box1 .gx{*/
-    /*position: relative;*/
-/*}*/
-/*#box1 .yuans li img{*/
-    /*position: absolute;*/
-/*}*/
-/*#box1 .yuans li:nth-child(1) img{*/
-    /*left: 33px;*/
-    /*top: 88px;*/
-/*}*/
-/*#box1 .yuans li:nth-child(2) img{*/
-    /*left: 123px;*/
-    /*top: 54px;*/
-/*}*/
-/*#box1 .yuans li:nth-child(3) img{*/
-    /*left: 233px;*/
-    /*top: 52px;*/
-/*}*/
-/*#box1 .yuans li:nth-child(4) img{*/
-    /*left: 347px;*/
-    /*top: 55px;*/
-/*}*/
-/*#box1 .yuans li:nth-child(5) img{*/
-    /*left: 461px;*/
-    /*top: 17px;*/
-/*}*/
-/*#box1 .yuans li:nth-child(6) img{*/
-    /*left: 587px;*/
-    /*top: -5px;*/
-/*}*/
-/*#box1 .yuans li:nth-child(7) img{*/
-    /*left: 587px;*/
-    /*top: 0px;*/
-/*}*/
-/*#box1 .yuans li:nth-child(8) img{*/
-    /*left: 677px;*/
-    /*top: 0px;*/
-/*}*/
-/*#box1 .yuans li:nth-child(9) img{*/
-    /*left: 769px;*/
-    /*top: 0px;*/
-/*}*/
-/*#box1 .yuans li:nth-child(10) img{*/
-    /*left: 869px;*/
-    /*top: 0px;*/
-/*}*/
+
+.danche{
+    width: 100%;
+    height: 808px;
+    background: #f8f8f8;
+    margin: auto;
+}
+.danche h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+.danche ul{
+    margin-top: 75px;
+}
+.danche ul li{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+}
+.danche ul li h2{
+    color: #4baede;
+    font-size: 55px;
+}
+.danche ul li p{
+    height: 194px;
+}
+.danche ul li span{
+    color: #000000;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.danche .cont{
+    width: 53%;
+    margin: auto;
+    margin-top: 80px;
+}
+.danche .cont p{
+    display: block;
+    font-size: 14px;
+    color: #c2c2c2;
+    text-indent: 2em;
+    line-height: 35px;
+}
+
+.fangan h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+.fangan .h2{
+    margin-top: 55px;
+    color: #4baede;
+}
+.fangan>p{
+    color: #b6b6b6;
+}
+.fangan>p span{
+    color: #4baede;
+}
+.fangan>p:nth-child(4){
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.fangan .yinjian{
+    margin-top: 60px;
+    overflow: hidden;
+}
+.fangan .yinjian img{
+    float: left;
+    padding-right: 15px;
+    padding-top: 6px;
+}
+.fangan .yinjian span{
+    color: #1765b6;
+    float: left;
+    font-size: 17px;
+}
+.fangan .hardware{
+    margin-top: 45px;
+    width: 1350px;
+    margin-left: -110px;
+}
+.fangan .hardware div{
+    width: 294px;
+    height: 277px;
+    border: 1px solid #f5f5f5;
+    float: left;
+    margin: 0 24px;
+    text-align: center;
+}
+.fangan .hardware div:nth-child(1){
+    margin-left: 0;
+}
+.fangan .hardware div:nth-child(4){
+    margin-right: 0;
+}
+.fangan .hardware div img{
+    display: block;
+    margin-top: 25px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.fangan .hardware div h3{
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #272727;
+}
+.fangan .ruanjian div:nth-child(3){
+    margin-right: 0;
+   float: right;
+}
+.fangan .ruanjian div:nth-child(2){
+    margin-left: 195px;
+}
+.foo{
+    text-align: center;
+}
+.foo h2{
+    color: #4baede;
+    font-size: 25px;
+    margin-top: 95px;
+}
+.foo h2:nth-child(3){
+    margin-top: 135px;
+}
+.foo p{
+    color: #c6c6c6;
+    font-size: 14px;
+    margin-top: 50px;
+    display: block;
+}
+#bot{
+    background-color: #F6F6F6;
+    padding: 12px 0;
+}
+#bot h5{
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    text-align: center;
+    letter-spacing: 1px;
+}

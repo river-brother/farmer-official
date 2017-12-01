@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>About</title>
-    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
@@ -39,16 +38,19 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">产品 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="product.html">软件定制</a></li>
-                        <li><a href="#">共享经济</a></li>
-                        <li><a href="#">产品3</a></li>
+                        <li><a href="software.html">软件定制</a></li>
+                        <li><a href="sharing.html">共享经济</a></li>
+                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="water.html">水闸监控</a></li>
+                        <li><a href="distribution.html">分销系统</a></li>
+                        <li><a href="system.html">集成系统</a></li>
                     </ul>
                 </li>
                 <li><a href="#">方案</a></li>
                 <li><a href="about.html">关于我们</a></li>
                 <li class="hidden-sm"><a href="about.html#message">联系我们</a></li>
                 <li>
-                    <a href="javascript:;" class="tel">13668100743</a>
+                    <a href="javascript:;" class="tel">专线&nbsp;136-6810-0743</a>
                 </li>
             </ul>
 
@@ -172,23 +174,21 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <img src="images/map.png" alt="map" class="img-responsive map">
+            <!--<img src="images/map.png" alt="map" class="img-responsive map">-->
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="map.html"></iframe>
+            </div>
         </div>
     </div>
 </div>
 
+<img title="返回顶部" src="images/top.png" alt="TOP" id="top" style="display: none;position: fixed;right: 3%;bottom: 5%;width: 50px;cursor: pointer">
 <div class="container-fluid" id="bot">
     <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
 </div>
 
 <script src="js/jquery.min.js"></script>
 <script src="plugins/bootstrap/js/bootstrap.js"></script>
-<script>
-    $(document).ready(function () {
-//        $(window).resize(function () {
-//            console.log('width:'+$(window).width()+'---'+'height:'+$(window).height());
-//        });
-    });
-</script>
+<script src="js/public.js"></script>
 </body>
 </html>
