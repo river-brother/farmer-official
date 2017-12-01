@@ -1,0 +1,146 @@
+html,body{
+    overflow-x: hidden;
+}
+.col-md-1-5 {
+    width: 20%;
+    float: left;
+}
+.col-xs-1-5,.col-sm-1-5,.col-md-1-5,.col-lg-1-5 {
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .col-sm-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+.con-header h2{
+    text-align: center;
+    font-weight: bold;
+}
+.con-header img{
+    padding: 5px 0;
+}
+/*nav*/
+#nav{
+    padding: 15px 0;
+    margin:0;
+}
+#nav .tel{
+    color:rgb(35,108,185);
+    font-size: 24px;
+}
+#nav .logo{
+    display: inline-block;
+    margin-top: -13px;
+    box-sizing: border-box;
+}
+
+#banner{
+    position: relative;
+}
+
+#banner .container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+}
+#banner h1{
+    color: #ffffff;
+    margin-top: 10%;
+    font-size: 55px;
+    letter-spacing: 5px;
+}
+#banner p{
+    color: #b2b3b6;
+    margin-top: 5%;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+
+
+.jump{
+    height: 80px;
+}
+.jump h2{
+    font-size: 24px;
+    display: inline-block;
+    line-height: 85px;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.jump .breadcrumb{
+    display: inline-block;
+    background-color: transparent;
+    margin-top: 25px;
+}
+.jump .breadcrumb li a{
+    color: #333333;
+}
+.jump .breadcrumb .active{
+    color: #206BB9;
+}
+
+
+#main{
+    border-top: 1px solid #cccccc;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+#main h3{
+    color: #8c8c8c;
+    text-align: left;
+}
+#main .desc{
+    text-indent: 5%;
+    margin-top: 3%;
+    line-height: 35px;
+
+}
+#main .main-box{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+#main .main-box span{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+
+#bot{
+    background-color: #f1f1f1;
+    padding: 12px 0;
+}
+#bot h5{
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    text-align: center;
+    letter-spacing: 1px;
+}

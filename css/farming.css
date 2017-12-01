@@ -1,0 +1,175 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+@media (min-width: 1920px){
+    html,body{
+        width: 1920px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+}
+
+
+.box .box-header .box-tit-eng{
+    padding-bottom: 0;
+    color: #ccc;
+    text-align: center;
+}
+.box .box-header .box-tit{
+    margin-top: 0;
+    text-align: center;
+}
+#nav{
+    padding: 15px 0;
+    margin:0;
+}
+
+#nav .tel{
+    color:rgb(35,108,185);
+    font-size: 24px;
+}
+#nav .logo{
+    display: inline-block;
+    margin-top: -13px;
+    box-sizing: border-box;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    margin: auto;
+}
+.banner h2 {
+    position: absolute;
+    top: 0;
+    color: white;
+}
+.banner p{
+    position: absolute;
+    top: 0;
+    color: white;
+}
+.banner h2{
+    font-size: 55px;
+    left: 353px;
+    top: 105px;
+}
+.banner p{
+    font-size: 25px;
+    left: 353px;
+    top:225px;
+}
+.jump{
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.jump h2{
+    font-size: 25px;
+}
+.jump .breadcrumb{
+    background-color: transparent;
+    margin-top: 15px;
+}
+.jump .breadcrumb li a{
+    color: #333333;
+}
+.jump .breadcrumb .active{
+    color: #206BB9;
+}
+.box{
+
+}
+.box h2{
+    font-size: 25px;
+}
+.box h2:nth-child(1){
+    color: #8c8c8c;
+}
+.box h2:nth-child(2){
+    text-align: center;
+    margin-top: 45px；
+}
+.box h2:nth-child(4){
+    text-align: center;
+    color: #6bb9e2;
+    margin-top: 50px;
+}
+.box img:nth-child(3){
+    margin-top: 18px;
+}
+.box p{
+    color: #c6c6c6;
+    font-size: 15px;
+    width: 85%;
+    margin: auto;
+    text-indent: 2em;
+    line-height: 38px;
+    margin-top: 40px;
+}
+.box h2:nth-child(6){
+    margin: 93px auto;
+    text-align: center;
+    color: #6bb9e2;
+}
+.box img:nth-child(8){
+    margin-top: 80px;
+}
+.cont{
+    background: #f8f8f8;
+    height: 655px;
+    margin-top: 40px;
+}
+.cont h2{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 63px;
+}
+.cont span{
+    font-size: 33px;
+    color: #77bde3;
+
+}
+.cont p:nth-child(2){
+    font-size: 18px;
+    /*font-weight: bolder;*/
+    margin-top: 55px;
+    color: #787878;
+}
+.cont dl{
+    float: left;
+    margin-right: 228px;
+    margin-top: 75px;
+    text-align: center;
+
+}
+.cont div{
+    overflow: hidden;
+}
+.cont div dl:nth-child(1){
+    margin-left: 26%;
+
+}
+.cont dl dd{
+    margin-top: 15px;
+    font-size: 18px;
+}
+.cont p:nth-child(4){
+    display: block;
+    font-size: 16px;
+    color: #929292;
+    text-align: center;
+    margin-top: 80px;
+}
+
+h5{
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 70px;
+}
