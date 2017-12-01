@@ -26,6 +26,7 @@ a:hover{
 #nav .tel{
 	color:rgb(35,108,185);
 	font-size: 24px;
+	font-family: Arial;
 }
 #nav .logo{
 	display: inline-block;
