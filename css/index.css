@@ -69,10 +69,7 @@ a:hover{
 	background-color: rgb(23,101,182);
 	border: 1px solid rgb(23,101,182);
 }
-/*#banner .b-bot .b-btn .main-btn button:hover{*/
-	/*background-color: rgb(23,101,182);*/
-	/*border: 1px solid rgb(23,101,182);*/
-/*}*/
+
 
 
 /*main-content*/
@@ -759,6 +756,41 @@ a:hover{
 		line-height: 55px;
 		font-size: 17px;
 	}
+
+	/*导航栏样式*/
+	.navbar-right{
+		margin-top: 7px;
+	}
+	.navbar-nav li{
+		padding-left: 10px;
+	}
+	.navbar-nav .dropdown-menu{
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,0);
+		-moz-transform: translate(-50%,0);
+		-webkit-transform: translate(-50%,0);
+		-o-transform: translate(-50%,0);
+		-ms-transform: translate(-50%,0);
+	}
+	.navbar-nav .dropdown-menu li{
+		padding-left: 0;
+	}
+	.navbar-nav .dropdown-menu li a{
+		text-align: center;
+
+		transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+	}
+	.navbar-nav .dropdown-menu li a:hover{
+		padding-right: 30px;
+	}
+	.navbar-nav li a{
+		padding: 10px;
+	}
 }
 
 
@@ -781,5 +813,7 @@ a:hover{
 		font-size: 18px;
 		letter-spacing: 2px;
 	}
+
+
 
 }
