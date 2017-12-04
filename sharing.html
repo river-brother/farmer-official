@@ -15,6 +15,7 @@
     <script src="js/jquery.lazyload.min.js"></script>
 </head>
 <body>
+
 <!--导航栏-->
 <nav class="navbar navbar-default" id="nav">
     <div class="container">
@@ -80,11 +81,15 @@
 </div>
 
 <div class="container" id="box1">
-    <h3>共享经济</h3>
-    <h2 class="sort-tit">开发服务</h2>
-    <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
+
+    <div class="con-header">
+        <h2 class="sort-tit">开发服务</h2>
+        <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
+    </div>
+
     <img src="images/sharing/flow.png" alt="" class="img-responsive benj">
 </div>
+
 
 <div class="container" id="bike">
     <div class="con-header">
@@ -100,7 +105,7 @@
                 <p>嵌入式芯片</p>
             </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 fh">
-                +
+                <p>+</p>
             </div>
 
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
@@ -108,7 +113,7 @@
                 <p>手机APP</p>
             </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 fh">
-                =
+                <p>=</p>
             </div>
 
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
@@ -126,103 +131,108 @@
 </div>
 
 
-<!--<div class="danche container">-->
-    <!--<h2 class="sort-tit">共享单车解决方案</h2>-->
-    <!--<img src="images/divider.png" alt="divide image" class="img-responsive center-block">-->
-    <!--<ul class="container-fluid container">-->
-        <!--<li>-->
-            <!--<p>-->
-            <!--<img src="images/sharing/sdd.png" alt="" class="img-responsive">-->
-            <!--</p>-->
-            <!--<span>嵌入式芯片</span>-->
-        <!--</li>-->
-        <!--<li>-->
-           <!--<h2>+</h2>-->
-        <!--</li>-->
-        <!--<li>-->
-            <!--<p>-->
-            <!--<img src="images/sharing/sj.png" alt="" class="img-responsive">-->
-            <!--</p>-->
-            <!--<span>手机APP</span>-->
-        <!--</li>-->
-        <!--<li>-->
-            <!--<h2>=</h2>-->
-        <!--</li>-->
-        <!--<li>-->
-            <!--<p>-->
-            <!--<img src="images/sharing/danche.png" alt="" class="img-responsive">-->
-            <!--</p>-->
-            <!--<span>共享智能单车</span>-->
-        <!--</li>-->
-    <!--</ul>-->
-    <!--<div class="cont ">-->
-        <!--<p class="">通过车身锁内集成了嵌入式芯片，GPS 模块和 SIM 卡，随时监控自行车在路上的具体位置。车辆投放到市场，不仅解决用户如何找到，还要解决如何进行运营和维护的问题。如果车辆无法被定位，且又无固定停车点情况，那很可能就是石沉大海。有了GPS一辆车在地图上就是一个点，也能形成供需关系。</p>-->
-        <!--<p class="">同时通过配合手机APP，用户通过手机APP可以查看附近的单车，并进行预约，然后通过地图引导找到单车，并通过扫二维码远程开锁进行汽车。使用app开可以完成付费和行驶线路记录。</p>-->
-    <!--</div>-->
-<!--</div>-->
+<div class="container" id="solve">
+    <div class="con-header">
+        <h2 class="sort-tit">方案划分</h2>
+        <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
+    </div>
 
-<div class="container fangan">
-    <h2 class="sort-tit">方案划分</h2>
-    <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
-    <h2 class="h2">车控终端</h2>
-    <p>车控终端这是共享单车的核心部件，主要实现：车辆电子锁控制、GPS定位、GPRS数据传输的功能。
-        车控终端实现包括硬件和软件两大部分：
-    </p>
-    <p>车控终端实现包括<span>硬件</span>和<span>软件</span>两大部分：</p>
-    <div class="yinjian">
-        <img src="images/sharing/fuhao.png" alt="" class="img-responsive">
-        <span>硬件</span>
+    <div class="row">
+        <p class="small-tit">车控终端</p>
+        <p class="desc">车控终端这是共享单车的核心部件，主要实现：车辆电子锁控制、GPS定位、GPRS数据传输的功能。车控终端实现包括硬件和软件两大部分：
+        </p>
+        <p class="desc">车控终端实现包括<span>硬件</span>和<span>软件</span>两大部分：</p>
     </div>
-    <div class="hardware container">
-        <div>
-            <img src="images/sharing/芯片.png" alt="" class="img-responsive">
-            <h3>控制芯片</h3>
-            <p>嵌入式主控芯片，用于控制</p>
-            <p>其他硬件和运行相应的嵌入式软件</p>
+
+
+    <div class="r1">
+        <div class="yinjian">
+            <img src="images/sharing/fuhao.png" alt="" class="img-responsive center-block">
+            <span>硬件</span>
         </div>
-        <div>
-            <img src="images/sharing/自锁车.png" alt="" class="img-responsive">
-            <h3>电控锁</h3>
-            <p>可以通过软件发送</p>
-            <p>电子信号开实现锁的开关</p>
-        </div>
-        <div>
-            <img src="images/sharing/GPS.png" alt="" class="img-responsive">
-            <h3>GPS定位模块</h3>
-            <p>可实现GPS定位数据采集</p>
-        </div>
-        <div>
-            <img src="images/sharing/gprs.png" alt="" class="img-responsive">
-            <h3>GPRS模块</h3>
-            <p>可实现数据通讯，用于软件</p>
-            <p>程序与云平台之间的信息通讯</p>
-        </div>
-    </div>
-    <div class="yinjian">
-        <img src="images/sharing/fuhao.png" alt="" class="img-responsive">
-        <span>软件</span>
-    </div>
-    <div class="hardware container ruanjian">
-        <div>
-            <img src="images/sharing/信息.png" alt="" class="img-responsive">
-            <h3>信息</h3>
-            <p>与云端平台进行通讯，</p>
-            <p>接收云端信息，上传信息</p>
-        </div>
-        <div>
-            <img src="images/sharing/远程开门20x20.png" alt="" class="img-responsive">
-            <h3>控制开关</h3>
-            <p>根据云端信息，控制电子锁的开关</p>
-        </div>
-        <div>
-            <img src="images/sharing/上传.png" alt="" class="img-responsive">
-            <h3>GPRS模块</h3>
-            <p>定时采集GRS定</p>
-            <p>位，并上传到云端，用于软件</p>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 rr-box">
+                <div class="wrap">
+                    <img src="images/sharing/芯片.png" alt="" class="img-responsive center-block">
+                    <h3>控制芯片</h3>
+                    <p>嵌入式主控芯片，用于控制</p>
+                    <p>其他硬件和运行相应的嵌入式软件</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 rr-box">
+                <div class="wrap">
+                    <img src="images/sharing/自锁车.png" alt="" class="img-responsive center-block">
+                    <h3>电控锁</h3>
+                    <p>可以通过软件发送</p>
+                    <p>电子信号开实现锁的开关</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 rr-box">
+                <div class="wrap">
+                    <img src="images/sharing/GPS.png" alt="" class="img-responsive center-block">
+                    <h3>GPS定位模块</h3>
+                    <p>可实现GPS定位数据采集</p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <div class="col-xs-6  col-sm-3 col-md-3 col-lg-3 rr-box">
+                <div class="wrap">
+                    <img src="images/sharing/gprs.png" alt="" class="img-responsive center-block">
+                    <h3>GPRS模块</h3>
+                    <p>可实现数据通讯，用于软件</p>
+                    <p>程序与云平台之间的信息通讯</p>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <div class="r2">
+        <div class="yinjian">
+            <img src="images/sharing/fuhao.png" alt="" class="img-responsive">
+            <span>软件</span>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 col-xs-offset-0 rr-box">
+                <div class="wrap">
+                    <img src="images/sharing/信息.png" alt="" class="img-responsive center-block">
+                    <h3>信息</h3>
+                    <p>与云端平台进行通讯，</p>
+                    <p>接收云端信息，上传信息</p>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 rr-box">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+                    <div class="wrap">
+                        <img src="images/sharing/远程开门20x20.png" alt="" class="img-responsive center-block">
+                        <h3>控制开关</h3>
+                        <p>根据云端信息，控制电子锁的开关</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-3 col-md-3 col-lg-3 rr-box">
+                <div class="wrap">
+                    <img src="images/sharing/上传.png" alt="" class="img-responsive center-block">
+                    <h3>GPRS模块</h3>
+                    <p>定时采集GRS定</p>
+                    <p>位，并上传到云端，用于软件</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </div>
-<div class="foo">
+
+<div class="container foo">
     <h2>云端平台</h2>
     <p>
         云端平台作为所有共享单车的中控大脑，可与所有单车进行数据通讯，收集信息与下单命令，同时为管理人员与用户APP提供服务。响应用户与管理员的操作来向车控终端发送命令进行控制。
@@ -235,6 +245,7 @@
 <div class="container-fluid" id="bot">
     <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
 </div>
+
 
 <script src="js/public.js"></script>
 </body>
