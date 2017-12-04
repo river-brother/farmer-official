@@ -1,17 +1,11 @@
-@media (min-width: 1920px){
-    html,body{
-        width: 1920px;
-        margin: 0 auto;
-        overflow-x: hidden;
-    }
-}
-/*html,body{*/
-    /*overflow-x: hidden;*/
-/*}*/
-li{
-    list-style: none;
-}
 /*nav*/
+.con-header h2{
+    text-align: center;
+    font-weight: bold;
+}
+.con-header img{
+    padding: 5px 0;
+}
 #nav{
     padding: 15px 0;
     margin:0;
@@ -32,8 +26,8 @@ li{
 .banner p{
     position: absolute;
     text-indent:2em;
-    width: 43%;
-    color: white;
+    width: 40%;
+    color: #ffffff;
     top:0;
     font-size: 17px;
     padding-top: 6%;
@@ -42,30 +36,30 @@ li{
 }
 
 .jump{
-    padding: 5px 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #f7f7f7;
+    height: 80px;
 }
 .jump h2{
-    font-size: 23px;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 85px;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .jump .breadcrumb{
+    display: inline-block;
     background-color: transparent;
-    margin-top: 15px;
-}
-.jump li{
-    font-size: 14px;
+    margin-top: 25px;
 }
 .jump .breadcrumb li a{
-    color: #7b7b7b;
+    color: #333333;
 }
 .jump .breadcrumb .active{
     color: #206BB9;
 }
 
 #box1{
-
+    border-top: 1px solid #cccccc;
 }
 #box1 h3{
     color: #7b7b7b;
@@ -83,20 +77,42 @@ li{
 
 #box1 .benj{
     margin-top: 70px;
-    margin-bottom: 200px;
+    margin-bottom: 70px;
 }
+
+
+
+#bike .row .wrap{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#bike .row .wrap > div{
+    height: 240px;
+    background-color: #1b6d85;
+}
+#bike .row .wrap > div p{
+    text-align: center;
+    padding: 8px 0;
+}
+#bike .fh{
+    display: inline-block;
+
+    color: #4baede;
+    font-size: 55px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 
 .danche{
     width: 100%;
-    height: 808px;
+    padding: 50px 0;
     background: #f8f8f8;
-    margin: auto;
 }
 .danche h2{
     text-align: center;
     font-weight: bold;
     font-size: 26px;
-    margin-top: 75px;
     margin-bottom: 20px;
 }
 .danche ul{
@@ -234,3 +250,92 @@ li{
     text-align: center;
     letter-spacing: 1px;
 }
+
+/*导航栏样式*/
+.navbar-right{
+    margin-top: 7px;
+}
+.navbar-nav li{
+    padding-left: 10px;
+}
+.navbar-nav .dropdown-menu{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+}
+.navbar-nav .dropdown-menu li{
+    padding-left: 0;
+}
+.navbar-nav .dropdown-menu li a{
+    text-align: center;
+
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+}
+.navbar-nav .dropdown-menu li a:hover{
+    padding-right: 30px;
+}
+.navbar-nav li a{
+    padding: 10px;
+}
+
+
+@media (max-width: 480px){
+    .banner p{
+        font-size: 12px;
+        text-indent: 0;
+        left: 0;
+    }
+
+    .jump{
+        height: 60px;
+    }
+    .jump h2{
+        font-size: 18px;
+        line-height: 65px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .jump .breadcrumb{
+        margin-top: 15px;
+    }
+
+    #box1 h3{
+        font-size: 20px;
+    }
+
+    #box1 .desc{
+        line-height: 20px;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    #box1 .sort-tit{
+        margin-top: 25px;
+    }
+    #box1 .benj{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    .danche{
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1920px){
+    html,body{
+        width: 1920px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+}
+
