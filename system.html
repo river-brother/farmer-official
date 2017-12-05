@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Index</title>
+    <title>System</title>
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/system.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
+    <script>
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    </script>
 </head>
 <body>
 
@@ -24,7 +32,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="javascript:;">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="logo" class="img-responsive logo">
             </a>
         </div>
@@ -33,24 +41,32 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">首页</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">产品 <span class="caret"></span></a>
+                       aria-expanded="false">软件定制 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="software.html">软件定制</a></li>
-                        <li><a href="sharing.html">共享经济</a></li>
-                        <li><a href="farming.html">农业灌溉</a></li>
-                        <li><a href="water.html">水闸监控</a></li>
                         <li><a href="distribution.html">分销系统</a></li>
                         <li><a href="system.html">集成系统</a></li>
+                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="water.html">水闸监控</a></li>
                     </ul>
                 </li>
-                <li><a href="javascript:;">方案</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">方案 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sharing.html">共享经济</a></li>
+                        <li><a href="farming.html">水利监控</a></li>
+                        <li><a href="water.html">智能灌溉</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="about.html">关于我们</a></li>
                 <li class="hidden-sm"><a href="about.html#message">联系我们</a></li>
                 <li>
-                    <a href="javascript:;" class="tel">专线&nbsp;136-6810-0743</a>
+                    <a href="javascript:;" class="tel"><span>客服专线：</span>136-6810-0743</a>
                 </li>
             </ul>
 
@@ -78,7 +94,10 @@
 </div>
 
 <div class="container" id="main">
-    <h3>软件定制</h3>
+    <div class="con-header">
+        <h2 class="sort-tit">软件定制</h2>
+        <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
+    </div>
     <p class="desc">互联网早已走入人们的日常生活和企业的营销生产，“互联网+”代表了一种新的社会形态，能够充分发挥互联网在社会资源配置中的优化和集成作用，将互联网的创新成果深度融合于经济、社会各项领域之中，提升全社会的创新力和生产力，形成更广泛的以互联网为基础设施和实现工具的经济发展形态。</p>
 
     <div class="row">
@@ -118,8 +137,6 @@
     <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/public.js"></script>
 </body>
 </html>

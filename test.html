@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        #small{
+            width: 50px;
+            position: fixed;
+            right: 30%;
+            bottom: 30%;
+            padding: 10px 0;
+        }
+        #small li{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            display: block;
+        }
+        #small li a{
+            display: block;
+            height: 50px;
+            color: #ffffff;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            line-height: 50px;
+            text-decoration: none;
+            background-color: #2285c8;
+
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+        }
+        #small li a.tool{
+            width: 185px;
+        }
+        #small li .tool-img{
+            width: 50px;
+            height: 50px;
+        }
+        #small li a span{
+            position: absolute;
+            top: 0;
+            padding: 0 5px;
+        }
+        #small li a:hover{
+            left: -135px;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="small">
+    <li>
+        <a href="javascript:;" class="tool">
+            <img src="images/tools/tel.png" alt="tel" class="tool-img">
+            <span>136-6810-0743</span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" id="top">
+            <img src="images/tools/top.png" alt="top" class="tool-img">
+        </a>
+    </li>
+</ul>
+
+</body>
+</html>

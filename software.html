@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=dev hidden-xs hidden-smice-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Product</title>
+    <title>SoftWare</title>
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/software.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
+    <script>
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    </script>
 </head>
 <body>
 
@@ -24,7 +32,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="javascript:;">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="logo" class="img-responsive logo">
             </a>
         </div>
@@ -33,10 +41,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">首页</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">产品 <span class="caret"></span></a>
+                       aria-expanded="false">软件定制 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="software.html">软件定制</a></li>
                         <li><a href="sharing.html">共享经济</a></li>
@@ -50,7 +57,7 @@
                 <li><a href="about.html">关于我们</a></li>
                 <li class="hidden-sm"><a href="about.html#message">联系我们</a></li>
                 <li>
-                    <a href="javascript:;" class="tel">专线&nbsp;136-6810-0743</a>
+                    <a href="javascript:;" class="tel"><span>客服专线：</span>136-6810-0743</a>
                 </li>
             </ul>
 
@@ -58,13 +65,15 @@
     </div>
 </nav>
 
+
 <!--banner图-->
-<div id="banner">
-    <img src="images/product/banner.png" alt="banner" class="img-responsive">
-    <div class="container">
-        <h1>软件定制</h1>
-        <p>我们不是搬运工，我们生产有价值的产品</p>
+<div class="container-fluid" id="banner">
+    <img src="images/a-banner.png" alt="banner" class="img-responsive">
+    <div class="border-box">
+        <p class="eng">SOFTWARE CUSTOMIZATION</p>
+        <span>软件定制</span>
     </div>
+    <p class="desc">我们<span>不是搬运工</span>，我们<span>生产有价值的产品</span></p>
 </div>
 
 <div class="container jump">
@@ -79,43 +88,50 @@
 
 
 <div class="container" id="box1">
-    <h3>软件定制</h3>
     <p class="problem">在模板外包生产环境下，什么才算是 <span>定制化？</span></p>
-    <p class="desc">对于很多客户表面的要求，以及形式上我们“看似”要满足的要求，其实很多都值得商榷。对待客户的需求，我们最需要做的是发掘更深处它们代表的是什么。不同的需求都是在特定的场景下才需求满足，做产品时我们会考虑到需要服务于什么样的场景。</p>
+
+    <div class="desc-box">
+        <p class="desc desc1">
+            对于很多客户表面的要求，以及形式上我们“看似”要满足的要求，其实很多都值得商议。对待客户的需求，我们最需要做的是发掘
+        </p>
+        <p class="desc">
+            更深处它们代表的是什么。不同的需求都是在特定的场景下才需求满足，做产品时我们会考虑到需要服务于什么样的场景。
+        </p>
+    </div>
 
     <div class="row">
-
         <div class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-offset-0 col-lg-offset-0 col-md-4 col-lg-4 x-div">
-            <img src="images/product/1.png" alt="">
+            <img src="images/software/1.png" alt="">
             <span>明确需求的用户与场景</span>
             <span class="dev hidden-xs hidden-sm"></span>
         </div>
         <div class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-offset-0 col-lg-offset-0 col-md-4 col-lg-4 x-div">
-            <img src="images/product/2.png" alt="">
+            <img src="images/software/2.png" alt="">
             <span>认真的研究需求业务流程图</span>
             <span class="dev hidden-xs hidden-sm"></span>
         </div>
         <div class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-offset-0 col-lg-offset-0 col-md-4 col-lg-4 x-div">
-            <img src="images/product/3.png" alt="">
+            <img src="images/software/3.png" alt="">
             <span>完成页面流程与目录</span>
             <span class="dev dev-no hidden-xs hidden-sm"></span>
         </div>
         <div class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-offset-0 col-lg-offset-0 col-md-4 col-lg-4 x-div">
-            <img src="images/product/4.png" alt="">
+            <img src="images/software/4.png" alt="">
             <span>确定页面框架</span>
             <span class="dev hidden-xs hidden-sm"></span>
         </div>
         <div class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-offset-0 col-lg-offset-0 col-md-4 col-lg-4 x-div">
-            <img src="images/product/5.png" alt="">
+            <img src="images/software/5.png" alt="">
             <span>确定交互细节、串联</span>
             <span class="dev hidden-xs hidden-sm"></span>
         </div>
         <div class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-offset-0 col-lg-offset-0 col-md-4 col-lg-4 x-div">
-            <img src="images/product/6.png" alt="">
+            <img src="images/software/6.png" alt="">
             <span>讨论迭代细节修正</span>
             <span class="dev dev-no hidden-xs hidden-sm"></span>
         </div>
     </div>
+
 </div>
 
 
@@ -129,32 +145,32 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="images/product/idea.png" alt="icon" class="img-responsive center-block">
+                <img src="images/software/idea.png" alt="icon" class="img-responsive center-block">
                 <span>解决方案</span>
                 <p>为客户提供专业的移动互联网转型解决方案，帮客户出谋划策</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="images/product/ios.png" alt="icon" class="img-responsive center-block">
+                <img src="images/software/ios.png" alt="icon" class="img-responsive center-block">
                 <span>IOS开发</span>
                 <p>基于IOS系统软件开发服务，经验丰富、到达国家一线标准</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="images/product/android.png" alt="icon" class="img-responsive center-block">
+                <img src="images/software/android.png" alt="icon" class="img-responsive center-block">
                 <span>Android开发</span>
                 <p>安卓占据国内80%市场，安卓开发的重要性与日俱增</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="images/product/wechat.png" alt="icon" class="img-responsive center-block">
+                <img src="images/software/wechat.png" alt="icon" class="img-responsive center-block">
                 <span>微信公众号、小程序</span>
                 <p>专注微信小程序、公众平台开发，提供微信个性化服务</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="images/product/h5.png" alt="icon" class="img-responsive center-block">
-                <span>HTML5开发</span>
+                <img src="images/software/h5.png" alt="icon" class="img-responsive center-block">
+                <span>网站开发 HTML5前沿技术</span>
                 <p>HTML5是网页开发的趋势，为您提供最前沿的HTML5开发</p>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="images/product/database.png" alt="icon" class="img-responsive center-block">
+                <img src="images/software/database.png" alt="icon" class="img-responsive center-block">
                 <span>数据库架构</span>
                 <p>庞大的数据库搭建与后台接口都放心交给我们吧</p>
             </div>
@@ -164,79 +180,78 @@
 
 
 <div class="container-fluid" id="demand">
-    <p class="problem">多种企业选择 &nbsp;满足你的<span>个性化需求</span></p>
+    <p class="problem">多种企业选择 满足你的<span>个性化需求</span></p>
     
     <div class="container img-f">
 
         <div class="warp">
-            <img src="images/product/fz2.png" alt="bot-img" class="img-responsive">
+            <img src="images/software/fz2.png" alt="bot-img" class="img-responsive">
             <div class="zz">
-                <img src="images/product/fz.png" alt="zz" class="img-responsive center-block">
+                <img src="images/software/fz.png" alt="zz" class="img-responsive center-block">
                 <p>服装鞋帽</p>
             </div>
         </div>
 
         <div class="warp">
-            <img src="images/product/jj2.png" alt="bot-img" class="img-responsive">
+            <img src="images/software/jj2.png" alt="bot-img" class="img-responsive">
             <div class="zz">
-                <img src="images/product/jj.png" alt="zz" class="img-responsive center-block">
+                <img src="images/software/jj.png" alt="zz" class="img-responsive center-block">
                 <p>家装家居</p>
             </div>
         </div>
         <div class="warp">
-            <img src="images/product/shum2.png" alt="bot-img" class="img-responsive">
+            <img src="images/software/cz2.png" alt="bot-img" class="img-responsive">
             <div class="zz">
-                <img src="images/product/shum.png" alt="zz" class="img-responsive center-block">
+                <img src="images/software/cz.png" alt="zz" class="img-responsive center-block">
+                <p>日化彩妆</p>
+            </div>
+        </div>
+        <div class="warp">
+            <img src="images/software/shum2.png" alt="bot-img" class="img-responsive">
+            <div class="zz">
+                <img src="images/software/shum.png" alt="zz" class="img-responsive center-block">
                 <p>数码3C</p>
             </div>
         </div>
         <div class="warp">
-            <img src="images/product/yybj2.png" alt="bot-img" class="img-responsive">
+            <img src="images/software/yybj2.png" alt="bot-img" class="img-responsive">
             <div class="zz">
-                <img src="images/product/yybj.png" alt="zz" class="img-responsive center-block">
-                <p>医疗保健</p>
+                <img src="images/software/yybj.png" alt="zz" class="img-responsive center-block">
+                <p>医药保健</p>
             </div>
         </div>
         <div class="warp">
-            <img src="images/product/my2.png" alt="bot-img" class="img-responsive">
+            <img src="images/software/my2.png" alt="bot-img" class="img-responsive">
             <div class="zz">
-                <img src="images/product/my.png" alt="zz" class="img-responsive center-block">
+                <img src="images/software/my.png" alt="zz" class="img-responsive center-block">
                 <p>母婴用品</p>
             </div>
         </div>
         <div class="warp">
-            <img src="images/product/zb2.png" alt="bot-img" class="img-responsive">
+            <img src="images/software/zb2.png" alt="bot-img" class="img-responsive">
             <div class="zz">
-                <img src="images/product/zb.png" alt="zz" class="img-responsive center-block">
+                <img src="images/software/zb.png" alt="zz" class="img-responsive center-block">
                 <p>珠宝饰品</p>
             </div>
         </div>
         <div class="warp">
-            <img src="images/product/sx2.png" alt="bot-img" class="img-responsive">
+            <img src="images/software/sx2.png" alt="bot-img" class="img-responsive">
             <div class="zz">
-                <img src="images/product/sx.png" alt="zz" class="img-responsive center-block">
+                <img src="images/software/sx.png" alt="zz" class="img-responsive center-block">
                 <p>生鲜水果</p>
             </div>
         </div>
         <div class="warp">
-            <img src="images/product/ds2.png" alt="bot-img" class="img-responsive">
+            <img src="images/software/ds2.png" alt="bot-img" class="img-responsive">
             <div class="zz">
-                <img src="images/product/ds.png" alt="zz" class="img-responsive center-block">
+                <img src="images/software/ds.png" alt="zz" class="img-responsive center-block">
                 <p>跨境电商</p>
             </div>
         </div>
         <div class="warp">
-            <img src="images/product/js2.png" alt="bot-img" class="img-responsive">
+            <img src="images/software/yd2.png" alt="bot-img" class="img-responsive">
             <div class="zz">
-                <img src="images/product/js.png" alt="zz" class="img-responsive center-block">
-                <p>运动健身</p>
-            </div>
-        </div>
-
-        <div class="warp">
-            <img src="images/product/js2.png" alt="bot-img" class="img-responsive">
-            <div class="zz">
-                <img src="images/product/js.png" alt="zz" class="img-responsive center-block">
+                <img src="images/software/yd.png" alt="zz" class="img-responsive center-block">
                 <p>运动健身</p>
             </div>
         </div>
@@ -252,7 +267,7 @@
         <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
     </div>
 
-    <img src="images/product/btns.png" alt="btns" class="btns img-responsive">
+    <img src="images/software/btns.png" alt="btns" class="btns img-responsive">
 </div>
 
 
@@ -261,7 +276,7 @@
         <h2 class="sort-tit">案例展示</h2>
         <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
     </div>
-    <img src="images/product/example.png" alt="example" class="img-responsive center-block e-img">
+    <img src="images/software/example.png" alt="example" class="img-responsive center-block e-img">
 </div>
 
 <img title="返回顶部" src="images/top.png" alt="TOP" id="top" style="display: none;position: fixed;right: 3%;bottom: 5%;width: 50px;cursor: pointer">
@@ -270,8 +285,7 @@
     <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="plugins/bootstrap/js/bootstrap.js"></script>
+
 <script src="js/public.js"></script>
 </body>
 </html>

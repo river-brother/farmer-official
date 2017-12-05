@@ -1,188 +1,10 @@
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-}
-
-@media (min-width: 1920px){
-    html,body{
-        width: 1920px;
-        margin: 0 auto;
-        overflow-x: hidden;
-    }
-}
-
-
-.box .box-header .box-tit-eng{
-    padding-bottom: 0;
-    color: #ccc;
-    text-align: center;
-}
-.box .box-header .box-tit{
-    margin-top: 0;
-    text-align: center;
-}
-#nav{
-    padding: 15px 0;
-    margin:0;
-}
-
-#nav .tel{
-    color:rgb(35,108,185);
-    font-size: 24px;
-}
-#nav .logo{
-    display: inline-block;
-    margin-top: -13px;
-    box-sizing: border-box;
-}
-.banner{
+#banner{
     position: relative;
 }
-.banner img{
-    margin: auto;
-}
-.banner h2 {
+
+#banner .container{
     position: absolute;
     top: 0;
-    color: white;
-}
-.banner p{
-    position: absolute;
-    top: 0;
-    color: white;
-}
-.banner h2{
-    font-size: 55px;
-    left: 353px;
-    top: 105px;
-}
-.banner p{
-    font-size: 25px;
-    left: 353px;
-    top:225px;
-}
-.jump{
-    padding: 5px 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #cccccc;
-}
-.jump h2{
-    font-size: 25px;
-}
-.jump .breadcrumb{
-    background-color: transparent;
-    margin-top: 15px;
-}
-.jump .breadcrumb li a{
-    color: #333333;
-}
-.jump .breadcrumb .active{
-    color: #206BB9;
-}
-.box{
-
-}
-.box h2{
-    font-size: 25px;
-}
-.box h2:nth-child(1){
-    color: #8c8c8c;
-}
-.box h2:nth-child(2){
-    text-align: center;
-    margin-top: 45px;
-}
-.box h2:nth-child(4){
-    text-align: center;
-    color: #6bb9e2;
-    margin-top: 50px;
-}
-.box img:nth-child(3){
-    margin-top: 18px;
-}
-.box p{
-    color: #c6c6c6;
-    font-size: 15px;
-    width: 85%;
-    margin: auto;
-    text-indent: 2em;
-    line-height: 38px;
-    margin-top: 40px;
-}
-.box h2:nth-child(6){
-    margin: 93px auto;
-    text-align: center;
-    color: #6bb9e2;
-}
-.box img:nth-child(8){
-    margin-top: 80px;
-}
-.cont{
-    background: #f8f8f8;
-    height: 655px;
-    margin-top: 40px;
-}
-.cont h2{
-    font-size: 25px;
-    text-align: center;
-    margin-top: 63px;
-}
-.cont span{
-    font-size: 33px;
-    color: #77bde3;
-
-}
-.cont p:nth-child(2){
-    font-size: 18px;
-    /*font-weight: bolder;*/
-    margin-top: 55px;
-    color: #787878;
-}
-.cont dl{
-    float: left;
-    margin-right: 228px;
-    margin-top: 75px;
-    text-align: center;
-
-}
-.cont div{
-    overflow: hidden;
-}
-.cont div dl:nth-child(1){
-    margin-left: 26%;
-
-}
-.cont dl dd{
-    margin-top: 15px;
-    font-size: 18px;
-}
-.cont p:nth-child(4){
-    display: block;
-    font-size: 16px;
-    color: #929292;
-    text-align: center;
-    margin-top: 80px;
-}
-
-h5{
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-top: 70px;
-}
-
-/*导航栏样式*/
-.navbar-right{
-    margin-top: 7px;
-}
-.navbar-nav li{
-    padding-left: 10px;
-}
-.navbar-nav .dropdown-menu{
-    position: absolute;
     left: 50%;
     transform: translate(-50%,0);
     -moz-transform: translate(-50%,0);
@@ -190,21 +12,150 @@ h5{
     -o-transform: translate(-50%,0);
     -ms-transform: translate(-50%,0);
 }
-.navbar-nav .dropdown-menu li{
-    padding-left: 0;
+#banner h1{
+    color: #ffffff;
+    margin-top: 10%;
+    font-size: 55px;
+    letter-spacing: 5px;
 }
-.navbar-nav .dropdown-menu li a{
-    text-align: center;
+#banner p{
+    color: #b2b3b6;
+    margin-top: 5%;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
 
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -ms-transition: all 0.3s;
+
+
+.box{
+    border-top: 1px solid #cccccc;
+    padding: 40px;
 }
-.navbar-nav .dropdown-menu li a:hover{
-    padding-right: 30px;
+
+.box h2:nth-child(2){
+    text-align: center;
+    margin-top: 45px;
+    font-size: 26px;
 }
-.navbar-nav li a{
-    padding: 10px;
+.box h2:nth-child(4){
+    text-align: center;
+    color: #6bb9e2;
+    margin-top: 50px;
+    font-size: 26px;
+}
+.box .main-pic{
+    margin-top: 25px;
+}
+.box p{
+    color: #c6c6c6;
+    font-size: 15px;
+    width: 85%;
+    text-indent: 2em;
+    line-height: 38px;
+    margin: 40px auto;
+}
+
+.cont{
+    background: #f8f8f8;
+    padding: 40px 0;
+}
+.cont p{
+    font-size: 18px;
+    line-height: 35px;
+    margin: 15px 0;
+}
+.cont .row{
+    margin: 30px 0;
+    padding: 10px 0;
+}
+.cont .desc{
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+@media (max-width: 480px) {
+    .con-header .sort-tit{
+        font-size: 22px;
+    }
+
+    #banner .container{
+        top: 0;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+    #banner h1{
+        margin-top: 5%;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    #banner p{
+        margin-top: 0;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .jump{
+        height: 60px;
+    }
+    .jump h2{
+        font-size: 18px;
+        line-height: 65px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .jump .breadcrumb{
+        margin-top: 15px;
+    }
+
+    .problem{
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+    .problem span{
+        font-size: 22px;
+    }
+
+
+    .box{
+        padding: 20px;
+    }
+    .box h2:nth-child(2){
+        margin-top: 25px;
+        font-size: 22px;
+    }
+    .box h2:nth-child(4){
+        margin-top: 40px;
+        font-size: 22px;
+    }
+    .box .main-pic{
+        margin-top: 25px;
+    }
+    .box p{
+        font-size: 14px;
+        line-height: 26px;
+        margin: 20px auto;
+    }
+
+
+    .cont{
+        padding: 20px 0;
+    }
+    .cont p{
+        font-size: 14px;
+        line-height: 25px;
+        margin: 15px 0;
+    }
+    .cont .row{
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    .cont .desc{
+        font-size: 12px;
+        text-align: center;
+        margin: 5px 0;
+        line-height: 20px;
+    }
 }
