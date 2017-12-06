@@ -1,112 +1,83 @@
-html,body{
-    overflow-x: hidden;
-}
-.con-header h2{
-    text-align: center;
-    font-weight: bold;
-}
-.con-header img{
-    padding: 5px 0;
-}
-/*nav*/
-#nav{
-    padding: 15px 0;
-    margin:0;
-}
-#nav .tel{
-    color:rgb(35,108,185);
-    font-size: 24px;
-}
-#nav .logo{
-    display: inline-block;
-    margin-top: -13px;
-    box-sizing: border-box;
-}
-
-
-
 #banner{
     position: relative;
+    padding: 0;
 }
-
-#banner .container{
+#banner .border-box{
     position: absolute;
-    top: 0;
+    top: 26%;
     left: 50%;
+    width: 360px;
+    height: 90px;
+    background: linear-gradient(to left, #fff, #fff) left top no-repeat,
+    linear-gradient(to bottom, #fff, #fff) left top no-repeat,
+    linear-gradient(to left, #BFB5B1, #BFB5B1) right top no-repeat,
+    linear-gradient(to bottom, #BFB5B1, #BFB5B1) right top no-repeat,
+    linear-gradient(to left, #BFB5B1, #BFB5B1) left bottom no-repeat,
+    linear-gradient(to bottom, #BFB5B1, #BFB5B1) left bottom no-repeat,
+    linear-gradient(to left, #fff, #fff) right bottom no-repeat,
+    linear-gradient(to left, #fff, #fff) right bottom no-repeat;
+    background-size: 4px 30px, 70px 4px, 4px 30px, 70px 4px;
+
     transform: translate(-50%,0);
     -moz-transform: translate(-50%,0);
     -webkit-transform: translate(-50%,0);
     -o-transform: translate(-50%,0);
     -ms-transform: translate(-50%,0);
-}
-#banner h1{
+
     color: #ffffff;
-    margin-top: 10%;
-    font-size: 55px;
+    text-align: center;
+    line-height: 88px;
+    font-size: 45px;
+    font-weight: 300;
+}
+#banner .eng{
+    width: 200%;
+    color: #c9c9c9;
+    font-size: 33px;
+    opacity: 67;
+    fill-opacity: 0.67;
+    position: absolute;
+    top: -105%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-weight: 300;
+    letter-spacing: 0;
+    font-family: "苹方","Microsoft YaHei",Arial;
+
+}
+#banner .desc{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 30%;
+    color: #f0f0f0;
+    font-size: 43px;
     letter-spacing: 5px;
+    font-weight: 200;
+    font-family: "苹方","Microsoft YaHei",Arial;
 }
-#banner p{
-    color: #b2b3b6;
-    margin-top: 5%;
-    font-size: 25px;
-    letter-spacing: 3px;
-}
+#banner .desc span{
+    font-weight: 400;
+    font-family: "苹方粗体","Microsoft YaHei",Arial;
 
-
-
-.jump{
-    height: 80px;
-}
-.jump h2{
-    font-size: 24px;
-    display: inline-block;
-    line-height: 85px;
-    margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.jump .breadcrumb{
-    display: inline-block;
-    background-color: transparent;
-    margin-top: 25px;
-}
-.jump .breadcrumb li a{
-    color: #333333;
-}
-.jump .breadcrumb .active{
-    color: #206BB9;
 }
 
 
 #box1{
     border-top: 1px solid #cccccc;
-    padding-top: 10px;
+    padding-top: 40px;
 }
-#box1 h3{
-    color: #8c8c8c;
-    text-align: center;
-}
-.problem{
-    font-weight: 500;
-    font-size: 22px;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 30px;
-}
-.problem span{
-    color: #4BAEDE;
-    font-size: 32px;
-}
+
+
 #box1 .desc{
-    width: 80%;
-    margin-left: 10%;
     text-align: center;
     letter-spacing: 1px;
-    font-weight: 500;
-    line-height: 28px;
-    margin-top: 25px;
-    text-indent: 8%;
+    line-height: 24px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
 }
+
 #box1 .row{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -114,22 +85,36 @@ html,body{
 #box1 .x-div{
     margin-top: 45px;
     margin-bottom: 45px;
+    overflow: hidden;
 }
-#box1 .x-div span{
-    margin-left: 5px;
+#box1 .x-div img{
+    float: left;
+    margin-left: 15%;
+    width: 15%;
+}
+#box1 .x-div p{
+    display: inline-block;
+    padding: 0 10px;
+    margin-left: 10px;
+    line-height: 54px;
+    margin-right: 50px;
+    float: left;
+    width: 50%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 #box1 .dev{
-    display: inline;
+    display: inline-block;
     width: 2px;
     height: 60px;
-    margin-top: 0;
-    margin-left: 50px;
-    float: right;
+    float: left;
     background-color: #cccccc;
     transform: rotate(30deg);
 }
 #box1 .dev-no{
-    visibility: hidden;
+    display: none;
 }
 
 
@@ -142,18 +127,22 @@ html,body{
     padding: 8px 0;
 }
 #box2 .row > div{
-    padding: 40px 0;
-    overflow: hidden;
+    padding: 30px 0;
 }
 #box2 .row p{
     text-align: center;
-    line-height: 26px;
-    height: 30px;
     width: 60%;
     margin-left: 20%;
     color: #929292;
+
+    line-height:1.8em;
+    height: 7.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
 }
-#box2 .row span{
+#box2 .row .tt{
     display: block;
     text-align: center;
     line-height: 26px;
@@ -164,52 +153,53 @@ html,body{
 
 
 #demand{
-    padding: 40px 0;
+    padding: 50px 0;
 }
 #demand .img-f{
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 #demand .img-f .warp{
     position: relative;
-    margin: 2%;
+    margin: 10px;
     overflow: hidden;
 }
+
 #demand .zz{
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.1);
 
-    transition: top 0.3s;
-    -moz-transition: top 0.3s;
-    -webkit-transition: top 0.3s;
-    -o-transition: top 0.3s;
-    -ms-transition: top 0.3s;
+    /*transition: top 0.3s;*/
+    /*-moz-transition: top 0.3s;*/
+    /*-webkit-transition: top 0.3s;*/
+    /*-o-transition: top 0.3s;*/
+    /*-ms-transition: top 0.3s;*/
 }
 #demand .zz img{
-    margin-top: 20%;
+    margin-top: 15%;
 }
 #demand .zz p{
     color: #ffffff;
-    font-size: 22px;
+    font-size: 19px;
     text-align: center;
     letter-spacing: 2px;
     padding: 5px 0;
 }
-#demand .warp:hover > .zz{
-    top: 0;
-}
+/*#demand .warp:hover > .zz{*/
+    /*top: 0;*/
+/*}*/
 
 
 #flow{
-    padding: 40px 0;
+    padding: 50px 0;
 }
 #flow .btns{
     margin-top: 40px;
@@ -224,18 +214,6 @@ html,body{
 }
 
 
-
-#bot{
-    background-color: #f1f1f1;
-    padding: 12px 0;
-}
-#bot h5{
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
-    text-align: center;
-    letter-spacing: 1px;
-}
 
 
 @media (max-width: 480px){
@@ -254,16 +232,26 @@ html,body{
         font-size: 18px;
     }
 
-    #banner h1{
-        margin-top: 7%;
-        font-size: 20px;
-        letter-spacing: 2px;
+
+    #banner .border-box{
+        top: 28%;
+        width: 150px;
+        height: 36px;
+        line-height: 34px;
+        font-size: 19px;
+        background-size: 2px 12px, 32px 2px, 2px 12px, 32px 2px;
     }
-    #banner p{
-        margin-top: 3%;
-        font-size: 12px;
-        letter-spacing: 0;
+    #banner .eng{
+        font-size: 16px;
+        top: -85%;
     }
+    #banner .desc{
+        font-size: 16px;
+        letter-spacing: 1px;
+        bottom: 15%;
+    }
+
+
 
     .jump{
         height: 60px;
@@ -278,10 +266,11 @@ html,body{
         margin-top: 15px;
     }
 
-    #box1 h3{
-        font-size: 20px;
-    }
 
+    #box1 .desc-box{
+        width: 80%;
+        margin-left: 10%;
+    }
     #box1 .desc{
         line-height: 20px;
         margin-top: 12px;
@@ -291,26 +280,37 @@ html,body{
         margin-top: 8px;
         margin-bottom: 8px;
         padding: 5px 0;
-        border: 1px solid #cccccc;
+    }
+    #box1 .x-div img{
+        margin-left: 10%;
+    }
+    #box1 .x-div p{
+        padding: 0 10px;
+        margin-left: 0;
+        line-height: 42px;
+        margin-right: 20px;
+        width: 65%;
     }
 
-    #box2 h4{
-        font-size: 16px;
-    }
+
+
     #box2 .row > div{
         padding: 15px 0;
         margin-top: 5px;
         margin-bottom: 8px;
     }
-
-
-    #demand .zz{
-        top: 0;
+    #box2 .row > div > span{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
+
+
 
     #flow .btns{
         margin-top: 15px;
     }
+
 
     #show .e-img{
         margin-top: 15px;
@@ -325,68 +325,65 @@ html,body{
         font-size: 20px;
     }
     .problem{
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 1px;
         margin-top: 10px;
     }
     .problem span{
+        font-size: 22px;
+    }
+
+
+    #banner .border-box{
+        top: 30%;
+        width: 160px;
+        height: 43px;
+        line-height: 43px;
+        font-size: 22px;
+        background-size: 2px 14px, 36px 2px, 2px 14px, 36px 2px;
+    }
+    #banner .eng{
         font-size: 18px;
+        top: -80%;
     }
-
-
-
-    #banner h1{
-        margin-top: 7%;
-        font-size: 24px;
+    #banner .desc{
+        font-size: 17px;
         letter-spacing: 2px;
+        bottom: 20%;
     }
-    #banner p{
-        font-size: 16px;
-        letter-spacing: 0;
-        margin-top: 5%;
-    }
+
 
     .jump{
-        height: 80px;
+        height: 70px;
     }
     .jump h2{
         font-size: 22px;
-        line-height: 82px;
+        line-height: 70px;
         padding-left: 25px;
         padding-right: 25px;
     }
     .jump .breadcrumb{
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
-    #box1 h3{
-        font-size: 22px;
+
+    #box1 .desc-box{
+        width: 80%;
+        margin-left: 10%;
     }
     #box1 .desc{
         line-height: 20px;
         margin-top: 12px;
         font-size: 14px;
+        width: 80%;
     }
     #box1 .x-div{
         margin-top: 10px;
         margin-bottom: 10px;
         padding: 0;
-        border: none;
-    }
-
-    #box2 h4{
-        font-size: 16px;
-    }
-    #box2 .row > div{
-        padding: 15px 0;
-        margin-top: 8px;
-        margin-bottom: 14px;
     }
 
 
-    #demand .zz{
-        top: 0;
-    }
 
     #flow .btns{
         margin-top: 20px;
@@ -397,7 +394,6 @@ html,body{
     }
 
 }
-
 
 @media (min-width: 768px){
     #box1,#box2,#demand,#flow,#show{
@@ -415,16 +411,25 @@ html,body{
         font-size: 24px;
     }
 
-    #banner h1{
-        margin-top: 7%;
-        font-size: 26px;
-        letter-spacing: 2px;
+
+    #banner .border-box{
+        top: 30%;
+        width: 190px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 23px;
+        background-size: 2px 16px, 40px 2px, 2px 16px, 40px 2px;
     }
-    #banner p{
-        margin-top: 3%;
-        font-size: 18px;
-        letter-spacing: 0;
+    #banner .eng{
+        font-size: 20px;
+        top: -80%;
     }
+    #banner .desc{
+        font-size: 19px;
+        letter-spacing: 3px;
+        bottom: 20%;
+    }
+
 
     .jump{
         height: 70px;
@@ -439,16 +444,18 @@ html,body{
         margin-top: 20px;
     }
 
-    #box1 h3{
-        font-size: 24px;
-        margin-top: 5px;
-    }
 
+    #box1 .desc-box{
+        width: 80%;
+        margin-left: 10%;
+    }
     #box1 .desc{
         line-height: 22px;
         margin-top: 12px;
-        font-size: 14px;
+        font-size: 16px;
     }
+
+
     #box1 .x-div{
         margin-top: 10px;
         margin-bottom: 10px;
@@ -460,14 +467,10 @@ html,body{
     }
     #box2 .row > div{
         padding: 15px 0;
-        margin-top: 12px;
-        margin-bottom: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
-
-    #demand .zz{
-        top: 0;
-    }
 
     #flow .btns{
         margin-top: 35px;
@@ -494,15 +497,22 @@ html,body{
         font-size: 24px;
     }
 
-    #banner h1{
-        margin-top: 7%;
+    #banner .border-box{
+        top: 30%;
+        width: 240px;
+        height: 60px;
+        line-height: 60px;
         font-size: 30px;
-        letter-spacing: 2px;
+        background-size: 2px 16px, 40px 2px, 2px 16px, 40px 2px;
     }
-    #banner p{
-        margin-top: 3%;
-        font-size: 20px;
-        letter-spacing: 0;
+    #banner .eng{
+        font-size: 24px;
+        top: -80%;
+    }
+    #banner .desc{
+        font-size: 26px;
+        letter-spacing: 4px;
+        bottom: 20%;
     }
 
     .jump{
@@ -518,21 +528,25 @@ html,body{
         margin-top: 20px;
     }
 
-    #box1 h3{
-        font-size: 28px;
-        margin-top: 5px;
-    }
 
-    #box1 .desc{
-        line-height: 24px;
-        margin-top: 12px;
-        font-size: 16px;
-    }
     #box1 .x-div{
         margin-top: 25px;
         margin-bottom: 25px;
         padding: 10px 0;
+        border: none;
     }
+    #box1 .desc-box{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #box1 .desc{
+        line-height: 24px;
+        font-size: 16px;
+        display: block;
+        margin: 12px auto;
+    }
+
 
     #box2 h4{
         font-size: 18px;
@@ -540,13 +554,9 @@ html,body{
     #box2 .row > div{
         padding: 15px 0;
         margin-top: 25px;
-        margin-bottom: 32px;
+        margin-bottom: 25px;
     }
 
-
-    #demand .zz{
-        top: 100%;
-    }
 
     #flow .btns{
         margin-top: 35px;
@@ -556,7 +566,6 @@ html,body{
         margin-top: 20px;
     }
 }
-
 
 @media (min-width: 1440px){
     #box1,#box2,#demand,#flow,#show{
@@ -574,15 +583,22 @@ html,body{
         font-size: 32px;
     }
 
-    #banner h1{
-        margin-top: 7%;
-        font-size: 55px;
-        letter-spacing: 5px;
+    #banner .border-box{
+        top: 30%;
+        width: 280px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 38px;
+        background-size: 2px 16px, 40px 2px, 2px 16px, 40px 2px;
     }
-    #banner p{
-        margin-top: 3%;
-        font-size: 25px;
-        letter-spacing: 3px;
+    #banner .eng{
+        font-size: 28px;
+        top: -80%;
+    }
+    #banner .desc{
+        font-size: 34px;
+        letter-spacing: 5px;
+        bottom: 25%;
     }
 
     .jump{
@@ -607,7 +623,9 @@ html,body{
     #box1 .desc{
         font-size: 16px;
         line-height: 28px;
-        margin-top: 25px;
+        margin-top: 30px;
+        width: 90%;
+        margin-left: 5%;
     }
     #box1 .x-div{
         margin-top: 25px;
@@ -620,14 +638,10 @@ html,body{
     }
     #box2 .row > div{
         padding: 0;
-        margin-top: 45px;
-        margin-bottom: 45px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
-
-    #demand .zz{
-        top: 100%;
-    }
 
     #flow .btns{
         margin-top: 35px;
@@ -637,44 +651,7 @@ html,body{
         margin-top: 20px;
     }
 
-
-
-    /*导航栏样式*/
-    .navbar-right{
-        margin-top: 7px;
-    }
-    .navbar-nav li{
-        padding-left: 10px;
-    }
-    .navbar-nav .dropdown-menu{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,0);
-        -moz-transform: translate(-50%,0);
-        -webkit-transform: translate(-50%,0);
-        -o-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-    }
-    .navbar-nav .dropdown-menu li{
-        padding-left: 0;
-    }
-    .navbar-nav .dropdown-menu li a{
-        text-align: center;
-
-        transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-    }
-    .navbar-nav .dropdown-menu li a:hover{
-        padding-right: 30px;
-    }
-    .navbar-nav li a{
-        padding: 10px;
-    }
 }
-
 
 @media (min-width: 1920px){
     html,body{
@@ -683,18 +660,5 @@ html,body{
         overflow-x: hidden;
     }
 
-    #banner h1{
-        margin-top: 10%;
-        font-size: 55px;
-        letter-spacing: 5px;
-        padding-left: 0;
-    }
-    #banner p{
-        margin-top: 5%;
-        font-size: 25px;
-        letter-spacing: 3px;
-        padding-left: 0;
-    }
+
 }
-
-

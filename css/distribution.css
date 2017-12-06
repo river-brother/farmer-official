@@ -1,7 +1,3 @@
-html,body{
-    overflow-x: hidden;
-}
-
 .col-md-1-5 {
     width: 20%;
     float: left;
@@ -12,54 +8,33 @@ html,body{
     padding-right: 15px;
     position: relative;
 }
+@media (max-width: 480px) {
+    .col-xs-1-5,.col-sm-1-5,.col-md-1-5,.col-lg-1-5 {
+        display: none;
+    }
+}
 @media (min-width: 768px) {
-    .col-sm-1-5 {
+    .col-xs-1-5,.col-sm-1-5,.col-md-1-5,.col-lg-1-5 {
+        display: inline-block;
         width: 20%;
         float: left;
     }
 }
 
 @media (min-width: 992px) {
-    .col-md-1-5 {
+    .col-xs-1-5,.col-sm-1-5,.col-md-1-5,.col-lg-1-5 {
         width: 20%;
         float: left;
     }
 }
 
 @media (min-width: 1200px) {
-    .col-lg-1-5 {
+    .col-xs-1-5,.col-sm-1-5,.col-md-1-5,.col-lg-1-5 {
         width: 20%;
         float: left;
     }
 }
 
-
-.con-header .sort-tit{
-    text-align: center;
-    font-weight: bold;
-    font-size: 26px;
-}
-.con-header .small-tit{
-    font-size: 17px;
-}
-.con-header img{
-    padding: 5px 0;
-}
-
-/*nav*/
-#nav{
-    padding: 15px 0;
-    margin:0;
-}
-#nav .tel{
-    color:rgb(35,108,185);
-    font-size: 24px;
-}
-#nav .logo{
-    display: inline-block;
-    margin-top: -13px;
-    box-sizing: border-box;
-}
 
 #banner{
     position: relative;
@@ -97,98 +72,41 @@ html,body{
 }
 
 
-.jump{
-    height: 80px;
-}
-.jump h2{
-    font-size: 24px;
-    display: inline-block;
-    line-height: 85px;
-    margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.jump .breadcrumb{
-    display: inline-block;
-    background-color: transparent;
-    margin-top: 25px;
-}
-.jump .breadcrumb li a{
-    color: #333333;
-}
-.jump .breadcrumb .active{
-    color: #206BB9;
-}
-
-
 #main{
     border-top: 1px solid #cccccc;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
-#main h3{
-    color: #8c8c8c;
-    text-align: left;
-}
-
-.problem{
-    font-weight: 500;
-    font-size: 22px;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 30px;
-}
-.problem span{
-    color: #4BAEDE;
-    font-size: 32px;
-}
-
 #main .desc{
-    text-indent: 5%;
+    width: 80%;
+    margin-left: 10%;
     margin-top: 3%;
     line-height: 35px;
-
+    text-align: center;
+    font-size: 16px;
 }
 #main img{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+#main .example{
+    margin-top: 50px;
+}
 
-
-
-#box1{
-    background-color: rgb(248,248,248);
-    padding: 40px 0;
-}
-#box1 >p{
-    color: #8c8c8c;
-    text-align: center;
-    font-size: 22px;
-    margin: 20px 0;
-}
-#box1 .container{
-    padding-top: 20px;
-}
-#box1 .media{
-    border: 1px solid #4baede;
-}
-#box1 .media-body{
-    padding-left: 10%;
-    font-size: 16px;
-}
-#box1 .media-heading{
-    margin-top: 10%;
-    font-size: 22px;
-    font-weight: bold;
-}
 
 
 #advantage{
     padding: 50px 0;
 }
+#advantage .gray{
+    color: #000;
+    text-align: center;
+    font-size: 26px;
+    margin: 20px 0;
+    padding: 40px 0;
+    background-color: rgb(248,248,248);
+}
 #advantage .a-box{
     padding: 5%;
-    /*border: 1px solid #2aabd2;*/
 }
 #advantage .a-box .media-heading{
     margin-top: 5%;
@@ -243,19 +161,27 @@ html,body{
 }
 #choose .ch-box{
     position: relative;
+    margin: 10px 0;
+    padding: 8px;
+}
+#choose .center-block{
+    width: 98%;
 }
 #choose .ch-box > h3{
     position: absolute;
-    top: 20%;
-    width: 100%;
+    top: 18%;
+    width: 90%;
     text-align: center;
 }
 #choose .ch-box > div{
     position: absolute;
-    top: 42%;
-    left: 28%;
-    width: 60%;
+    top: 40%;
+    left: 12%;
+    width: 75%;
     color: #b2b3b6;
+}
+#choose .ch-box > div p{
+    text-align: center;
 }
 
 
@@ -273,85 +199,350 @@ html,body{
 }
 #info .i-desc{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     margin: 20px 0;
 }
+#info .page{
+    width: 100px;
+    margin: 30px auto;
+    padding-bottom: 10px;
+}
+#info .art{
+    padding-top: 30px;
+}
 
-#info .i-box > div{
-    padding: 30px 20px;
+#info .art-l,#info .art-r{
+    height: 204px;
+}
+#info .art-l{
+    margin-left: 50px;
+    float: left;
+    display: inline;
+}
+#info .art-r{
+    margin-left: -50px;
+    margin-top: 30px;
+    float: left;
+    display: inline;
     background-color: #ffffff;
 }
 
-#info .i-box .i-tit{
-    font-size: 18px;
+#info button{
+    border: 1px solid #2aabd2;
     color: #2aabd2;
 }
 
+#info .article .art-tit{
+    font-size: 18px;
+    color: #2aabd2;
+    margin: 20px 0 15px 0;
+}
 #info .i-con{
-    position:relative;
-    line-height:1.4em;
-    /* 3 times the line-height to show 3 lines */
-    height:2.8em;
-    overflow:hidden;
-}
-#info .i-con::after {
-    content:"...";
-    font-weight:bold;
-    position:absolute;
-    bottom:0;
-    right:0;
-    padding:0 20px 1px 45px;
-    background:url(http://newimg88.b0.upaiyun.com/newimg88/2014/09/ellipsis_bg.png) repeat-y;
+    line-height:2.1em;
+    height: 6.3em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 
-
-
-#bot{
-    background-color: #f1f1f1;
-    padding: 12px 0;
+#info .time{
+    margin-top: 5%;
 }
-#bot h5{
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
+#info .date{
+    font-family: Arial;
+    font-size: 32px;
+    color: rgb(135,135,135);
+    display: block;
     text-align: center;
-    letter-spacing: 1px;
+    padding-bottom: 0;
 }
-
-
-
-/*导航栏样式*/
-.navbar-right{
-    margin-top: 7px;
+#info .date::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #2aabd2;
+    margin: 0 auto;
 }
-.navbar-nav li{
-    padding-left: 10px;
-}
-.navbar-nav .dropdown-menu{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,0);
-    -moz-transform: translate(-50%,0);
-    -webkit-transform: translate(-50%,0);
-    -o-transform: translate(-50%,0);
-    -ms-transform: translate(-50%,0);
-}
-.navbar-nav .dropdown-menu li{
-    padding-left: 0;
-}
-.navbar-nav .dropdown-menu li a{
+#info .year{
     text-align: center;
+    font-size: 22px;
+    color: #2aabd2;
+    margin: 0 auto;
+    display: block;
+    padding: 20px 15px;
+}
+#info .row{
+    display: none;
+}
+#info .current{
+    display: block;
+}
 
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -ms-transition: all 0.3s;
+@media (max-width: 480px) {
+
+    .lazy{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #banner .container{
+        top: 0;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    #banner h1{
+        margin-top: 5%;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    #banner p{
+        margin-top: 0;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    #banner p > span{
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        float: left;
+    }
+
+    .jump{
+        height: 60px;
+    }
+    .jump h2{
+        font-size: 18px;
+        line-height: 65px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .jump .breadcrumb{
+        margin-top: 15px;
+    }
+
+
+    .problem{
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+    .problem span{
+        font-size: 22px;
+    }
+
+
+    #main,#advantage{
+        padding: 20px 0;
+    }
+    #main .desc{
+        line-height: 24px;
+        font-size: 14px;
+    }
+    #main img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #main .example{
+        margin-top: 30px;
+    }
+
+
+
+    #advantage .gray{
+        font-size: 22px;
+        margin: 0;
+        padding: 20px 0;
+        background-color: rgb(248,248,248);
+    }
+
+
+    #study{
+        padding: 20px 0;
+        background-color: rgb(248,248,248);
+    }
+    #study .container{
+        background: url("../images/distribution/study.png") no-repeat 50% 0 padding-box;
+    }
+    #study h3{
+        margin-top: 58%;
+        text-align: center;
+        font-size: 20px;
+    }
+    #study .s-fir{
+        margin-top: 5%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    #study p{
+        line-height: 28px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    #study p span{
+        color: #2aabd2;
+    }
+
+
+    #choose{
+        padding: 20px 0;
+    }
+    #choose .show-xs{
+        margin: 20px 0;
+        padding-top: 10px;
+    }
+    #choose .show-xs > div{
+        border: 1px solid #cccccc;
+        margin: 30px 0;
+        padding: 30px 10px;
+        position: relative;
+    }
+    #choose .show-xs .col-xs-6 > img{
+        position: absolute;
+        top: -10%;
+        left: 50%;
+        width: 30%;
+        transform: translate(-50%,0);
+        -webkit-transform: translate(-50%,0);
+        -moz-transform: translate(-50%,0);
+        -o-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+    }
+    #choose .show-xs .col-xs-6 h3{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #choose .show-xs .col-xs-6 p{
+        height: 150px;
+    }
+
+
+
+    #six{
+        padding: 20px 0;
+    }
+    #six img{
+        margin-top: 20px;
+    }
+
+
+
+    #info{
+        padding: 20px 0;
+    }
+    #info .i-desc{
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    #info .page{
+        width: 100px;
+        margin: 15px auto;
+        padding-bottom: 10px;
+    }
+    #info .art{
+        padding-top: 30px;
+    }
+    #info .art-l,#info .art-r{
+        height: 150px;
+    }
+    #info .art-l{
+        margin-left: 30px;
+    }
+    #info .art-r{
+        margin-left: -30px;
+        margin-top: 20px;
+    }
+    #info .article .art-tit{
+        font-size: 14px;
+        color: #2aabd2;
+        margin: 10px 0 8px 0;
+        line-height:1.6em;
+        height: 3.2em;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+    #info .i-con{
+        line-height:1.6em;
+        height: 4.8em;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+
+    #info .time{
+        margin-top: 8%;
+        padding: 0;
+    }
+    #info .date{
+        font-size: 20px;
+        color: rgb(135,135,135);
+        display: block;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    #info .date::after{
+        content: '';
+        display: block;
+        width: 40px;
+        height: 1px;
+        background-color: #2aabd2;
+        margin: 0 auto;
+    }
+    #info .year{
+        text-align: center;
+        font-size: 14px;
+        margin: 0 auto;
+        display: block;
+        padding: 5px;
+    }
+    #info .row{
+        display: none;
+    }
+    #info .current{
+        display: block;
+    }
+
 }
-.navbar-nav .dropdown-menu li a:hover{
-    padding-right: 30px;
+@media (min-width: 480px){
+    #choose .show-xs{
+        display: none;
+    }
 }
-.navbar-nav li a{
-    padding: 10px;
+@media (min-width: 768px){
+    #choose .show-xs{
+        display: none;
+    }
+}
+
+@media (min-width: 992px){
+    #choose .show-xs{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px){
+    #choose .show-xs{
+        display: none;
+    }
+}
+
+@media (min-width: 1440px){
+    #choose .show-xs{
+        display: none;
+    }
+}
+
+
+@media (min-width: 1600px){
+    #choose .show-xs{
+        display: none;
+    }
 }
 

@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Index</title>
+    <title>成都市农夫未来科技有限公司</title>
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/index.css">
 
     <script src="js/jquery.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
     <script>
         $("img.lazy").lazyload({effect: "fadeIn"});
@@ -32,7 +34,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="javascript:;">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="logo" class="img-responsive logo">
             </a>
         </div>
@@ -41,24 +43,32 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">首页</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">产品 <span class="caret"></span></a>
+                       aria-expanded="false">软件定制 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="software.html">软件定制</a></li>
-                        <li><a href="sharing.html">共享经济</a></li>
-                        <li><a href="farming.html">农业灌溉</a></li>
-                        <li><a href="water.html">水闸监控</a></li>
                         <li><a href="distribution.html">分销系统</a></li>
                         <li><a href="system.html">集成系统</a></li>
+                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="water.html">水利监控系统</a></li>
                     </ul>
                 </li>
-                <li><a href="javascript:;">方案</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">方案 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sharing.html">共享经济</a></li>
+                        <li><a href="sljk.html">水利监控</a></li>
+                        <li><a href="zngg.html">智能灌溉</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="about.html">关于我们</a></li>
                 <li class="hidden-sm"><a href="about.html#message">联系我们</a></li>
                 <li>
-                    <a href="javascript:;" class="tel">专线&nbsp;136-6810-0743</a>
+                    <a href="javascript:;" class="tel"><span>客服专线：</span>136-6810-0743</a>
                 </li>
             </ul>
 
@@ -72,15 +82,14 @@
     <ol class="carousel-indicators hidden-xs">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="images/slider/banner1.png" alt="slider" class="lazy">
+            <img src="images/banner1.png" alt="slider" class="lazy">
             <div class="b-bot">
-                <h1 class="wow bounce">我们提供移动互联垂直应用场景解决方案</h1>
+                <h2 class="wow bounce">我们致力于为客户提供更加智慧的行业定制化解决方案</h2>
                 <div class="main-btn center-block">
                     <button class="pull-left current">需求定制</button>
                     <button class="pull-right">了解更多</button>
@@ -89,11 +98,14 @@
             <div class="carousel-caption"></div>
         </div>
         <div class="item">
-            <img src="images/slider/banner2.png" alt="slider" class="lazy">
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="images/slider/banner3.png" alt="slider" class="lazy">
+            <img src="images/banner2.png" alt="slider" class="lazy">
+            <div class="b-bot">
+                <h2 class="wow bounce">因地制宜&nbsp;适得其所&nbsp;&nbsp;&nbsp;把你的问题讲给我们听</h2>
+                <div class="main-btn center-block">
+                    <button class="pull-left current">需求定制</button>
+                    <button class="pull-right">了解更多</button>
+                </div>
+            </div>
             <div class="carousel-caption"></div>
         </div>
     </div>
@@ -119,32 +131,32 @@
     <div class="con-con row">
         <h4 class="small-tit">互联网技术+商业运营融合</h4>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow slideInLeft">
-            <img src="images/P1.png" alt="box-img" class="img-responsive center-block">
+            <img src="images/P1.png" alt="box-img" class="img-responsive center-block lazy">
             <a href="javascript:;" class="box-tit center-block">互联网+教育</a>
             <a href="javascript:;" class="box-desc center-block">在线教育大爆发</a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInDown">
-            <img src="images/P2.png" alt="box-img" class="img-responsive center-block">
+            <img src="images/P2.png" alt="box-img" class="img-responsive center-block lazy">
             <a href="javascript:;" class="box-tit center-block">互联网+生活服务</a>
             <a href="javascript:;" class="box-desc center-block">O2O才刚刚开始</a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow slideInRight">
-            <img src="images/P3.png" alt="box-img" class="img-responsive center-block">
+            <img src="images/P3.png" alt="box-img" class="img-responsive center-block lazy">
             <a href="javascript:;" class="box-tit center-block">互联网+零售</a>
             <a href="javascript:;" class="box-desc center-block">零售体验、跨境电商和移动电商的未来</a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow slideInLeft">
-            <img src="images/P4.png" alt="box-img" class="img-responsive center-block">
+            <img src="images/P4.png" alt="box-img" class="img-responsive center-block lazy">
             <a href="javascript:;" class="box-tit center-block">互联网+金融</a>
             <a href="javascript:;" class="box-desc center-block">全民理财与微小企业发展</a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInDown">
-            <img src="images/P5.png" alt="box-img" class="img-responsive center-block">
+            <img src="images/P5.png" alt="box-img" class="img-responsive center-block lazy">
             <a href="javascript:;" class="box-tit center-block">互联网+媒体</a>
             <a href="javascript:;" class="box-desc center-block">新业态的出现</a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow slideInRight">
-            <img src="images/P6.png" alt="box-img" class="img-responsive center-block">
+            <img src="images/P6-1.png" alt="box-img" class="img-responsive center-block lazy">
             <a href="javascript:;" class="tell center-block">把你想要的告诉我们</a>
         </div>
     </div>
@@ -152,17 +164,17 @@
     <div class="con-con row" style="margin-top: 50px;">
         <h4 class="small-tit">互联网技术+商业运营融合</h4>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow slideInLeft">
-            <img src="images/P7.png" alt="box-img" class="img-responsive center-block">
+            <img src="images/P7.png" alt="box-img" class="img-responsive center-block lazy">
             <a href="javascript:;" class="box-tit center-block">互联网(监控、控制)</a>
             <a href="javascript:;" class="box-desc center-block">实现移动随声监控，控制</a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInDown">
-            <img src="images/P8.png" alt="box-img" class="img-responsive center-block">
+            <img src="images/P8.png" alt="box-img" class="img-responsive center-block lazy">
             <a href="javascript:;" class="box-tit center-block">物联网(农业灌溉)</a>
             <a href="javascript:;" class="box-desc center-block">催化中国农业品牌化道路</a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow slideInRight">
-            <img src="images/P6.png" alt="box-img" class="img-responsive center-block">
+            <img src="images/P6.png" alt="box-img" class="img-responsive center-block lazy">
             <a href="javascript:;" class="tell center-block">把你想要的告诉我们</a>
         </div>
     </div>
@@ -177,7 +189,7 @@
     </div>
     <div class=" container-fluid con-con">
         <h4 class="small-tit">智慧移动解决方案</h4>
-        <img src="images/main-feature.png" alt="Mac" class="img-responsive center-block wow slideInRight content1-img">
+        <img src="images/main-feature.png" alt="Mac" class="lazy img-responsive center-block wow slideInRight content1-img">
     </div>
 </div>
 
@@ -194,7 +206,7 @@
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">IOS / Android / H5 / 小程序</h4>
-                        提供小程序和APP的方案策划、定制研发、运营建议等一站式服务
+                        <p>提供小程序和APP的方案策划、定制研发、运营建议等一站式服务</p>
                     </div>
                 </div>
             </div>
@@ -206,8 +218,8 @@
                         </a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">IOS / Android / H5 / 小程序</h4>
-                        提供小程序和APP的方案策划、定制研发、运营建议等一站式服务
+                        <h4 class="media-heading">微信 (微商城 / 微分销)</h4>
+                        <p>用于微信公众平台开发的微商城/微分销，依托微信的庞大用户群，方便用户获取和维系客户</p>
                     </div>
                 </div>
             </div>
@@ -220,8 +232,8 @@
                         </a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">IOS / Android / H5 / 小程序</h4>
-                        提供小程序和APP的方案策划、定制研发、运营建议等一站式服务
+                        <h4 class="media-heading">互联网+</h4>
+                        <p>充分发挥互联网在社会资源配置中的优化和集成作用</p>
                     </div>
                 </div>
             </div>
@@ -233,8 +245,8 @@
                         </a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">IOS / Android / H5 / 小程序</h4>
-                        提供小程序和APP的方案策划、定制研发、运营建议等一站式服务
+                        <h4 class="media-heading">P2P金融 (存取 / 借贷系统)</h4>
+                        <p>搭建网络平台帮助借贷双方确立借贷关系并完成相关手续费交易，完成小额借贷交易。可自行发布借款信息，包括金额、利息、还款方式和时间，自行决定借出金额实现自助式借款</p>
                     </div>
                 </div>
             </div>
@@ -247,8 +259,8 @@
                         </a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">IOS / Android / H5 / 小程序</h4>
-                        提供小程序和APP的方案策划、定制研发、运营建议等一站式服务
+                        <h4 class="media-heading">后台管理</h4>
+                        <p>对平台和商家网站数据库和文件快速操作和管理系统，以使得前台内容能够得到及时更新和调整</p>
                     </div>
                 </div>
             </div>
@@ -260,8 +272,8 @@
                         </a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">IOS / Android / H5 / 小程序</h4>
-                        提供小程序和APP的方案策划、定制研发、运营建议等一站式服务
+                        <h4 class="media-heading">生鲜配送系统(库存 / 订单系统)</h4>
+                        <p>介绍小程序开发介绍小程序开发介绍小程序开发介绍小程序开发介绍小程序开发</p>
                     </div>
                 </div>
             </div>
@@ -273,7 +285,7 @@
 
 <div class="container-fluid" id="example">
     <div class="con-header">
-        <h2 class="sort-tit">热门行业案例</h2>
+        <h2 class="sort-tit">热门行业场案例</h2>
         <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
     </div>
     <div class="con-con">
@@ -287,15 +299,15 @@
                     </div>
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 wow fadeInDown">
                         <img src="images/anli2.png" alt="image1" class="img-responsive">
-                        <a href="javascript:;">移动智能监控与控制系统</a>
+                        <a href="javascript:;">搭建互联网+平台</a>
                     </div>
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 wow fadeInDown">
                         <img src="images/anli3.png" alt="image1" class="img-responsive">
-                        <a href="javascript:;">移动智能监控与控制系统</a>
+                        <a href="javascript:;">互联网+分销模式</a>
                     </div>
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 wow fadeInDown">
                         <img src="images/anli4.png" alt="image1" class="img-responsive">
-                        <a href="javascript:;">移动智能监控与控制系统</a>
+                        <a href="javascript:;">App、小程序、web软件定制开发</a>
                     </div>
                 </div>
             </div>
@@ -305,7 +317,7 @@
 
 
 <div id="help">
-    <img src="images/hand.png" class="img-responsive" alt="">
+    <img src="images/hand.png" class="img-responsive lazy" alt="...">
     <p class="t1">你想要却说不清楚</p>
     <p class="t2">我们帮你整理，挖掘最真实的需求</p>
 </div>
@@ -332,50 +344,83 @@
                 <span>18982104959@163.com</span>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 pull-right">
-            <form>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <input type="text" placeholder="*姓名">
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <input type="text" id="tel" placeholder="*电话">
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <textarea name="message" id="message" rows="3" placeholder="留言"></textarea>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <button type="submit" id="submit">提 交</button>
-                </div>
-            </form>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 pull-right wow slideInRight">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <input type="text" id="name" placeholder="*姓名">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <input type="text" id="tel" placeholder="*电话">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <textarea name="message" id="message" rows="3" placeholder="留言"></textarea>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <button type="submit" id="submit">提 交</button>
+            </div>
         </div>
     </div>
 </div>
 
-<img title="返回顶部" src="images/top.png" alt="TOP" id="top" style="display: none;position: fixed;right: 3%;bottom: 5%;width: 50px;cursor: pointer">
+<ul id="small">
+    <li>
+        <a href="javascript:;" class="tool" title="联系电话">
+            <img src="images/tools/tel.png" alt="tel" class="tool-img">
+            <span>136-6810-0743</span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" id="top" title="返回顶部">
+            <img src="images/tools/top.png" alt="top" class="tool-img">
+        </a>
+    </li>
+</ul>
 <div class="container-fluid" id="bot">
     <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
 </div>
 
 <script src="js/public.js"></script>
-<script src="js/wow.min.js"></script>
-<script>
-    wow = new WOW(
-        {
-            animateClass: 'animated',
-            offset:       100,
-            callback:     function(box) {
-                
-            }
-        }
-    );
-    wow.init();
-</script>
-
 <script>
     $(document).ready(function () {
         //轮播图
         $("#carousel").carousel({
-            interval: 3000
+            interval: 4000
+        });
+
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset:       100,
+                callback:     function(box) {
+
+                }
+            }
+        );
+        wow.init();
+
+        //提交留言
+        $("#submit").click(function () {
+            var name = trim($("#name").val());
+            var tel = trim($("#tel").val());
+            var message = $("#message").val();
+
+            if(name=="" || tel==""){
+                return alert("请填写姓名和电话");
+            }else{
+                var post_data = {
+                    'name':name,
+                    'phone':tel,
+                    'content':message
+                };
+                $.ajax({
+                    type: "post",
+                    url: "http://120.78.145.150:8080/api/message-board",
+                    dataType:'json',
+                    data: post_data,
+                    success: function(msg){
+                        console.log(msg);
+                    }
+                });
+            }
         });
 
         //首页图标效果
@@ -387,6 +432,9 @@
         },function () {
             $(this).attr('src',init_src);
         });
+
+
+        function trim(str){return str.replace(/(^\s*)|(\s*$)/g,"");}
     });
 </script>
 

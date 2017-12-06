@@ -8,7 +8,15 @@
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/distribution.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
+    <script>
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    </script>
 </head>
 <body>
 
@@ -24,7 +32,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="javascript:;">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="logo" class="img-responsive logo">
             </a>
         </div>
@@ -33,24 +41,32 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">首页</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">产品 <span class="caret"></span></a>
+                       aria-expanded="false">软件定制 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="software.html">软件定制</a></li>
-                        <li><a href="sharing.html">共享经济</a></li>
-                        <li><a href="farming.html">农业灌溉</a></li>
-                        <li><a href="water.html">水闸监控</a></li>
                         <li><a href="distribution.html">分销系统</a></li>
                         <li><a href="system.html">集成系统</a></li>
+                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="water.html">水利监控系统</a></li>
                     </ul>
                 </li>
-                <li><a href="javascript:;">方案</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">方案 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sharing.html">共享经济</a></li>
+                        <li><a href="sljk.html">水利监控</a></li>
+                        <li><a href="zngg.html">智能灌溉</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="about.html">关于我们</a></li>
                 <li class="hidden-sm"><a href="about.html#message">联系我们</a></li>
                 <li>
-                    <a href="javascript:;" class="tel">专线&nbsp;136-6810-0743</a>
+                    <a href="javascript:;" class="tel"><span>客服专线：</span>136-6810-0743</a>
                 </li>
             </ul>
 
@@ -60,7 +76,7 @@
 
 <!--banner图-->
 <div id="banner">
-    <img src="images/system/banner.png" alt="banner" class="img-responsive">
+    <img src="images/distribution/banner.png" alt="banner" class="img-responsive">
     <div class="container">
         <h1>打造专业的定制化小程序直销商城</h1>
         <p>
@@ -81,10 +97,9 @@
 </div>
 
 <div class="container" id="main">
-    <h3>分销系统</h3>
     <p class="problem">
         <span>我们的直销模式</span>
-        适应当前互联网环境下
+        适应当前互联网环境
     </p>
 
     <div class="container">
@@ -93,137 +108,101 @@
         </p>
     </div>
 
-    <img src="images/distribution/1.png" alt="background" class="img-responsive center-block">
+    <img src="images/distribution/1.png" alt="background" class="img-responsive center-block lazy">
+    <img src="images/distribution/example.png" alt="example" class="img-responsive center-block lazy example">
 </div>
 
-
-<div class="container-fluid" id="box1">
-    <p>所有的代理都为同级代理，不需要趸货商家直供代理收入分2部分</p>
+<div class="container-fluid" id="advantage">
+    <p class="gray">我们的优势</p>
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
-                <div class="media center-block">
+
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
+                <div class="media">
                     <div class="media-left media-middle">
                         <a href="#">
-                            <img class="media-object" src="images/distribution/money1.png" alt="...">
+                            <img class="media-object" src="images/distribution/gift.png" alt="...">
                         </a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">商品销售的收入</h4>
-                        商品的定价，所有代理统一
+                        <h4 class="media-heading">多种奖励制度</h4>
+                        激发代理积极性，多种运营方式，数据分销，针对性定制运营活动，帮助商家、长久经营
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-6">
-                <div class="media center-block">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
+                <div class="media">
                     <div class="media-left media-middle">
                         <a href="#">
-                            <img class="media-object" src="images/distribution/money1.png" alt="...">
+                            <img class="media-object" src="images/distribution/gift.png" alt="...">
                         </a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">商品销售的收入</h4>
-                        商品的定价，所有代理统一
+                        <h4 class="media-heading">功能定制化</h4>
+                        根据商品的特性，制定不同的功能模块，增强系统实用性
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                            <img class="media-object" src="images/distribution/gift.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">数据化运营</h4>
+                        细分统计代理日、月、年业绩数据，客户的资料购买量统计，团队的人数、业绩增长率
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                            <img class="media-object" src="images/distribution/gift.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">素材管理</h4>
+                        自动归类、永久保存、一键发送到朋友圈
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                            <img class="media-object" src="images/distribution/gift.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">智能客户管理</h4>
+                        自动生成客户资料，对客户进行分级服务，分析客户
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                            <img class="media-object" src="images/distribution/gift.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">后期的培训</h4>
+                        根据系统数据针对性培训
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
-</div>
-
-<div class="container" id="advantage">
-    <div class="con-header">
-        <h2 class="sort-tit">我们的优势</h2>
-        <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
-            <div class="media">
-                <div class="media-left media-middle">
-                    <a href="#">
-                        <img class="media-object" src="images/distribution/gift.png" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">多种奖励制度</h4>
-                    激发代理积极性，多种运营方式，数据分销，针对性定制运营活动，帮助商家、长久经营
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
-            <div class="media">
-                <div class="media-left media-middle">
-                    <a href="#">
-                        <img class="media-object" src="images/distribution/gift.png" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">多种奖励制度</h4>
-                    激发代理积极性，多种运营方式，数据分销，针对性定制运营活动，帮助商家、长久经营
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
-            <div class="media">
-                <div class="media-left media-middle">
-                    <a href="#">
-                        <img class="media-object" src="images/distribution/gift.png" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">多种奖励制度</h4>
-                    激发代理积极性，多种运营方式，数据分销，针对性定制运营活动，帮助商家、长久经营
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
-            <div class="media">
-                <div class="media-left media-middle">
-                    <a href="#">
-                        <img class="media-object" src="images/distribution/gift.png" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">多种奖励制度</h4>
-                    激发代理积极性，多种运营方式，数据分销，针对性定制运营活动，帮助商家、长久经营
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
-            <div class="media">
-                <div class="media-left media-middle">
-                    <a href="#">
-                        <img class="media-object" src="images/distribution/gift.png" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">多种奖励制度</h4>
-                    激发代理积极性，多种运营方式，数据分销，针对性定制运营活动，帮助商家、长久经营
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-lg-6 col-md-offset-0 col-lg-offset-0 a-box">
-            <div class="media">
-                <div class="media-left media-middle">
-                    <a href="#">
-                        <img class="media-object" src="images/distribution/gift.png" alt="...">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">多种奖励制度</h4>
-                    激发代理积极性，多种运营方式，数据分销，针对性定制运营活动，帮助商家、长久经营
-                </div>
-            </div>
-        </div>
-
     </div>
 
 </div>
@@ -244,7 +223,6 @@
     </div>
 </div>
 
-
 <div class="container" id="function">
     <div class="con-header">
         <h2 class="sort-tit">我们的功能</h2>
@@ -258,37 +236,37 @@
             <img src="images/distribution/team.png" class="center-block img-responsive" alt="...">
             <span>团队数据分析</span>
         </div>
-
         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 f-box">
             <img src="images/distribution/team1.png" class="center-block img-responsive" alt="...">
             <span>客户数据分析</span>
         </div>
-
         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 f-box">
             <img src="images/distribution/sort.png" class="center-block img-responsive" alt="...">
             <span>个人业绩查询</span>
         </div>
-
         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 f-box">
             <img src="images/distribution/sys.png" class="center-block img-responsive" alt="...">
             <span>客户、代理双系统</span>
         </div>
-
         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 f-box">
             <img src="images/distribution/teach.png" class="center-block img-responsive" alt="...">
             <span>配套培训系统</span>
         </div>
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 f-box">
+            <img src="images/distribution/person.png" class="center-block img-responsive" alt="...">
+            <span>私人定制</span>
+        </div>
+
+
 
         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 f-box">
             <img src="images/distribution/second.png" class="center-block img-responsive" alt="...">
             <span>限时秒杀</span>
         </div>
-
         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 f-box">
             <img src="images/distribution/buy.png" class="center-block img-responsive" alt="...">
             <span>拼团团购</span>
         </div>
-
         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 f-box">
             <img src="images/distribution/price.png" class="center-block img-responsive" alt="...">
             <span>全民砍价</span>
@@ -297,61 +275,106 @@
             <img src="images/distribution/pic.png" class="center-block img-responsive" alt="...">
             <span>素材一键分享</span>
         </div>
-
         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 f-box">
             <img src="images/distribution/kuai.png" class="center-block img-responsive" alt="...">
             <span>物流一键分享</span>
         </div>
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 f-box">
+            <img src="images/distribution/dz.png" class="center-block img-responsive" alt="...">
+            <span>私人定制</span>
+        </div>
+
     </div>
 </div>
 
 <div class="container-fluid" id="choose">
-    <p class="problem">
-        为什么选择
-        <span>微信小程序商城</span>
-    </p>
+    <p class="problem">为什么选择<span>微信小程序商城</span></p>
     
     <div class="container">
-        <div class="row">
-            <div class="col-xs-5 col-md-1-5 col-md-1-5 col-lg-1-5 ch-box">
-                <img src="images/distribution/c1.png" alt="..." class="center-block">
+        <div class="row hide-xs">
+            <div class="col-md-1-5 col-md-1-5 col-lg-1-5 ch-box">
+                <img src="images/distribution/c1-1.png" alt="..." class="center-block">
                 <h3>生态社交资源</h3>
                 <div>
                     商家开发搭建微信商城，可以充分利用微信生态资源和社交圈资源，实现圈子精准营销和引流。
                 </div>
             </div>
-
-            <div class="col-xs-5 col-md-1-5 col-md-1-5 col-lg-1-5 ch-box">
+            <div class="col-md-1-5 col-md-1-5 col-lg-1-5 ch-box">
                 <img src="images/distribution/c2.png" alt="..." class="center-block">
                 <h3>打造企业形象</h3>
                 <div>
-                    商家开发搭建微信商城，可以充分利用微信生态资源和社交圈资源，实现圈子精准营销和引流。
+                    商家通过微信不仅可以建立微信商城，还可以将PC端的官网挪至移动端，和微信商城同处一地，共同宣传推广，通过微信粉丝朋友圈口口相传，从而得到更大范围的推广和传播。
                 </div>
             </div>
 
-            <div class="col-xs-5 col-md-1-5 col-md-1-5 col-lg-1-5 ch-box">
+            <div class="col-md-1-5 col-md-1-5 col-lg-1-5 ch-box">
                 <img src="images/distribution/c3.png" alt="..." class="center-block">
                 <h3>拓展新销售渠道</h3>
                 <div>
-                    商家开发搭建微信商城，可以充分利用微信生态资源和社交圈资源，实现圈子精准营销和引流。
+                    微信小程序可以帮助微信商城在线上拓新流量，稳固线上发展的同时，也能帮助传统电商全面联通打开线下局面，获取线下资源流量，发展新零售。
                 </div>
             </div>
 
-            <div class="col-xs-5 col-md-1-5 col-md-1-5 col-lg-1-5 ch-box">
+            <div class="col-md-1-5 col-md-1-5 col-lg-1-5 ch-box">
                 <img src="images/distribution/c4.png" alt="..." class="center-block">
                 <h3>开发成本低</h3>
                 <div>
-                    商家开发搭建微信商城，可以充分利用微信生态资源和社交圈资源，实现圈子精准营销和引流。
+                    对于小程序拥有者来说，开发成本更低。他们可以更多财力，人力，精力放在如何运营好产品，做好内容本身。
                 </div>
             </div>
 
-            <div class="col-xs-5 col-md-1-5 col-md-1-5 col-lg-1-5 ch-box">
+            <div class="col-md-1-5 col-md-1-5 col-lg-1-5 ch-box">
                 <img src="images/distribution/c5.png" alt="..." class="center-block">
                 <h3>小程序的使命</h3>
                 <div>
-                    商家开发搭建微信商城，可以充分利用微信生态资源和社交圈资源，实现圈子精准营销和引流。
+                    <p>连接人与人</p>
+                    <p>连接人与服务</p>
+                    <p>连接人与商业</p>
+                    <p>连接人与物品</p>
                 </div>
             </div>
+        </div>
+
+        <div class="row show-xs">
+            <div class="col-xs-6 col-md-4">
+                <img src="images/distribution/icon1.png" alt="..." class="center-block">
+                <h3>生态社交资源</h3>
+                <p>
+                    商家开发搭建微信商城，可以充分利用微信生态资源和社交圈资源，实现圈子精准营销和引流。
+                </p>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <img src="images/distribution/icon2.png" alt="..." class="center-block">
+                <h3>打造企业形象</h3>
+                <p>
+                    商家通过微信不仅可以建立微信商城，还可以将PC端的官网挪至移动端，和微信商城同处一地，共同宣传推广，通过微信粉丝朋友圈口口相传，从而得到更大范围的推广和传播。
+                </p>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <img src="images/distribution/icon3.png" alt="..." class="center-block">
+                <h3>拓展新销售渠道</h3>
+                <p>
+                    微信小程序可以帮助微信商城在线上拓新流量，稳固线上发展的同时，也能帮助传统电商全面联通打开线下局面，获取线下资源流量，发展新零售。
+                </p>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <img src="images/distribution/icon4.png" alt="..." class="center-block">
+                <h3>开发成本低</h3>
+                <p>
+                    对于小程序拥有者来说，开发成本更低。他们可以更多财力，人力，精力放在如何运营好产品，做好内容本身。
+                </p>
+            </div>
+            <div class="col-xs-6 col-xs-offset-3 col-md-offset-4 col-md-4 last">
+                <img src="images/distribution/icon5.png" alt="..." class="center-block">
+                <h3>小程序的使命</h3>
+                <p>
+                    <span>连接人与人</span>
+                    <span>连接人与服务</span>
+                    <span>连接人与商业</span>
+                    <span>连接人与物品</span>
+                </p>
+            </div>
+
         </div>
     </div>
 
@@ -359,7 +382,7 @@
 
 
 <div id="six">
-    <img src="images/distribution/advantage.png" alt="advantage" class="img-responsive center-block">
+    <img src="images/distribution/advantage.png" alt="advantage" class="img-responsive center-block lazy">
 </div>
 
 
@@ -370,41 +393,113 @@
         <p class="i-desc">第一时间掌握行业动态，了解行业趋势</p>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 i-box">
-                <div>
-                    <p class="i-tit">
-                        阿里巴巴真做微商了！这次主动进朋友圈
-                    </p>
+    <div class="page">
+        <button type="button" class="btn btn-default pull-left"> &lt; </button>
+        <button type="button" class="btn btn-default pull-right"> &gt; </button>
+    </div>
+
+    <div class="container art">
+        <div class="row current">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 art-l">
+                <img src="images/distribution/z1.png" alt="zixun" class="img-responsive center-block">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 art-r">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 time">
+                    <span class="date">12.05</span>
+                    <span class="year">2017</span>
+                </div>
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 article">
+                    <p class="art-tit">阿里巴巴真做微商了！这次主动进朋友圈</p>
                     <p class="i-con">
                         【亿邦动力网讯】10月19日消息，最近微商行业收到的冲击不少，如微信开始出面整治三级分销、就在微商整体环境有点“尴尬”的时候，阿里站出来说：我们要进军微商了...
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 i-box">
-                <div>
-                    <p class="i-tit">
-                        丁磊也开始做微商了最低788元成为网易考拉微店主
-                    </p>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 art-l">
+                <img src="images/distribution/z2.png" alt="zixun" class="img-responsive center-block">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 art-r">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 time">
+                    <span class="date">12.05</span>
+                    <span class="year">2017</span>
+                </div>
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 article">
+                    <p class="art-tit">小程序用户人群画像是什么？使用时长是多少？小程序行业发了首份生态白皮</p>
                     <p class="i-con">
-                        近期，网易旗下的跨境电商平台网易考拉海购推出了“微店主招募计划”，在全国范围内招募个人店主，协助网易考拉销售平台上的海淘产品，该计划主要在微信上进行推广和实践...
+                        在这份白皮书中主要探讨了以下几个问题:
+                        1.为什么小程序会出现？ 2.小程序的独有的优势和特点是什么？ 3.小程序行业又是什么样子？ 4.哪些群体的人群正在使用小程序？
+                        5.哪些场景和企业可以作为小程序的典型案例值得借鉴？ 6.小程序第三方生态是什么样子？ 7.前TOP200的小程序究竟是哪些？
+                        8.哪些小程序成长最快？ 9.未来小程序又会有哪些发展趋势和变化？
                     </p>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 art-l">
+                <img src="images/distribution/z3.png" alt="zixun" class="img-responsive center-block">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 art-r">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 time">
+                    <span class="date">12.05</span>
+                    <span class="year">2017</span>
+                </div>
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 article">
+                    <p class="art-tit">考虑到线上流量日益高涨，利用微商模式进行商品的推广也算得上一笔不错的买卖，丁老板的算盘打得不错。</p>
+                    <p class="i-con">
+                        近期，网易旗下的跨境电商平台网易考拉海购推出了“微店主招募计划”，在全国范围内招募个人店主，协助网易考拉销售平台上的海淘产品，该计划主要在微信上进行推广和实践，最后采用的付款方式也是微信以及银联支付，结算方式和传统微商差异不大。
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
-<img title="返回顶部" src="images/top.png" alt="TOP" id="top" style="display: none;position: fixed;right: 3%;bottom: 5%;width: 50px;cursor: pointer">
+<ul id="small">
+    <li>
+        <a href="javascript:;" class="tool" title="联系电话">
+            <img src="images/tools/tel.png" alt="tel" class="tool-img">
+            <span>136-6810-0743</span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" id="top" title="返回顶部">
+            <img src="images/tools/top.png" alt="top" class="tool-img">
+        </a>
+    </li>
+</ul>
 <div class="container-fluid" id="bot">
     <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
 </div>
 
-
-<script src="js/jquery.min.js"></script>
-<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/public.js"></script>
+<script>
+    $(document).ready(function () {
+        var row = $("#info .row");
+
+        $("#info .pull-left").click(function () {
+            var index = $("#info .current").index();
+            if(index>0){
+                row.eq(index).fadeOut().removeClass('current');
+                row.eq(index-1).fadeIn().addClass('current');
+            }else{
+                return false;
+            }
+        });
+        $("#info .pull-right").click(function () {
+            var index = $("#info .current").index();
+            if(index<row.length-1){
+                row.eq(index).fadeOut().removeClass('current');
+                row.eq(index+1).fadeIn().addClass('current');
+            }else{
+                return false;
+            }
+        });
+    });
+</script>
 </body>
 </html>
