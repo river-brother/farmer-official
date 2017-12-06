@@ -1,0 +1,210 @@
+/* public css */
+html,body{
+    overflow-x: hidden;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/* 分割标题 */
+.con-header .sort-tit{
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+}
+.con-header img{
+    padding: 5px 0;
+}
+
+
+/*nav*/
+#nav{
+    padding: 15px 0;
+    margin:0;
+}
+#nav .tel{
+    color:#1765b6;
+    font-size: 24px;
+    line-height: 11px;
+    font-family: Arial;
+}
+#nav .tel span{
+    font-size: 16px;
+    color: #949494;
+    font-family: sans-serif;
+}
+#nav .logo{
+    display: inline-block;
+    margin-top: -13px;
+    box-sizing: border-box;
+}
+
+
+/* 页面的导航 banner图下面的 */
+.jump{
+    height: 80px;
+}
+.jump h2{
+    font-size: 24px;
+    display: inline-block;
+    line-height: 85px;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.jump .breadcrumb{
+    display: inline-block;
+    background-color: transparent;
+    margin-top: 25px;
+}
+.jump .breadcrumb li a{
+    color: #333333;
+}
+.jump .breadcrumb .active{
+    color: #206BB9;
+}
+
+
+.problem{
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 10px;
+}
+.problem span{
+    color: #4BAEDE;
+    font-size: 32px;
+}
+
+
+@media (max-width: 480px){
+
+}
+
+@media (min-width: 480px){
+
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1200px){
+
+}
+
+@media (min-width: 1440px){
+    /*导航栏样式*/
+    .navbar-right{
+        margin-top: 7px;
+    }
+    .navbar-nav li{
+        padding-left: 10px;
+    }
+    .navbar-nav .dropdown-menu{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        -moz-transform: translate(-50%,0);
+        -webkit-transform: translate(-50%,0);
+        -o-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+    }
+    .navbar-nav .dropdown-menu li{
+        padding-left: 0;
+    }
+    .navbar-nav .dropdown-menu li a{
+        text-align: center;
+
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+    }
+    .navbar-nav .dropdown-menu li a:hover{
+        padding-right: 30px;
+    }
+    .navbar-nav li a{
+        padding: 10px;
+    }
+}
+@media (min-width: 1920px){
+
+}
+
+/* 右侧小按钮 */
+#small{
+    width: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    padding: 10px 0;
+    display: none;
+}
+#small li{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: block;
+}
+#small li a{
+    display: block;
+    height: 50px;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    background-color: #2285c8;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+#small li a.tool{
+    width: 185px;
+}
+#small li .tool-img{
+    width: 50px;
+    height: 50px;
+}
+#small li a span{
+    position: absolute;
+    top: 0;
+    padding: 0 5px;
+}
+#small li a.tool:hover{
+    left: -135px;
+}
+
+
+/* bot */
+#bot{
+    background-color: #f1f1f1;
+    padding: 12px 0;
+}
+#bot h5{
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 24px;
+}

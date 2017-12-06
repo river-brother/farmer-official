@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta charset="UTF-8">
     <title>农业灌溉</title>
-    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/farming.css">
 
     <script src="js/jquery.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    </script>
 </head>
 <body>
 <!--导航栏-->
@@ -27,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="javascript:;">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="logo" class="img-responsive logo">
             </a>
         </div>
@@ -36,24 +42,32 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">首页</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">产品 <span class="caret"></span></a>
+                       aria-expanded="false">软件定制 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="software.html">软件定制</a></li>
-                        <li><a href="sharing.html">共享经济</a></li>
-                        <li><a href="farming.html">农业灌溉</a></li>
-                        <li><a href="water.html">水闸监控</a></li>
                         <li><a href="distribution.html">分销系统</a></li>
                         <li><a href="system.html">集成系统</a></li>
+                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="water.html">水利监控系统</a></li>
                     </ul>
                 </li>
-                <li><a href="javascript:;">方案</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">方案 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sharing.html">共享经济</a></li>
+                        <li><a href="sljk.html">水利监控</a></li>
+                        <li><a href="zngg.html">智能灌溉</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="about.html">关于我们</a></li>
                 <li class="hidden-sm"><a href="about.html#message">联系我们</a></li>
                 <li>
-                    <a href="javascript:;" class="tel">专线&nbsp;136-6810-0743</a>
+                    <a href="javascript:;" class="tel"><span>客服专线：</span>136-6810-0743</a>
                 </li>
             </ul>
 
@@ -61,56 +75,84 @@
     </div>
 </nav>
 
-<div class="banner">
-    <img src="images/farming/banner.png" alt="" class="img-responsive">
-    <h2>大田农业智能灌溉系统</h2>
-    <p>通过移动APP、微信、计算机等信息终端接收农田墒情信息、气象信息，并可远程控制灌溉设备。</p>
+
+<div id="banner">
+    <img src="images/farming/banner.png" alt="banner" class="img-responsive lazy">
+    <div class="container">
+        <h1 class="wow slideInDown">大田农业智能灌溉系统</h1>
+        <p class="wow slideInRight">通过移动APP、微信、计算机等信息终端接收农田墒情信息、气象信息，并可远程控制灌溉设备。</p>
+    </div>
 </div>
+
 
 <div class="container jump">
     <div class="pull-left">
         <h2>产品</h2>
     </div>
-    <div class="pull-right">
-        <ol class="breadcrumb">
-            <li><a href="index.html">首页</a></li>
-            <li class="active">农业灌溉</li>
-        </ol>
-    </div>
+    <ol class="breadcrumb pull-right">
+        <li><a href="index.html">首页</a></li>
+        <li class="active">农业灌溉</li>
+    </ol>
 </div>
 
+
 <div class="box container">
-    <h2>农业灌溉</h2>
-    <h2>系统介绍</h2>
-    <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
-    <h2>车控终端</h2>
-    <p>系统能自动感测到什么时候需要灌溉，灌溉多长时间；系统可以自动开启灌溉，也可以自动关闭灌溉；可以实现土壤太干时增大喷灌量，太湿时减少喷灌量。要实现此功能充分利用可编程控制器的控制作用。系统要实现自动感测土壤湿度的功能必须要有土壤湿度传感器。实现灌溉水量的多与少的调节，采用变频器。在可编程控制器内预先设定50%—60%RH为标准湿度，传感器采集的湿度模拟信号经A/D模块转换成数字信号。</p>
-    <h2>系统组成</h2>
-    <p>智能农业灌溉系统涉及到传感器技术、自动控制技术、计算机技术、无线通信技术等多种高新技术，这些新技术的应用使农业由传统的劳动密集型向技术密集型转变奠定了重要的基础，和传统灌溉系统相比，智能农业灌溉系统的成本差不多，却可节水16%到30%。</p>
-    <img src="images/farming/组74.png" alt="" class="img-responsive">
+    <div class="con-header">
+        <h2 class="sort-tit">系统介绍</h2>
+        <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
+    </div>
+
+    <h2 class="wow slideInDown">车控终端</h2>
+    <p class="wow slideInLeft">系统能自动感测到什么时候需要灌溉，灌溉多长时间；系统可以自动开启灌溉，也可以自动关闭灌溉；可以实现土壤太干时增大喷灌量，太湿时减少喷灌量。要实现此功能充分利用可编程控制器的控制作用。系统要实现自动感测土壤湿度的功能必须要有土壤湿度传感器。实现灌溉水量的多与少的调节，采用变频器。在可编程控制器内预先设定50%—60%RH为标准湿度，传感器采集的湿度模拟信号经A/D模块转换成数字信号。</p>
+
+    <h2 class="wow slideInDown">系统组成</h2>
+    <p class="wow slideInLeft">智能农业灌溉系统涉及到传感器技术、自动控制技术、计算机技术、无线通信技术等多种高新技术，这些新技术的应用使农业由传统的劳动密集型向技术密集型转变奠定了重要的基础，和传统灌溉系统相比，智能农业灌溉系统的成本差不多，却可节水16%到30%。</p>
+
+    <img src="images/farming/组74.png" alt="" class="img-responsive lazy main-pic wow slideInDown">
 </div>
 
 <div class="cont container-fluid">
-    <h2>我们打造<span>物联网平台</span></h2>
-    <p class="container">运维管理平台包括:</p>
-    <div>
-        <dl class="container-fluid">
-            <dt><img src="images/farming/图层6.png" alt="" class="img-responsive"></dt>
-            <dd>旱情预报</dd>
-        </dl>
-        <dl>
-            <dt><img src="images/farming/组1拷贝.png" alt="" class="img-responsive"></dt>
-            <dd>灌溉远程/自动控制</dd>
-        </dl>
-        <dl>
-            <dt><img src="images/farming/图层7.png" alt="" class="img-responsive"></dt>
-            <dd>农田水利管理</dd>
-        </dl>
+    <div class="container">
+        <p class="problem">我们打造<span>物联网平台</span></p>
+
+        <p>运维管理平台包括:</p>
+
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 wow slideInLeft">
+                <img src="images/farming/图层6.png" alt="" class="img-responsive center-block">
+                <p class="desc">旱情预报</p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 wow slideInDown">
+                <img src="images/farming/组1拷贝.png" alt="" class="img-responsive center-block">
+                <p class="desc">灌溉远程/自动控制</p>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 wow slideInRight">
+                <img src="images/farming/图层7.png" alt="" class="img-responsive center-block">
+                <p class="desc">农田水利管理</p>
+            </div>
+        </div>
+
+        <p class="wow slideInLeft">在联点数据应用平台上，用户可以通过移动APP、微信、计算机等信息终端接收农田墒情信息、气象信息，并可远程控制灌溉设备。</p>
     </div>
+</div>
 
-    <p class="container">在联点数据应用平台上，用户可以通过移动APP、微信、计算机等信息终端接收农田墒情信息、气象信息，并可远程控制灌溉设备。</p>
-        <h5 class="container-fluid" id="bot">Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
 
+<ul id="small">
+    <li>
+        <a href="javascript:;" class="tool" title="联系电话">
+            <img src="images/tools/tel.png" alt="tel" class="tool-img">
+            <span>136-6810-0743</span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" id="top" title="返回顶部">
+            <img src="images/tools/top.png" alt="top" class="tool-img">
+        </a>
+    </li>
+</ul>
+
+<div class="container-fluid" id="bot">
+    <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
 </div>
 
 <script src="js/public.js"></script>

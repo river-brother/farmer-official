@@ -1,13 +1,23 @@
 $(document).ready(function () {
+    wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset:       100,
+            callback:     function(box) {
+
+            }
+        }
+    );
+    wow.init();
 
     $(window).scroll(function () {
         var top = $("html").scrollTop();
         var winHeight = $(window).height();
 
         if(top>=winHeight*0.4){
-            $("#top").fadeIn('slow');
+            $("#small").fadeIn('slow');
         }else{
-            $("#top").fadeOut('slow');
+            $("#small").fadeOut('slow');
         }
     });
 
@@ -15,5 +25,6 @@ $(document).ready(function () {
 
         $("html,body").animate({"scrollTop":0},300);
     });
+
 });
 

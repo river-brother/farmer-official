@@ -1,30 +1,3 @@
-html,body{
-    overflow-x: hidden;
-}
-.con-header h2{
-    text-align: center;
-    font-weight: bold;
-}
-.con-header img{
-    padding: 5px 0;
-}
-/*nav*/
-#nav{
-    padding: 15px 0;
-    margin:0;
-}
-#nav .tel{
-    color:rgb(35,108,185);
-    font-size: 24px;
-}
-#nav .logo{
-    display: inline-block;
-    margin-top: -13px;
-    box-sizing: border-box;
-}
-
-
-
 #banner{
     position: relative;
 }
@@ -54,34 +27,12 @@ html,body{
 
 
 
-.jump{
-    height: 80px;
-}
-.jump h2{
-    font-size: 24px;
-    display: inline-block;
-    line-height: 85px;
-    margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.jump .breadcrumb{
-    display: inline-block;
-    background-color: transparent;
-    margin-top: 25px;
-}
-.jump .breadcrumb li a{
-    color: #333333;
-}
-.jump .breadcrumb .active{
-    color: #206BB9;
-}
-
 
 #box1{
     border-top: 1px solid #cccccc;
-    padding-top: 10px;
+    padding: 50px 0;
 }
+
 #box1 h3{
     color: #8c8c8c;
     text-align: center;
@@ -97,22 +48,9 @@ html,body{
     color: #4BAEDE;
     font-size: 32px;
 }
-#box1 .desc{
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
-    letter-spacing: 1px;
-    font-weight: 500;
-    line-height: 28px;
-    margin-top: 25px;
-    text-indent: 8%;
-}
 #box1 .row{
     margin-top: 20px;
     margin-bottom: 20px;
-}
-#box1 h3{
-    text-align: left;
 }
 #box1 .box1-desc{
     width: 80%;
@@ -124,11 +62,13 @@ html,body{
 
 
 #box2{
-    padding: 40px 0;
+    padding: 50px 0;
 }
 #box2 .row img{
     margin-top: 30px;
 }
+
+
 
 #sys{
     padding: 40px 0;
@@ -169,51 +109,95 @@ html,body{
 }
 
 
-#bot{
-    background-color: #f1f1f1;
-    padding: 12px 0;
-}
-#bot h5{
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
-    text-align: center;
-    letter-spacing: 1px;
-}
+@media (max-width: 480px){
+    .con-header .sort-tit{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .lazy{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #banner .container{
+        top: 0;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    #banner h1{
+        margin-top: 3%;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    #banner p{
+        margin-top: 0;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .jump{
+        height: 60px;
+    }
+    .jump h2{
+        font-size: 18px;
+        line-height: 65px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .jump .breadcrumb{
+        margin-top: 15px;
+    }
+
+    #box1,#box2{
+        padding: 20px 0;
+    }
+
+    #box1 .row{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #box1 .box1-desc{
+        margin-top: 10px;
+        line-height: 24px;
+    }
+
+    #box2 .row img{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #sys{
+        padding: 20px 0;
+    }
+    #sys .row img{
+        margin-top: 15px;
+    }
 
 
+    #intro{
+        padding: 20px 0;
+    }
+    #intro .row img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
-/*导航栏样式*/
-.navbar-right{
-    margin-top: 7px;
-}
-.navbar-nav li{
-    padding-left: 10px;
-}
-.navbar-nav .dropdown-menu{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,0);
-    -moz-transform: translate(-50%,0);
-    -webkit-transform: translate(-50%,0);
-    -o-transform: translate(-50%,0);
-    -ms-transform: translate(-50%,0);
-}
-.navbar-nav .dropdown-menu li{
-    padding-left: 0;
-}
-.navbar-nav .dropdown-menu li a{
-    text-align: center;
 
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-}
-.navbar-nav .dropdown-menu li a:hover{
-    padding-right: 30px;
-}
-.navbar-nav li a{
-    padding: 10px;
+    #special{
+        padding: 20px 0;
+    }
+    #special .container{
+        margin-top: 10px;
+    }
+    #special .container p{
+        width: 90%;
+        margin-left: 5%;
+        line-height: 24px;
+        text-indent: 2em;
+        margin-top: 10px;
+    }
+    #special .container img{
+        margin-top: 30px;
+    }
+
 }

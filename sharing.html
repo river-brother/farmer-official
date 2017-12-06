@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -8,11 +8,17 @@
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/sharing.css">
 
     <script src="js/jquery.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
+    <script>
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    </script>
 </head>
 <body>
 
@@ -28,7 +34,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="javascript:;">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="logo" class="img-responsive logo">
             </a>
         </div>
@@ -37,24 +43,32 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">首页</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">产品 <span class="caret"></span></a>
+                       aria-expanded="false">软件定制 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="software.html">软件定制</a></li>
-                        <li><a href="sharing.html">共享经济</a></li>
-                        <li><a href="farming.html">农业灌溉</a></li>
-                        <li><a href="water.html">水闸监控</a></li>
                         <li><a href="distribution.html">分销系统</a></li>
                         <li><a href="system.html">集成系统</a></li>
+                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="water.html">水利监控系统</a></li>
                     </ul>
                 </li>
-                <li><a href="javascript:;">方案</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">方案 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sharing.html">共享经济</a></li>
+                        <li><a href="sljk.html">水利监控</a></li>
+                        <li><a href="zngg.html">智能灌溉</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="about.html">关于我们</a></li>
                 <li class="hidden-sm"><a href="about.html#message">联系我们</a></li>
                 <li>
-                    <a href="javascript:;" class="tel">专线&nbsp;136-6810-0743</a>
+                    <a href="javascript:;" class="tel"><span>客服专线：</span>136-6810-0743</a>
                 </li>
             </ul>
 
@@ -63,8 +77,8 @@
 </nav>
 
 <div class="banner">
-    <img src="images/sharing/ben.png" alt="" class="img-responsive">
-    <p>
+    <img src="images/sharing/ben.png" alt="" class="img-responsive wow slideInRight lazy">
+    <p class="wow slideInLeft">
         <span>通过蓝牙+wifi+3G/4G 多种物联网模式，架构共享线上平台。</span>
         <span class="hidden-xs">模块组成 手机端：APP/微信公众号/小程序 硬件设备：普通设备+定位模块+网络模块 定位模块： GPS/北斗双星导航，同步接收BDS、GPS卫星信号与wifi、LBS信号，具有更快的搜星和定位速度，更加快速精准锁定硬件设备。 网络模块：利用传感器等获取设备信息，并采用先进的NB-IoT/LoRa/GPRS技术，通过电信网络与互联网融合传递设备信息，进而进行互联网智能操作。 管理系统：设备监管+财务统计+使用情况 案例应用：共享单车、共享充电宝</span>
     </p>
@@ -81,13 +95,11 @@
 </div>
 
 <div class="container" id="box1">
-
     <div class="con-header">
         <h2 class="sort-tit">开发服务</h2>
         <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
     </div>
-
-    <img src="images/sharing/flow.png" alt="" class="img-responsive benj">
+    <img src="images/sharing/flow.png" alt="" class="img-responsive benj wow slideInDown lazy">
 </div>
 
 
@@ -100,33 +112,33 @@
     <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 wrap">
 
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <img src="images/sharing/sdd.png" alt="" class="img-responsive center-block">
-                <p>嵌入式芯片</p>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 wow slideInLeft">
+                <img src="images/sharing/xin.png" alt="" class="img-responsive center-block">
+                <p class="word">嵌入式芯片</p>
             </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 fh">
                 <p>+</p>
             </div>
 
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <img src="images/sharing/sj.png" alt="" class="img-responsive">
-                <p>手机APP</p>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 wow slideInDown">
+                <img src="images/sharing/app.png" alt="" class="img-responsive center-block">
+                <p class="word">手机APP</p>
             </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 fh">
                 <p>=</p>
             </div>
 
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <img src="images/sharing/danche.png" alt="" class="img-responsive">
-                <p>共享智能单车</p>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 wow slideInRight">
+                <img src="images/sharing/bike.png" alt="" class="img-responsive center-block bk">
+                <p class="word">共享智能单车</p>
             </div>
 
         </div>
     </div>
 
     <div class="cont ">
-        <p class="">通过车身锁内集成了嵌入式芯片，GPS 模块和 SIM 卡，随时监控自行车在路上的具体位置。车辆投放到市场，不仅解决用户如何找到，还要解决如何进行运营和维护的问题。如果车辆无法被定位，且又无固定停车点情况，那很可能就是石沉大海。有了GPS一辆车在地图上就是一个点，也能形成供需关系。</p>
-        <p class="">同时通过配合手机APP，用户通过手机APP可以查看附近的单车，并进行预约，然后通过地图引导找到单车，并通过扫二维码远程开锁进行汽车。使用app开可以完成付费和行驶线路记录。</p>
+        <p class="wow slideInDown">通过车身锁内集成了嵌入式芯片，GPS 模块和 SIM 卡，随时监控自行车在路上的具体位置。车辆投放到市场，不仅解决用户如何找到，还要解决如何进行运营和维护的问题。如果车辆无法被定位，且又无固定停车点情况，那很可能就是石沉大海。有了GPS一辆车在地图上就是一个点，也能形成供需关系。</p>
+        <p class="wow slideInDown">同时通过配合手机APP，用户通过手机APP可以查看附近的单车，并进行预约，然后通过地图引导找到单车，并通过扫二维码远程开锁进行汽车。使用app开可以完成付费和行驶线路记录。</p>
     </div>
 </div>
 
@@ -154,7 +166,7 @@
         <div class="clearfix"></div>
 
         <div class="row">
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 rr-box">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 rr-box wow slideInLeft">
                 <div class="wrap">
                     <img src="images/sharing/芯片.png" alt="" class="img-responsive center-block">
                     <h3>控制芯片</h3>
@@ -162,7 +174,7 @@
                     <p>其他硬件和运行相应的嵌入式软件</p>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 rr-box">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 rr-box wow slideInLeft">
                 <div class="wrap">
                     <img src="images/sharing/自锁车.png" alt="" class="img-responsive center-block">
                     <h3>电控锁</h3>
@@ -170,7 +182,7 @@
                     <p>电子信号开实现锁的开关</p>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 rr-box">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 rr-box wow slideInRight">
                 <div class="wrap">
                     <img src="images/sharing/GPS.png" alt="" class="img-responsive center-block">
                     <h3>GPS定位模块</h3>
@@ -178,7 +190,7 @@
                     <p>&nbsp;</p>
                 </div>
             </div>
-            <div class="col-xs-6  col-sm-3 col-md-3 col-lg-3 rr-box">
+            <div class="col-xs-6  col-sm-3 col-md-3 col-lg-3 rr-box wow slideInRight">
                 <div class="wrap">
                     <img src="images/sharing/gprs.png" alt="" class="img-responsive center-block">
                     <h3>GPRS模块</h3>
@@ -198,7 +210,7 @@
         <div class="clearfix"></div>
 
         <div class="row">
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 col-xs-offset-0 rr-box">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 col-xs-offset-0 rr-box wow slideInLeft">
                 <div class="wrap">
                     <img src="images/sharing/信息.png" alt="" class="img-responsive center-block">
                     <h3>信息</h3>
@@ -207,7 +219,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 rr-box">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 rr-box wow slideInDown">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
                     <div class="wrap">
                         <img src="images/sharing/远程开门20x20.png" alt="" class="img-responsive center-block">
@@ -218,7 +230,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-3 col-md-3 col-lg-3 rr-box">
+            <div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-3 col-md-3 col-lg-3 rr-box wow slideInRight">
                 <div class="wrap">
                     <img src="images/sharing/上传.png" alt="" class="img-responsive center-block">
                     <h3>GPRS模块</h3>
@@ -234,14 +246,27 @@
 
 <div class="container foo">
     <h2>云端平台</h2>
-    <p>
+    <p class="wow slideInRight">
         云端平台作为所有共享单车的中控大脑，可与所有单车进行数据通讯，收集信息与下单命令，同时为管理人员与用户APP提供服务。响应用户与管理员的操作来向车控终端发送命令进行控制。
     </p>
     <h2>手机APP</h2>
     <p>手机APP作为用户的操作入口，用户可通过APP查看附近的单车，预约单车充值、开锁、查看行驶路径、计算使用费用等。</p>
 </div>
 
-<img title="返回顶部" src="images/top.png" alt="TOP" id="top" style="display: none;position: fixed;right: 3%;bottom: 5%;width: 50px;cursor: pointer">
+
+<ul id="small">
+    <li>
+        <a href="javascript:;" class="tool" title="联系电话">
+            <img src="images/tools/tel.png" alt="tel" class="tool-img">
+            <span>136-6810-0743</span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" id="top" title="返回顶部">
+            <img src="images/tools/top.png" alt="top" class="tool-img">
+        </a>
+    </li>
+</ul>
 <div class="container-fluid" id="bot">
     <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
 </div>

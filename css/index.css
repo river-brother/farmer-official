@@ -1,37 +1,8 @@
-html,body{
-	overflow-x: hidden;
-}
-a{
-	text-decoration: none;
-}
-a:hover{
-	text-decoration: none;
-}
-.con-header .sort-tit{
+.small-tit{
 	text-align: center;
-	font-weight: bold;
-	font-size: 26px;
-}
-.con-header .small-tit{
-	font-size: 17px;
-}
-.con-header img{
-	padding: 5px 0;
-}
-/*nav*/
-#nav{
-	padding: 15px 0;
-	margin:0;
-}
-#nav .tel{
-	color:rgb(35,108,185);
-	font-size: 24px;
-	font-family: Arial;
-}
-#nav .logo{
-	display: inline-block;
-	margin-top: -13px;
-	box-sizing: border-box;
+	margin-top: 10px;
+	font-size: 16px;
+	color: rgb(124,124,126);
 }
 
 /*carousel*/
@@ -44,21 +15,21 @@ a:hover{
 	top: 0;
 	left: 0;
 }
-#carousel .b-bot h1{
+#carousel .b-bot h2{
 	margin-top: 10%;
 	text-align: center;
 	color: #fff;
 	letter-spacing: 5px;
+	font-size: 38px;
 }
 #carousel .main-btn{
 	width: 300px;
 	height: 55px;
-	margin-top: 5%;
 }
 #carousel .main-btn button{
 	width: 130px;
 	height: 55px;
-	line-height: 55px;
+	line-height: 52px;
 	border: 1px solid #f0f0f0;
 	background-color: rgba(255,255,255,0.13);
 	color: #f0f0f0;
@@ -71,12 +42,10 @@ a:hover{
 }
 
 
-
 /*main-content*/
 #main-content{
 	padding-top: 50px;
 	padding-bottom: 50px;
-	margin-top: 30px;
 }
 #main-content .con-con > div{
 	margin-top: 30px;
@@ -99,12 +68,14 @@ a:hover{
 	font-size: 16px;
 	text-align: center;
 	color: #767676;
+	padding: 5px 0;
 }
 #main-content .con-con .tell{
 	font-size: 16px;
 	text-align: center;
-	padding-top: 10px;
 	color: #000000;
+	margin-top: 10px;
+	display: block;
 }
 
 /*content1*/
@@ -112,10 +83,7 @@ a:hover{
 	padding-top: 50px;
 	background-color: rgb(249,249,249);
 }
-#content1 .con-con .small-tit{
-	text-align: center;
-	margin-top: 10px;
-}
+
 #content1 .content1-img{
 	position: relative;
 	top: 50px;
@@ -143,6 +111,9 @@ a:hover{
 	font-size: 12px;
 	color: #787878;
 }
+#service .media-body p{
+	width: 80%;
+}
 
 /*example*/
 #example{
@@ -167,6 +138,7 @@ a:hover{
 /*help*/
 #help{
 	position: relative;
+	text-align: center;
 }
 #help .t1{
 	width: 100%;
@@ -174,7 +146,6 @@ a:hover{
 	top: 20%;
 	left: 0;
 	display: block;
-	text-align: center;
 	font-size: 44px;
 	letter-spacing: 10px;
 	color: #ffffff;
@@ -185,8 +156,7 @@ a:hover{
 	top: 35%;
 	left: 0;
 	display: block;
-	text-align: center;
-	font-size: 22px;
+	font-size: 28px;
 	color: #ffffff;
 }
 
@@ -225,6 +195,7 @@ a:hover{
 	text-indent: 1em;
 	letter-spacing: 2px;
 	border: 1px solid #cccccc;
+	outline: none;
 }
 #contact input:focus{
 	border: 1px solid #000000;
@@ -234,6 +205,8 @@ a:hover{
 	margin-top: 20px;
 	padding: 1em;
 	resize: none;
+	outline: none;
+	border: 1px solid #cccccc;
 }
 #contact textarea:focus{
 	border: 1px solid #000000;
@@ -248,26 +221,16 @@ a:hover{
 }
 
 
-/*bot*/
-#bot{
-	background-color: #f1f1f1;
-	padding: 12px 0;
-}
-#bot h5{
-	padding: 0;
-	margin: 0;
-	vertical-align: middle;
-	text-align: center;
-	letter-spacing: 1px;
-}
-
 
 /*媒体查询*/
 @media (max-width: 480px){
-	#carousel .b-bot h1{
-		margin-top: 10%;
-		font-size: 18px;
-		letter-spacing: 0;
+	#carousel .b-bot h2{
+		margin-top: 5%;
+		font-size: 16px;
+		line-height: 25px;
+		letter-spacing: 1px;
+		width: 80%;
+		margin-left: 10%;
 	}
 	#carousel .main-btn{
 		width: 180px;
@@ -277,18 +240,20 @@ a:hover{
 	#carousel .main-btn button{
 		width: 80px;
 		height: 30px;
-		line-height: 30px;
+		line-height: 28px;
 		font-size: 12px;
 	}
 
 
 	#main-content{
-		padding: 10px 0 20px 0;
+		padding: 20px 0 20px 0;
 		margin-top: 5px;
 	}
+	#main-content .sort-tit{
+		margin-top: 10px;
+	}
 	#main-content .con-con .box-tit{
-		padding: 2px 0;
-
+		padding: 4px 0;
 	}
 	#main-content .con-con .box-desc{
 		font-size: 14px;
@@ -311,7 +276,7 @@ a:hover{
 
 
 	#service{
-		padding: 15px 0;
+		padding: 20px 0;
 	}
 	#service .row{
 		display: flex;
@@ -351,7 +316,7 @@ a:hover{
 
 
 	#contact{
-		padding: 20px 0 10px 0;
+		padding: 20px 0;
 	}
 	#contact .row h4{
 		text-align: center;
@@ -384,30 +349,35 @@ a:hover{
 
 
 @media (min-width: 480px){
-	#carousel .b-bot h1{
-		margin-top: 10%;
-		font-size: 24px;
+	#carousel .b-bot h2{
+		margin-top: 5%;
+		font-size: 22px;
+		line-height: 32px;
 		letter-spacing: 2px;
+		width: 80%;
+		margin-left: 10%;
 	}
 	#carousel .main-btn{
 		width: 230px;
 		height: 36px;
-		margin-top: 5%;
+		margin-top: 3%;
 	}
 	#carousel .main-btn button{
 		width: 95px;
 		height: 36px;
-		line-height: 36px;
+		line-height: 34px;
 		font-size: 14px;
 	}
 
 
 	#main-content{
-		padding: 5px 0 30px 0;
+		padding: 25px 0;
+	}
+	#main-content .sort-tit{
 		margin-top: 10px;
 	}
 	#main-content .con-con .box-tit{
-		padding: 2px 0;
+		padding: 3px 0;
 	}
 	#main-content .con-con .box-desc{
 		font-size: 14px;
@@ -422,7 +392,7 @@ a:hover{
 
 
 	#content1{
-		padding-top: 20px;
+		padding: 25px 0;
 	}
 	#content1 .content1-img{
 		top: 20px;
@@ -430,7 +400,7 @@ a:hover{
 
 
 	#service{
-		padding: 20px 0;
+		padding: 25px 0;
 	}
 	#service .row{
 		display: flex;
@@ -500,28 +470,30 @@ a:hover{
 
 @media (min-width: 768px){
 
-	#carousel .b-bot h1{
-		margin-top: 10%;
+	#carousel .b-bot h2{
+		margin-top: 7%;
 		font-size: 24px;
 		letter-spacing: 2px;
+		width: 70%;
+		margin-left: 15%;
 	}
 	#carousel .main-btn{
 		width: 270px;
 		height: 40px;
-		margin-top: 5%;
+		margin-top: 3%;
 	}
 	#carousel .main-btn button{
 		width: 110px;
 		height: 40px;
-		line-height: 40px;
+		line-height: 38px;
 		font-size: 16px;
 	}
 
 	#main-content{
-		padding: 15px 0 30px 0;
+		padding: 30px 0;
 	}
 	#main-content .con-con .box-tit{
-		padding: 2px 0;
+		padding: 3px 0;
 	}
 	#main-content .con-con .box-desc{
 		font-size: 14px;
@@ -544,7 +516,7 @@ a:hover{
 
 
 	#service{
-		padding: 28px 0;
+		padding: 30px 0;
 	}
 	#service .row{
 		display: block;
@@ -552,7 +524,7 @@ a:hover{
 
 
 	#example{
-		padding: 28px 0;
+		padding: 30px 0;
 	}
 	#example .row > div{
 		padding: 20px 0;
@@ -580,7 +552,7 @@ a:hover{
 
 
 	#contact{
-		padding: 20px 0 10px 0;
+		padding: 20px 0;
 	}
 	#contact .row h4{
 		text-align: left;
@@ -608,7 +580,7 @@ a:hover{
 
 @media (min-width: 992px){
 
-	#carousel .b-bot h1{
+	#carousel .b-bot h2{
 		margin-top: 10%;
 		font-size: 26px;
 		letter-spacing: 2px;
@@ -627,7 +599,7 @@ a:hover{
 
 
 	#main-content{
-		padding: 20px 0 35px 0;
+		padding: 35px 0;
 	}
 	#main-content .con-con .box-tit{
 		padding: 2px 0;
@@ -645,7 +617,7 @@ a:hover{
 
 
 	#content1{
-		padding-top: 25px;
+		padding-top: 35px;
 	}
 	#content1 .content1-img{
 		top: 28px;
@@ -689,7 +661,7 @@ a:hover{
 
 
 	#contact{
-		padding: 35px 0 10px 0;
+		padding: 35px 0;
 	}
 	#contact .row h4{
 		text-align: left;
@@ -717,7 +689,7 @@ a:hover{
 
 
 @media (min-width: 1200px){
-	#carousel .b-bot h1{
+	#carousel .b-bot h2{
 		margin-top: 10%;
 		font-size: 32px;
 		letter-spacing: 2px;
@@ -735,12 +707,24 @@ a:hover{
 	}
 
 
+	#help p.t1{
+		top: 20%;
+		left: 0;
+		font-size: 32px;
+		letter-spacing: 3px;
+	}
+	#help p.t2{
+		top: 45%;
+		left: 0;
+		font-size: 24px;
+		letter-spacing: 2px;
+	}
 }
 
 
 @media (min-width: 1440px){
 
-	#carousel .b-bot h1{
+	#carousel .b-bot h2{
 		margin-top: 10%;
 		font-size: 32px;
 		letter-spacing: 3px;
@@ -757,40 +741,20 @@ a:hover{
 		font-size: 17px;
 	}
 
-	/*导航栏样式*/
-	.navbar-right{
-		margin-top: 7px;
-	}
-	.navbar-nav li{
-		padding-left: 10px;
-	}
-	.navbar-nav .dropdown-menu{
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%,0);
-		-moz-transform: translate(-50%,0);
-		-webkit-transform: translate(-50%,0);
-		-o-transform: translate(-50%,0);
-		-ms-transform: translate(-50%,0);
-	}
-	.navbar-nav .dropdown-menu li{
-		padding-left: 0;
-	}
-	.navbar-nav .dropdown-menu li a{
-		text-align: center;
 
-		transition: all 0.3s;
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		-o-transition: all 0.3s;
-		-ms-transition: all 0.3s;
+	#help .t1{
+		top: 20%;
+		left: 0;
+		font-size: 44px;
+		letter-spacing: 10px;
 	}
-	.navbar-nav .dropdown-menu li a:hover{
-		padding-right: 30px;
+	#help .t2{
+		top: 45%;
+		left: 0;
+		font-size: 26px;
+		letter-spacing: 2px;
 	}
-	.navbar-nav li a{
-		padding: 10px;
-	}
+
 }
 
 
@@ -799,6 +763,11 @@ a:hover{
 		width: 1920px;
 		margin: 0 auto;
 		overflow-x: hidden;
+	}
+
+	#carousel .b-bot h2{
+		letter-spacing: 5px;
+		font-size: 38px;
 	}
 
 	#help .t1{
@@ -810,10 +779,9 @@ a:hover{
 	#help .t2{
 		top: 45%;
 		left: 0;
-		font-size: 18px;
+		font-size: 26px;
 		letter-spacing: 2px;
 	}
-
 
 
 }
