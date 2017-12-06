@@ -345,20 +345,18 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 pull-right wow slideInRight">
-            <form>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <input type="text" placeholder="*姓名">
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <input type="text" id="tel" placeholder="*电话">
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <textarea name="message" id="message" rows="3" placeholder="留言"></textarea>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <button type="submit" id="submit">提 交</button>
-                </div>
-            </form>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <input type="text" id="name" placeholder="*姓名">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <input type="text" id="tel" placeholder="*电话">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <textarea name="message" id="message" rows="3" placeholder="留言"></textarea>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <button type="submit" id="submit">提 交</button>
+            </div>
         </div>
     </div>
 </div>
@@ -388,6 +386,43 @@
             interval: 4000
         });
 
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset:       100,
+                callback:     function(box) {
+
+                }
+            }
+        );
+        wow.init();
+
+        //提交留言
+        $("#submit").click(function () {
+            var name = trim($("#name").val());
+            var tel = trim($("#tel").val());
+            var message = $("#message").val();
+
+            if(name=="" || tel==""){
+                return alert("请填写姓名和电话");
+            }else{
+                var post_data = {
+                    'name':name,
+                    'phone':tel,
+                    'content':message
+                };
+                $.ajax({
+                    type: "post",
+                    url: "http://120.78.145.150/api/message-board",
+                    dataType:'json',
+                    data: post_data,
+                    success: function(msg){
+                        console.log(msg);
+                    }
+                });
+            }
+        });
+
         //首页图标效果
         var init_src = '';
         $(".media-object").hover(function () {
@@ -397,6 +432,9 @@
         },function () {
             $(this).attr('src',init_src);
         });
+
+
+        function trim(str){return str.replace(/(^\s*)|(\s*$)/g,"");}
     });
 </script>
 

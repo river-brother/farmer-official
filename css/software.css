@@ -73,11 +73,10 @@
     text-align: center;
     letter-spacing: 1px;
     line-height: 24px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
 }
-#box1 .desc1{
-    margin-top: 25px;
-}
-
 
 #box1 .row{
     margin-top: 20px;
@@ -86,22 +85,36 @@
 #box1 .x-div{
     margin-top: 45px;
     margin-bottom: 45px;
+    overflow: hidden;
 }
-#box1 .x-div span{
-    margin-left: 5px;
+#box1 .x-div img{
+    float: left;
+    margin-left: 15%;
+    width: 15%;
+}
+#box1 .x-div p{
+    display: inline-block;
+    padding: 0 10px;
+    margin-left: 10px;
+    line-height: 54px;
+    margin-right: 50px;
+    float: left;
+    width: 50%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 #box1 .dev{
-    display: inline;
+    display: inline-block;
     width: 2px;
     height: 60px;
-    margin-top: 0;
-    margin-left: 50px;
-    float: right;
+    float: left;
     background-color: #cccccc;
     transform: rotate(30deg);
 }
 #box1 .dev-no{
-    visibility: hidden;
+    display: none;
 }
 
 
@@ -114,18 +127,22 @@
     padding: 8px 0;
 }
 #box2 .row > div{
-    padding: 40px 0;
-    overflow: hidden;
+    padding: 30px 0;
 }
 #box2 .row p{
     text-align: center;
-    line-height: 26px;
-    height: 30px;
     width: 60%;
     margin-left: 20%;
     color: #929292;
+
+    line-height:1.8em;
+    height: 7.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
 }
-#box2 .row span{
+#box2 .row .tt{
     display: block;
     text-align: center;
     line-height: 26px;
@@ -143,41 +160,42 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 #demand .img-f .warp{
     position: relative;
-    margin: 2%;
+    margin: 10px;
     overflow: hidden;
 }
+
 #demand .zz{
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.1);
 
-    transition: top 0.3s;
-    -moz-transition: top 0.3s;
-    -webkit-transition: top 0.3s;
-    -o-transition: top 0.3s;
-    -ms-transition: top 0.3s;
+    /*transition: top 0.3s;*/
+    /*-moz-transition: top 0.3s;*/
+    /*-webkit-transition: top 0.3s;*/
+    /*-o-transition: top 0.3s;*/
+    /*-ms-transition: top 0.3s;*/
 }
 #demand .zz img{
-    margin-top: 20%;
+    margin-top: 15%;
 }
 #demand .zz p{
     color: #ffffff;
-    font-size: 22px;
+    font-size: 19px;
     text-align: center;
     letter-spacing: 2px;
     padding: 5px 0;
 }
-#demand .warp:hover > .zz{
-    top: 0;
-}
+/*#demand .warp:hover > .zz{*/
+    /*top: 0;*/
+/*}*/
 
 
 #flow{
@@ -196,18 +214,6 @@
 }
 
 
-
-#bot{
-    background-color: #f1f1f1;
-    padding: 12px 0;
-}
-#bot h5{
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
-    text-align: center;
-    letter-spacing: 1px;
-}
 
 
 @media (max-width: 480px){
@@ -269,18 +275,25 @@
         line-height: 20px;
         margin-top: 12px;
         font-size: 12px;
-        display: inline;
     }
     #box1 .x-div{
         margin-top: 8px;
         margin-bottom: 8px;
         padding: 5px 0;
-        border: 1px solid #cccccc;
+    }
+    #box1 .x-div img{
+        margin-left: 10%;
+    }
+    #box1 .x-div p{
+        padding: 0 10px;
+        margin-left: 0;
+        line-height: 42px;
+        margin-right: 20px;
+        width: 65%;
     }
 
-    #box2 h4{
-        font-size: 18px;
-    }
+
+
     #box2 .row > div{
         padding: 15px 0;
         margin-top: 5px;
@@ -292,9 +305,6 @@
         white-space: nowrap;
     }
 
-    #demand .zz{
-        top: 0;
-    }
 
 
     #flow .btns{
@@ -366,28 +376,14 @@
         margin-top: 12px;
         font-size: 14px;
         width: 80%;
-        display: inline;
     }
     #box1 .x-div{
         margin-top: 10px;
         margin-bottom: 10px;
-        border: 1px solid #cccccc;
-        padding: 5px 0;
-    }
-
-    #box2 h4{
-        font-size: 16px;
-    }
-    #box2 .row > div{
-        padding: 15px 0;
-        margin-top: 8px;
-        margin-bottom: 14px;
+        padding: 0;
     }
 
 
-    #demand .zz{
-        top: 0;
-    }
 
     #flow .btns{
         margin-top: 20px;
@@ -457,7 +453,6 @@
         line-height: 22px;
         margin-top: 12px;
         font-size: 16px;
-        display: inline;
     }
 
 
@@ -472,14 +467,10 @@
     }
     #box2 .row > div{
         padding: 15px 0;
-        margin-top: 12px;
-        margin-bottom: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
-
-    #demand .zz{
-        top: 100%;
-    }
 
     #flow .btns{
         margin-top: 35px;
@@ -563,13 +554,9 @@
     #box2 .row > div{
         padding: 15px 0;
         margin-top: 25px;
-        margin-bottom: 32px;
+        margin-bottom: 25px;
     }
 
-
-    #demand .zz{
-        top: 100%;
-    }
 
     #flow .btns{
         margin-top: 35px;
@@ -636,7 +623,9 @@
     #box1 .desc{
         font-size: 16px;
         line-height: 28px;
-        margin-top: 25px;
+        margin-top: 30px;
+        width: 90%;
+        margin-left: 5%;
     }
     #box1 .x-div{
         margin-top: 25px;
@@ -649,14 +638,10 @@
     }
     #box2 .row > div{
         padding: 0;
-        margin-top: 45px;
-        margin-bottom: 45px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
-
-    #demand .zz{
-        top: 100%;
-    }
 
     #flow .btns{
         margin-top: 35px;
@@ -666,42 +651,6 @@
         margin-top: 20px;
     }
 
-
-
-    /*导航栏样式*/
-    .navbar-right{
-        margin-top: 7px;
-    }
-    .navbar-nav li{
-        padding-left: 10px;
-    }
-    .navbar-nav .dropdown-menu{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,0);
-        -moz-transform: translate(-50%,0);
-        -webkit-transform: translate(-50%,0);
-        -o-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-    }
-    .navbar-nav .dropdown-menu li{
-        padding-left: 0;
-    }
-    .navbar-nav .dropdown-menu li a{
-        text-align: center;
-
-        transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-    }
-    .navbar-nav .dropdown-menu li a:hover{
-        padding-right: 30px;
-    }
-    .navbar-nav li a{
-        padding: 10px;
-    }
 }
 
 @media (min-width: 1920px){
@@ -713,4 +662,3 @@
 
 
 }
-

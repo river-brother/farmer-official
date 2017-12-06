@@ -1,33 +1,39 @@
-@media (max-width: 480px) {
-
-    .lazy{
-        width: 90%;
-        margin-left: 5%;
+@media (max-width: 480px){
+    #box1,#box2,#demand,#flow,#show{
+        padding: 20px 0;
     }
-    #banner .container{
-        top: 0;
-        width: 90%;
-        padding: 0;
-        margin: 0;
+    .con-header .sort-tit{
+        font-size: 20px;
     }
-    #banner h1{
-        margin-top: 5%;
-        font-size: 22px;
+    .problem{
+        font-size: 14px;
         letter-spacing: 1px;
+        margin-top: 10px;
     }
-    #banner p{
-        margin-top: 0;
-        font-size: 12px;
-        letter-spacing: 1px;
+    .problem span{
+        font-size: 18px;
     }
 
-    #banner p > span{
-        display: inline-block;
-        width: 50%;
-        height: 100%;
-        text-align: center;
-        float: left;
+
+    #banner .border-box{
+        top: 28%;
+        width: 150px;
+        height: 36px;
+        line-height: 34px;
+        font-size: 19px;
+        background-size: 2px 12px, 32px 2px, 2px 12px, 32px 2px;
     }
+    #banner .eng{
+        font-size: 16px;
+        top: -85%;
+    }
+    #banner .desc{
+        font-size: 16px;
+        letter-spacing: 1px;
+        bottom: 15%;
+    }
+
+
 
     .jump{
         height: 60px;
@@ -43,6 +49,58 @@
     }
 
 
+    #box1 .desc-box{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #box1 .desc{
+        line-height: 20px;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    #box1 .x-div{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 5px 0;
+        border: 1px solid #cccccc;
+    }
+
+    #box2 h4{
+        font-size: 18px;
+    }
+    #box2 .row > div{
+        padding: 15px 0;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+    #box2 .row > div > span{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #demand .zz{
+        top: 0;
+    }
+
+
+    #flow .btns{
+        margin-top: 15px;
+    }
+
+
+    #show .e-img{
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 480px){
+    #box1,#box2,#demand,#flow,#show{
+        padding: 30px 0;
+    }
+    .con-header .sort-tit{
+        font-size: 20px;
+    }
     .problem{
         font-size: 16px;
         letter-spacing: 1px;
@@ -53,210 +111,356 @@
     }
 
 
-    #main,#advantage{
-        padding: 20px 0;
+    #banner .border-box{
+        top: 30%;
+        width: 160px;
+        height: 43px;
+        line-height: 43px;
+        font-size: 22px;
+        background-size: 2px 14px, 36px 2px, 2px 14px, 36px 2px;
     }
-    #main .desc{
-        line-height: 24px;
+    #banner .eng{
+        font-size: 18px;
+        top: -80%;
     }
-    #main img{
+    #banner .desc{
+        font-size: 17px;
+        letter-spacing: 2px;
+        bottom: 20%;
+    }
+
+
+    .jump{
+        height: 70px;
+    }
+    .jump h2{
+        font-size: 22px;
+        line-height: 70px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .jump .breadcrumb{
+        margin-top: 15px;
+    }
+
+
+    #box1 .desc-box{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #box1 .desc{
+        line-height: 20px;
+        margin-top: 12px;
+        font-size: 14px;
+        width: 80%;
+    }
+    #box1 .x-div{
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-    #main .example{
-        margin-top: 30px;
-    }
-
-
-    #advantage .gray{
-        font-size: 22px;
-        margin: 0;
-        padding: 20px 0;
-        background-color: rgb(248,248,248);
-    }
-
-
-    #study{
-        padding: 20px 0;
-        background-color: rgb(248,248,248);
-    }
-    #study .container{
-        background: url("../images/distribution/study.png") no-repeat 50% 0 padding-box;
-    }
-    #study h3{
-        margin-top: 58%;
-        text-align: center;
-        font-size: 20px;
-    }
-    #study .s-fir{
-        margin-top: 5%;
-        width: 90%;
-        margin-left: 5%;
-    }
-    #study p{
-        line-height: 28px;
-        width: 90%;
-        margin-left: 5%;
-    }
-    #study p span{
-        color: #2aabd2;
-    }
-
-
-    #choose{
-        padding: 20px 0;
-    }
-    #choose .show-xs{
-        margin: 20px 0;
-        padding-top: 10px;
-    }
-    #choose .show-xs > div{
         border: 1px solid #cccccc;
-        margin: 30px 0;
-        padding: 30px 10px;
-        position: relative;
+        padding: 5px 0;
     }
-    #choose .show-xs .col-xs-6 > img{
-        position: absolute;
-        top: -14%;
-        left: 50%;
-        transform: translate(-50%,0);
-        -webkit-transform: translate(-50%,0);
-        -moz-transform: translate(-50%,0);
-        -o-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
+
+    #box2 h4{
+        font-size: 16px;
     }
-    #choose .show-xs .col-xs-6 h3{
-        text-align: center;
-        font-size: 18px;
-        font-weight: bold;
-    }
-    #choose .show-xs .col-xs-6 p{
-        height: 150px;
+    #box2 .row > div{
+        padding: 15px 0;
+        margin-top: 8px;
+        margin-bottom: 14px;
     }
 
 
-
-    #six{
-        padding: 20px 0;
+    #demand .zz{
+        top: 0;
     }
-    #six img{
+
+    #flow .btns{
         margin-top: 20px;
     }
 
-
-
-    #info{
-        padding: 20px 0;
-    }
-    #info .i-desc{
-        font-size: 14px;
-        margin: 10px 0;
-    }
-    #info .page{
-        width: 100px;
-        margin: 15px auto;
-        padding-bottom: 10px;
-    }
-    #info .art{
-        padding-top: 30px;
-    }
-    #info .art-l,#info .art-r{
-        height: 150px;
-    }
-    #info .art-l{
-        margin-left: 30px;
-    }
-    #info .art-r{
-        margin-left: -30px;
+    #show .e-img{
         margin-top: 20px;
     }
-    #info .article .art-tit{
-        font-size: 14px;
-        color: #2aabd2;
-        margin: 10px 0 8px 0;
-        line-height:1.6em;
-        height: 3.2em;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-    }
-    #info .i-con{
-        line-height:1.6em;
-        height: 4.8em;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        overflow: hidden;
-    }
-
-    #info .time{
-        margin-top: 8%;
-        padding: 0;
-    }
-    #info .date{
-        font-size: 20px;
-        color: rgb(135,135,135);
-        display: block;
-        text-align: center;
-        padding-bottom: 0;
-    }
-    #info .date::after{
-        content: '';
-        display: block;
-        width: 40px;
-        height: 1px;
-        background-color: #2aabd2;
-        margin: 0 auto;
-    }
-    #info .year{
-        text-align: center;
-        font-size: 14px;
-        margin: 0 auto;
-        display: block;
-        padding: 5px;
-    }
-    #info .row{
-        display: none;
-    }
-    #info .current{
-        display: block;
-    }
 
 }
-@media (min-width: 480px){
-    #choose .show-xs{
-        display: none;
-    }
-}
+
 @media (min-width: 768px){
-    #choose .show-xs{
-        display: none;
+    #box1,#box2,#demand,#flow,#show{
+        padding: 40px 0;
+    }
+    .con-header .sort-tit{
+        font-size: 24px;
+    }
+    .problem{
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-top: 15px;
+    }
+    .problem span{
+        font-size: 24px;
+    }
+
+
+    #banner .border-box{
+        top: 30%;
+        width: 190px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 23px;
+        background-size: 2px 16px, 40px 2px, 2px 16px, 40px 2px;
+    }
+    #banner .eng{
+        font-size: 20px;
+        top: -80%;
+    }
+    #banner .desc{
+        font-size: 19px;
+        letter-spacing: 3px;
+        bottom: 20%;
+    }
+
+
+    .jump{
+        height: 70px;
+    }
+    .jump h2{
+        font-size: 20px;
+        line-height: 75px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .jump .breadcrumb{
+        margin-top: 20px;
+    }
+
+
+    #box1 .desc-box{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #box1 .desc{
+        line-height: 22px;
+        margin-top: 12px;
+        font-size: 16px;
+    }
+
+
+    #box1 .x-div{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+
+    #box2 h4{
+        font-size: 18px;
+    }
+    #box2 .row > div{
+        padding: 15px 0;
+        margin-top: 12px;
+        margin-bottom: 16px;
+    }
+
+
+    #demand .zz{
+        top: 100%;
+    }
+
+    #flow .btns{
+        margin-top: 35px;
+    }
+
+    #show .e-img{
+        margin-top: 20px;
     }
 }
 
 @media (min-width: 992px){
-    #choose .show-xs{
-        display: none;
+    #box1,#box2,#demand,#flow,#show{
+        padding: 40px 0;
     }
-}
+    .con-header .sort-tit{
+        font-size: 26px;
+    }
+    .problem{
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+    .problem span{
+        font-size: 24px;
+    }
 
-@media (min-width: 1200px){
-    #choose .show-xs{
-        display: none;
+    #banner .border-box{
+        top: 30%;
+        width: 240px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 30px;
+        background-size: 2px 16px, 40px 2px, 2px 16px, 40px 2px;
+    }
+    #banner .eng{
+        font-size: 24px;
+        top: -80%;
+    }
+    #banner .desc{
+        font-size: 26px;
+        letter-spacing: 4px;
+        bottom: 20%;
+    }
+
+    .jump{
+        height: 75px;
+    }
+    .jump h2{
+        font-size: 22px;
+        line-height: 75px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .jump .breadcrumb{
+        margin-top: 20px;
+    }
+
+
+    #box1 .x-div{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 10px 0;
+        border: none;
+    }
+    #box1 .desc-box{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #box1 .desc{
+        line-height: 24px;
+        font-size: 16px;
+        display: block;
+        margin: 12px auto;
+    }
+
+
+    #box2 h4{
+        font-size: 18px;
+    }
+    #box2 .row > div{
+        padding: 15px 0;
+        margin-top: 25px;
+        margin-bottom: 32px;
+    }
+
+
+    #demand .zz{
+        top: 100%;
+    }
+
+    #flow .btns{
+        margin-top: 35px;
+    }
+
+    #show .e-img{
+        margin-top: 20px;
     }
 }
 
 @media (min-width: 1440px){
-    #choose .show-xs{
-        display: none;
+    #box1,#box2,#demand,#flow,#show{
+        padding: 40px 0;
     }
+    .con-header .sort-tit{
+        font-size: 26px;
+    }
+    .problem{
+        font-size: 22px;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+    .problem span{
+        font-size: 32px;
+    }
+
+    #banner .border-box{
+        top: 30%;
+        width: 280px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 38px;
+        background-size: 2px 16px, 40px 2px, 2px 16px, 40px 2px;
+    }
+    #banner .eng{
+        font-size: 28px;
+        top: -80%;
+    }
+    #banner .desc{
+        font-size: 34px;
+        letter-spacing: 5px;
+        bottom: 25%;
+    }
+
+    .jump{
+        height: 80px;
+    }
+    .jump h2{
+        font-size: 24px;
+        line-height: 85px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .jump .breadcrumb{
+        margin-top: 25px;
+    }
+
+    #box1 h3{
+        font-size: 32px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    #box1 .desc{
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 30px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    #box1 .x-div{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 10px 0;
+    }
+
+    #box2 h4{
+        font-size: 18px;
+    }
+    #box2 .row > div{
+        padding: 0;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+
+    #demand .zz{
+        top: 100%;
+    }
+
+    #flow .btns{
+        margin-top: 35px;
+    }
+
+    #show .e-img{
+        margin-top: 20px;
+    }
+
 }
 
-
-@media (min-width: 1600px){
-    #choose .show-xs{
-        display: none;
+@media (min-width: 1920px){
+    html,body{
+        width: 1920px;
+        margin: 0 auto;
+        overflow-x: hidden;
     }
+
+
 }

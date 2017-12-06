@@ -31,16 +31,13 @@
     border-top: 1px solid #cccccc;
     padding: 40px;
 }
-
-.box h2:nth-child(2){
-    text-align: center;
-    margin-top: 45px;
-    font-size: 26px;
+.box .sort-tit{
+    color: #000000;
 }
-.box h2:nth-child(4){
+.box h2{
     text-align: center;
     color: #6bb9e2;
-    margin-top: 50px;
+    margin-top: 45px;
     font-size: 26px;
 }
 .box .main-pic{

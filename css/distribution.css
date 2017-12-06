@@ -77,9 +77,12 @@
     padding: 50px 0;
 }
 #main .desc{
-    text-indent: 5%;
+    width: 80%;
+    margin-left: 10%;
     margin-top: 3%;
     line-height: 35px;
+    text-align: center;
+    font-size: 16px;
 }
 #main img{
     margin-top: 20px;
@@ -158,20 +161,24 @@
 }
 #choose .ch-box{
     position: relative;
+    margin: 10px 0;
+    padding: 8px;
+}
+#choose .center-block{
+    width: 98%;
 }
 #choose .ch-box > h3{
     position: absolute;
     top: 18%;
-    width: 100%;
+    width: 90%;
     text-align: center;
 }
 #choose .ch-box > div{
     position: absolute;
-    top: 38%;
-    left: 24%;
-    width: 64%;
+    top: 40%;
+    left: 12%;
+    width: 75%;
     color: #b2b3b6;
-    height: 180px;
 }
 #choose .ch-box > div p{
     text-align: center;
@@ -333,6 +340,7 @@
     }
     #main .desc{
         line-height: 24px;
+        font-size: 14px;
     }
     #main img{
         margin-top: 10px;
@@ -341,6 +349,7 @@
     #main .example{
         margin-top: 30px;
     }
+
 
 
     #advantage .gray{
@@ -393,8 +402,9 @@
     }
     #choose .show-xs .col-xs-6 > img{
         position: absolute;
-        top: -14%;
+        top: -10%;
         left: 50%;
+        width: 30%;
         transform: translate(-50%,0);
         -webkit-transform: translate(-50%,0);
         -moz-transform: translate(-50%,0);
