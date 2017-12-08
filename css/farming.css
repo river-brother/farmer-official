@@ -29,10 +29,14 @@
 
 .box{
     border-top: 1px solid #cccccc;
-    padding: 50px 0;
+    padding: 40px 0;
 }
 .box .sort-tit{
     color: #000000;
+}
+.box-gray-title{
+    text-align: left;
+    text-indent: 1em;
 }
 .box h2{
     text-align: center;
@@ -44,7 +48,7 @@
     margin-top: 25px;
 }
 .box p{
-    color: #c6c6c6;
+    color: #808080;
     font-size: 15px;
     width: 85%;
     text-indent: 2em;
@@ -57,9 +61,10 @@
     padding: 40px 0;
 }
 .cont p{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 35px;
     margin: 15px 0;
+    color: #808080;
 }
 .cont .row{
     margin: 30px 0;
@@ -73,15 +78,12 @@
 
 @media (max-width: 480px) {
     #banner .container{
-        width: 90%;
+        margin-left: -10%;
     }
-
-
     #banner h1{
-        margin-top: 3%;
+        margin-top: 5%;
         font-size: 22px;
         letter-spacing: 1px;
-
     }
     #banner p{
         margin-top: 0;
@@ -109,6 +111,7 @@
 
     .box-gray-title{
         text-align: left;
+        text-indent: 1em;
     }
 
 
@@ -134,25 +137,23 @@
 
 @media (min-width: 480px) {
     #banner .container{
-        width: 80%;
+        margin-left: -10%;
     }
 
-
     #banner h1{
-        margin-top: 5%;
-        font-size: 24px;
+        margin-top: 8%;
+        font-size: 26px;
         letter-spacing: 1px;
-
     }
     #banner p{
         margin-top: 0;
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 1px;
     }
 
 
     .box{
-        padding: 30px;
+        padding: 30px 0;
     }
     .box h2{
         margin-top: 35px;
@@ -170,6 +171,7 @@
 
     .box-gray-title{
         text-align: left;
+        text-indent: 1em;
     }
 
 
@@ -194,25 +196,22 @@
 
 @media (min-width: 768px) {
     #banner .container{
-        width: 80%;
+        margin: 0 auto;
     }
-
-
     #banner h1{
-        margin-top: 5%;
-        font-size: 28px;
+        margin-top: 8%;
+        font-size: 30px;
         letter-spacing: 1px;
-
     }
     #banner p{
-        margin-top: 30px;
+        margin-top: 20px;
         font-size: 16px;
         letter-spacing: 1px;
     }
 
 
     .box{
-        padding: 40px;
+        padding: 40px 0;
     }
     .box h2{
         margin-top: 35px;
@@ -230,6 +229,7 @@
 
     .box-gray-title{
         text-align: left;
+        text-indent: 1em;
     }
 
 
@@ -253,26 +253,20 @@
 }
 
 @media (min-width: 992px) {
-    #banner .container{
-        width: 75%;
-    }
-
-
     #banner h1{
-        margin-top: 7%;
-        font-size: 32px;
+        margin-top: 8%;
+        font-size: 34px;
         letter-spacing: 1px;
-
     }
     #banner p{
-        margin-top: 30px;
-        font-size: 20px;
+        margin-top: 20px;
+        font-size: 18px;
         letter-spacing: 1px;
     }
 
 
     .box{
-        padding: 40px;
+        padding: 40px 0;
     }
     .box h2{
         margin-top: 45px;
@@ -290,6 +284,7 @@
 
     .box-gray-title{
         text-align: left;
+        text-indent: 1em;
     }
 
 
@@ -313,26 +308,19 @@
 }
 
 @media (min-width: 1200px) {
-    #banner .container{
-        width: 70%;
-    }
-
-
     #banner h1{
-        margin-top: 7%;
-        font-size: 36px;
+        margin-top: 6%;
+        font-size: 34px;
         letter-spacing: 1px;
-
     }
     #banner p{
-        margin-top: 30px;
-        font-size: 22px;
-        letter-spacing: 1px;
+        margin-top: 40px;
+        font-size: 18px;
+        letter-spacing: 2px;
     }
 
-
     .box{
-        padding: 50px;
+        padding: 40px 0;
     }
     .box h2{
         margin-top: 45px;
@@ -350,6 +338,7 @@
 
     .box-gray-title{
         text-align: left;
+        text-indent: 1em;
     }
 
 
@@ -373,26 +362,20 @@
 }
 
 @media (min-width: 1440px) {
-    #banner .container{
-        width: 70%;
-    }
-
-
     #banner h1{
-        margin-top: 7%;
-        font-size: 40px;
-        letter-spacing: 3px;
-
+        margin-top: 10%;
+        font-size: 55px;
+        letter-spacing: 5px;
     }
     #banner p{
-        margin-top: 30px;
-        font-size: 24px;
-        letter-spacing: 1px;
+        margin-top: 50px;
+        font-size: 25px;
+        letter-spacing: 3px;
     }
 
 
     .box{
-        padding: 50px;
+        padding: 40px 0;
     }
     .box h2{
         margin-top: 45px;
@@ -410,6 +393,7 @@
 
     .box-gray-title{
         text-align: left;
+        text-indent: 1em;
     }
 
 
@@ -417,9 +401,13 @@
         padding: 50px 0;
     }
     .cont p{
-        font-size: 18px;
+        font-size: 20px;
         line-height: 25px;
         margin: 15px 0;
+        color: #808080;
+    }
+    .cont .problem{
+        font-size: 22px;
     }
     .cont .row{
         margin: 10px 0;
@@ -448,7 +436,7 @@
 
 
     .box{
-        padding: 40px;
+        padding: 40px 0;
     }
     .box .sort-tit{
         color: #000000;
@@ -463,7 +451,6 @@
         margin-top: 25px;
     }
     .box p{
-        color: #c6c6c6;
         font-size: 15px;
         width: 85%;
         text-indent: 2em;
@@ -488,5 +475,11 @@
         font-size: 16px;
         text-align: center;
         margin: 10px 0;
+    }
+}
+
+@media (min-width: 1920px){
+    #banner{
+        background-color: #f9f9f9;
     }
 }

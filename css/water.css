@@ -97,13 +97,11 @@
 
 @media (max-width: 480px){
     #banner .container{
-        top: 0;
-        width: 90%;
-        padding: 0;
-        margin: 0;
+        margin-left: -10%;
     }
+
     #banner h1{
-        margin-top: 3%;
+        margin-top: 5%;
         font-size: 22px;
         letter-spacing: 1px;
     }
@@ -170,20 +168,18 @@
 
 @media (min-width: 480px){
     #banner .container{
-        top: 0;
-        width: 80%;
-        padding: 0;
-        margin: 0;
+        margin-left: -10%;
     }
+
     #banner h1{
         margin-top: 8%;
-        font-size: 24px;
-        letter-spacing: 2px;
+        font-size: 26px;
+        letter-spacing: 1px;
     }
     #banner p{
+        margin-top: 0;
         font-size: 14px;
         letter-spacing: 1px;
-        margin-top: 0;
     }
 
 
@@ -243,20 +239,17 @@
 
 @media (min-width: 768px) {
     #banner .container{
-        top: 0;
-        width: 70%;
-        padding: 0;
-        margin: 0;
+        margin: 0 auto;
     }
     #banner h1{
         margin-top: 8%;
-        font-size: 28px;
-        letter-spacing: 2px;
+        font-size: 30px;
+        letter-spacing: 1px;
     }
     #banner p{
+        margin-top: 20px;
         font-size: 16px;
         letter-spacing: 1px;
-        margin-top: 10px;
     }
 
 
@@ -266,21 +259,15 @@
 }
 
 @media (min-width: 992px) {
-    #banner .container{
-        top: 0;
-        width: 70%;
-        padding: 0;
-        margin: 0;
-    }
     #banner h1{
         margin-top: 8%;
-        font-size: 32px;
-        letter-spacing: 2px;
+        font-size: 34px;
+        letter-spacing: 1px;
     }
     #banner p{
-        font-size: 20px;
+        margin-top: 20px;
+        font-size: 18px;
         letter-spacing: 1px;
-        margin-top: 30px;
     }
 
 
@@ -290,21 +277,15 @@
 }
 
 @media (min-width: 1200px) {
-    #banner .container{
-        top: 0;
-        width: 70%;
-        padding: 0;
-        margin: 0;
-    }
     #banner h1{
-        margin-top: 8%;
-        font-size: 38px;
-        letter-spacing: 2px;
+        margin-top: 6%;
+        font-size: 34px;
+        letter-spacing: 1px;
     }
     #banner p{
-        font-size: 24px;
-        letter-spacing: 1px;
-        margin-top: 30px;
+        margin-top: 40px;
+        font-size: 18px;
+        letter-spacing: 2px;
     }
 
     .box-gray-title{
@@ -324,11 +305,10 @@
         letter-spacing: 5px;
     }
     #banner p{
-        margin-top: 4%;
-        font-size: 26px;
+        margin-top: 50px;
+        font-size: 25px;
         letter-spacing: 3px;
     }
-
 
     #box1{
         padding: 50px 0;
@@ -373,5 +353,17 @@
     }
     #special .container img{
         margin-top: 70px;
+    }
+
+    .pic-z{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (min-width: 1920px){
+    #banner{
+        background-color: #f9f9f9;
     }
 }

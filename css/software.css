@@ -514,11 +514,11 @@
 
 
     #flow .btns{
-        margin-top: 35px;
+        margin-top: 50px;
     }
 
     #show .e-img{
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
 }
@@ -526,5 +526,8 @@
 @media (min-width: 1920px){
 
 
+    #banner{
+        background-color: rgb(147,146,151);
+    }
 }
 

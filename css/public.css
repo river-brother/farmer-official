@@ -30,7 +30,6 @@ li{
     padding: 20px 0;
     margin:0;
 }
-
 #nav .navbar-nav li a{
     color: #3d3d3d;
     margin: 0 5px;
@@ -325,14 +324,7 @@ li{
         font-size: 34px;
     }
 }
-@media (min-width: 1920px){
 
-    html,body{
-        width: 1920px;
-        margin: 0 auto;
-        overflow-x: hidden;
-    }
-}
 
 /* 右侧小按钮 */
 #small{

@@ -27,22 +27,38 @@
 	height: 60px;
 	margin-top: 25%;
 }
-#carousel .main-btn button{
+#carousel .main-btn a{
 	width: 170px;
 	height: 60px;
 	line-height: 60px;
-	border: 1px solid #f0f0f0;
+	border: 1px solid #ffffff;
 	background-color: rgba(255,255,255,0.13);
-	color: #f0f0f0;
+	color: #ffffff;
 	font-size: 22px;
 	text-align: center;
 	padding: 0;
+	border-radius: 2px;
 }
-#carousel .main-btn button.current{
+#carousel .main-btn a.current{
 	background-color: rgb(23,101,182);
 	border: 1px solid rgb(23,101,182);
 }
 
+/* 轮播控制原点 */
+#carousel .carousel-indicators li{
+	width: 18px;
+	height: 18px;
+	background-color: rgba(255,255,255,0.3);
+	margin-left: 10px;
+	border: none;
+}
+#carousel .carousel-indicators li.active{
+	background-color: rgb(23,101,182);
+	border: none;
+}
+#carousel .carousel-indicators li:first-child{
+	margin-left: 0;
+}
 
 /*main-content*/
 #main-content{
@@ -121,12 +137,13 @@
 }
 #example .row div a{
 	display: block;
-	margin-top: 10px;
+	margin-top: 12px;
 	font-size: 16px;
 	color: #242424;
 }
 #example .container{
 	position: relative;
+	margin-top: 30px;
 }
 #example .prev{
 	position: absolute;
@@ -950,6 +967,13 @@
 		letter-spacing: 2px;
 	}
 
+
+	#carousel{
+		background-color: rgb(148,148,148);
+	}
+	#help{
+		background-color: rgb(35,42,52);
+	}
 
 }
 
