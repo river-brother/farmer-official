@@ -295,7 +295,7 @@
 		margin-top: 3%;
 	}
 
-	#carousel .main-btn button{
+	#carousel .main-btn a{
 		width: 80px;
 		height: 30px;
 		line-height: 28px;
@@ -437,7 +437,7 @@
 		height: 36px;
 		margin-top: 3%;
 	}
-	#carousel .main-btn button{
+	#carousel .main-btn a{
 		width: 95px;
 		height: 36px;
 		line-height: 36px;
@@ -576,7 +576,7 @@
 		height: 40px;
 		margin-top: 3%;
 	}
-	#carousel .main-btn button{
+	#carousel .main-btn a{
 		width: 110px;
 		height: 40px;
 		line-height: 38px;
@@ -703,7 +703,7 @@
 		height: 45px;
 		margin-top: 3%;
 	}
-	#carousel .main-btn button{
+	#carousel .main-btn a{
 		width: 130px;
 		height: 45px;
 		line-height: 43px;
@@ -831,7 +831,7 @@
 		height: 50px;
 		margin-top: 3%;
 	}
-	#carousel .main-btn button{
+	#carousel .main-btn a{
 		width: 135px;
 		height: 50px;
 		line-height: 50px;
@@ -881,7 +881,7 @@
 		height: 55px;
 		margin-top: 5%;
 	}
-	#carousel .main-btn button{
+	#carousel .main-btn a{
 		width: 135px;
 		height: 55px;
 		line-height: 55px;

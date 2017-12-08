@@ -8,16 +8,22 @@
     color: #ffffff;
     top:0;
     font-size: 17px;
-    margin-top: 5%;
     margin-left: 19%;
     display: block;
-    line-height: 35px;
+    line-height: 32px;
+
+    margin-top: 3%;
 }
 
 
 #box1{
     padding: 40px 0;
     border-top: 1px solid #cccccc;
+}
+
+.box-gray-title{
+    text-align: left;
+    text-indent: 1em;
 }
 
 #box1 .benj{
@@ -29,6 +35,9 @@
 #bike{
     padding: 40px 0;
 }
+#bike p{
+    color: #808080;
+}
 #bike .wrap{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -39,11 +48,13 @@
 }
 #bike .word{
     display: inline-block;
-    padding: 10px 0 15px 0;
+    padding: 15px 0 15px 0;
     position: absolute;
     bottom: 0;
     text-align: center;
     width: 90%;
+    color: #151515;
+    margin-top: 20px;
 }
 #bike .fh p{
     display: inline-block;
@@ -83,7 +94,7 @@
 }
 
 #solve .desc{
-    color: #b6b6b6;
+    color: #808080;
     width: 90%;
     margin-left: 5%;
     margin-top: 15px;
@@ -140,7 +151,7 @@
 .foo h2{
     color: #4baede;
     font-size: 25px;
-    margin-top: 95px;
+    margin-top: 40px;
 }
 .foo h2:nth-child(3){
     margin-top: 135px;
@@ -149,7 +160,7 @@
     width: 80%;
     margin-left: 10%;
     line-height: 26px;
-    color: #c6c6c6;
+    color: #808080;
     font-size: 16px;
     margin-top: 50px;
     display: block;
@@ -157,33 +168,23 @@
 
 
 
+
 @media (max-width: 480px){
     #box1,#bike,#solve,.foo{
         padding: 20px 0;
     }
-
-    .con-header .sort-tit{
-        font-size: 20px;
-    }
-
     #banner p{
         font-size: 12px;
         text-indent: 0;
         left: 0;
         line-height: 20px;
+        margin-top: 3%;
     }
 
-    .jump{
-        height: 60px;
-    }
-    .jump h2{
-        font-size: 18px;
-        line-height: 65px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .jump .breadcrumb{
-        margin-top: 15px;
+
+    .box-gray-title{
+        text-align: left;
+        text-indent: 1em;
     }
 
 
@@ -208,6 +209,7 @@
     #bike .word{
         padding: 5px 10px 10px 0;
         font-size: 12px;
+        color: #808080;
     }
     #bike .fh p{
         font-size: 40px;
@@ -218,7 +220,6 @@
     }
     #bike .cont p{
         font-size: 14px;
-        color: #c2c2c2;
         text-indent: 2em;
         line-height: 24px;
     }
@@ -229,7 +230,10 @@
         font-size: 22px;
     }
     #solve .desc{
-        margin-top: 15px;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        line-height: 24px;
     }
     #solve .rr-box{
         padding: 10px 0;
@@ -246,7 +250,7 @@
         padding: 20px 0;
     }
     #solve .yinjian img{
-       margin-left: 5%;
+        margin-left: 5%;
     }
 
 
@@ -262,32 +266,93 @@
         width: 80%;
         margin-left: 10%;
         line-height: 24px;
-        color: #c6c6c6;
         font-size: 14px;
         margin-top: 10px;
         text-indent: 2em;
     }
 }
 
+@media (min-width: 480px){
+    #box1,#bike,#solve,.foo{
+        padding: 30px 0;
+    }
+    #banner p{
+        font-size: 14px;
+        text-indent: 0;
+        left: 0;
+        line-height: 22px;
+        margin-top: 5%;
+    }
 
+}
+
+@media (min-width: 768px){
+    #box1,#bike,#solve,.foo{
+        padding: 40px 0;
+    }
+    #banner p{
+        font-size: 14px;
+        text-indent: 0;
+        left: 0;
+        line-height: 22px;
+        margin-top: 3%;
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 992px){
+    #box1,#bike,#solve,.foo{
+        padding: 50px 0;
+    }
+    #banner p{
+        font-size: 16px;
+        text-indent: 0;
+        left: 0;
+        line-height: 24px;
+        margin-top: 3%;
+        width: 50%;
+    }
+
+}
+
+
+@media (min-width: 1200px){
+    #box1,#bike,#solve,.foo{
+        padding: 50px 0;
+    }
+    #banner p{
+        font-size: 16px;
+        text-indent: 0;
+        left: 0;
+        line-height: 28px;
+        margin-top: 3%;
+        width: 40%;
+    }
+
+
+}
 
 
 @media (min-width: 1440px){
-    .con-header .sort-tit{
-        font-size: 26px;
+    #box1,#bike,#solve,.foo{
+        padding: 50px 0;
     }
-
     #banner p{
+        font-size: 16px;
+        text-indent: 0;
+        left: 0;
+        line-height: 28px;
         margin-top: 3%;
+        width: 40%;
     }
 
 }
 
 
 @media (min-width: 1920px){
-    html,body{
-        width: 1920px;
-        margin: 0 auto;
-        overflow-x: hidden;
+
+    #banner{
+        background-color: rgb(0,111,237);
     }
 }

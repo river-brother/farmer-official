@@ -130,6 +130,11 @@ li{
         font-size: 22px;
     }
 
+    .box-gray-title{
+        text-align: left;
+        text-indent: 1em;
+    }
+
 
 }
 
@@ -377,21 +382,6 @@ li{
 }
 
 
-/* bot */
-#bot{
-    background-color: #f1f1f1;
-    padding: 12px 0;
-}
-#bot h5{
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 24px;
-}
-
-
 
 .consult_contact{
     position: fixed;
@@ -478,4 +468,20 @@ li{
 }
 .consult_contact:hover .tip{
     display: block;
+}
+
+
+
+/* bot */
+#bot{
+    background-color: #f1f1f1;
+    padding: 12px 0;
+}
+#bot h5{
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 24px;
 }
