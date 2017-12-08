@@ -1,7 +1,7 @@
-.banner{
+#banner{
     position: relative;
 }
-.banner p{
+#banner p{
     position: absolute;
     text-indent:2em;
     width: 40%;
@@ -13,8 +13,6 @@
     display: block;
     line-height: 35px;
 }
-
-
 
 
 #box1{
@@ -63,7 +61,7 @@
 #bike .cont p{
     display: block;
     font-size: 14px;
-    color: #c2c2c2;
+    color: #808080;
     text-indent: 2em;
     line-height: 35px;
     width: 90%;
@@ -168,7 +166,7 @@
         font-size: 20px;
     }
 
-    .banner p{
+    #banner p{
         font-size: 12px;
         text-indent: 0;
         left: 0;
@@ -279,7 +277,7 @@
         font-size: 26px;
     }
 
-    .banner p{
+    #banner p{
         margin-top: 3%;
     }
 
