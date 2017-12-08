@@ -2,8 +2,9 @@
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="viewport" content="width=dev hidden-xs hidden-smice-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>水利监控系统</title>
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/normalize.css">
@@ -12,11 +13,17 @@
     <link rel="stylesheet" href="css/water.css">
 
     <script src="js/jquery.min.js"></script>
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.lazyload.min.js"></script>
-    <script>
-        $("img.lazy").lazyload({effect: "fadeIn"});
+    <!--[if IE 8]>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        alert("当前页面不支持IE8浏览器，请更换浏览器查看。");
     </script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -41,15 +48,15 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="water.html">水利监控系统</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">软件定制 <span class="caret"></span></a>
+                       aria-expanded="false">产品 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="software.html">软件定制</a></li>
                         <li><a href="distribution.html">分销系统</a></li>
+                        <li><a href="software.html">软件定制</a></li>
                         <li><a href="system.html">集成系统</a></li>
                         <li><a href="farming.html">农业灌溉</a></li>
-                        <li><a href="water.html">水利监控系统</a></li>
                     </ul>
                 </li>
 
@@ -64,9 +71,9 @@
                 </li>
 
                 <li><a href="about.html">关于我们</a></li>
-                <li class="hidden-sm"><a href="about.html#message">联系我们</a></li>
-                <li>
-                    <a href="javascript:;" class="tel"><span>客服专线：</span>136-6810-0743</a>
+                <li class="hidden-sm hidden-md"><a href="about.html#message">联系我们</a></li>
+                <li class="last">
+                    <a href="javascript:;">客服专线：<span>136-6810-0743</span></a>
                 </li>
             </ul>
 
@@ -95,6 +102,8 @@
 
 
 <div class="container" id="box1">
+    <div class="box-gray-title">水闸监控和控制系统</div>
+
     <div class="con-header">
         <h2 class="sort-tit">背景</h2>
         <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
@@ -181,7 +190,6 @@
     </li>
 </ul>
 
-<!--<img title="返回顶部" src="images/top.png" alt="TOP" id="top" style="display: none;position: fixed;right: 3%;bottom: 5%;width: 50px;cursor: pointer">-->
 <div class="container-fluid" id="bot">
     <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
 </div>

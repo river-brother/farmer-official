@@ -5,15 +5,6 @@
     .con-header .sort-tit{
         font-size: 20px;
     }
-    .problem{
-        font-size: 14px;
-        letter-spacing: 1px;
-        margin-top: 10px;
-    }
-    .problem span{
-        font-size: 18px;
-    }
-
 
     #banner .border-box{
         top: 28%;
@@ -62,12 +53,20 @@
         margin-top: 8px;
         margin-bottom: 8px;
         padding: 5px 0;
-        border: 1px solid #cccccc;
+    }
+    #box1 .x-div img{
+        margin-left: 10%;
+    }
+    #box1 .x-div p{
+        padding: 0 10px;
+        margin-left: 0;
+        line-height: 42px;
+        margin-right: 20px;
+        width: 65%;
     }
 
-    #box2 h4{
-        font-size: 18px;
-    }
+
+
     #box2 .row > div{
         padding: 15px 0;
         margin-top: 5px;
@@ -79,9 +78,6 @@
         white-space: nowrap;
     }
 
-    #demand .zz{
-        top: 0;
-    }
 
 
     #flow .btns{
@@ -157,23 +153,10 @@
     #box1 .x-div{
         margin-top: 10px;
         margin-bottom: 10px;
-        border: 1px solid #cccccc;
-        padding: 5px 0;
-    }
-
-    #box2 h4{
-        font-size: 16px;
-    }
-    #box2 .row > div{
-        padding: 15px 0;
-        margin-top: 8px;
-        margin-bottom: 14px;
+        padding: 0;
     }
 
 
-    #demand .zz{
-        top: 0;
-    }
 
     #flow .btns{
         margin-top: 20px;
@@ -257,14 +240,10 @@
     }
     #box2 .row > div{
         padding: 15px 0;
-        margin-top: 12px;
-        margin-bottom: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
-
-    #demand .zz{
-        top: 100%;
-    }
 
     #flow .btns{
         margin-top: 35px;
@@ -348,13 +327,9 @@
     #box2 .row > div{
         padding: 15px 0;
         margin-top: 25px;
-        margin-bottom: 32px;
+        margin-bottom: 25px;
     }
 
-
-    #demand .zz{
-        top: 100%;
-    }
 
     #flow .btns{
         margin-top: 35px;
@@ -436,14 +411,10 @@
     }
     #box2 .row > div{
         padding: 0;
-        margin-top: 45px;
-        margin-bottom: 45px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
-
-    #demand .zz{
-        top: 100%;
-    }
 
     #flow .btns{
         margin-top: 35px;
@@ -456,11 +427,5 @@
 }
 
 @media (min-width: 1920px){
-    html,body{
-        width: 1920px;
-        margin: 0 auto;
-        overflow-x: hidden;
-    }
-
 
 }

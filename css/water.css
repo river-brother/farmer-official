@@ -37,27 +37,13 @@
     color: #8c8c8c;
     text-align: center;
 }
-.problem{
-    font-weight: 500;
-    font-size: 22px;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 30px;
-}
-.problem span{
-    color: #4BAEDE;
-    font-size: 32px;
-}
-#box1 .row{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 #box1 .box1-desc{
     width: 80%;
     margin-left: 10%;
     margin-top: 20px;
     line-height: 28px;
     text-indent: 2em;
+    color: #353535;
 }
 
 
@@ -110,14 +96,6 @@
 
 
 @media (max-width: 480px){
-    .con-header .sort-tit{
-        font-size: 22px;
-        font-weight: 600;
-    }
-    .lazy{
-        width: 90%;
-        margin-left: 5%;
-    }
     #banner .container{
         top: 0;
         width: 90%;
@@ -135,18 +113,6 @@
         letter-spacing: 1px;
     }
 
-    .jump{
-        height: 60px;
-    }
-    .jump h2{
-        font-size: 18px;
-        line-height: 65px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .jump .breadcrumb{
-        margin-top: 15px;
-    }
 
     #box1,#box2{
         padding: 20px 0;
@@ -200,4 +166,212 @@
         margin-top: 30px;
     }
 
+}
+
+@media (min-width: 480px){
+    #banner .container{
+        top: 0;
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+    #banner h1{
+        margin-top: 8%;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    #banner p{
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-top: 0;
+    }
+
+
+    #box1,#box2{
+        padding: 30px 0;
+    }
+
+    #box1 .row{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #box1 .box1-desc{
+        margin-top: 10px;
+        line-height: 24px;
+    }
+
+    #box2 .row img{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #sys{
+        padding: 20px 0;
+    }
+    #sys .row img{
+        margin-top: 15px;
+    }
+
+
+    #intro{
+        padding: 20px 0;
+    }
+    #intro .row img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    #special{
+        padding: 20px 0;
+    }
+    #special .container{
+        margin-top: 10px;
+    }
+    #special .container p{
+        width: 90%;
+        margin-left: 5%;
+        line-height: 24px;
+        text-indent: 2em;
+        margin-top: 10px;
+    }
+    #special .container img{
+        margin-top: 30px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    #banner .container{
+        top: 0;
+        width: 70%;
+        padding: 0;
+        margin: 0;
+    }
+    #banner h1{
+        margin-top: 8%;
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+    #banner p{
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+
+
+    #box1,#box2{
+        padding: 40px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    #banner .container{
+        top: 0;
+        width: 70%;
+        padding: 0;
+        margin: 0;
+    }
+    #banner h1{
+        margin-top: 8%;
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    #banner p{
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+    }
+
+
+    #box1,#box2{
+        padding: 40px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    #banner .container{
+        top: 0;
+        width: 70%;
+        padding: 0;
+        margin: 0;
+    }
+    #banner h1{
+        margin-top: 8%;
+        font-size: 38px;
+        letter-spacing: 2px;
+    }
+    #banner p{
+        font-size: 24px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+    }
+
+    .box-gray-title{
+        text-align: left;
+        text-indent: 1em;
+    }
+
+    #box1,#box2{
+        padding: 50px 0;
+    }
+}
+
+@media (min-width: 1440px){
+    #banner h1{
+        margin-top: 10%;
+        font-size: 55px;
+        letter-spacing: 5px;
+    }
+    #banner p{
+        margin-top: 4%;
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+
+
+    #box1{
+        padding: 50px 0;
+    }
+
+    #box1 .box1-desc{
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+
+    #box2{
+        padding: 50px 0;
+    }
+    #box2 .row img{
+        margin-top: 30px;
+    }
+
+
+
+    #intro{
+        padding: 40px 0;
+    }
+    #intro .row img{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #special{
+        padding: 50px 0;
+    }
+    #special .container{
+        margin-top: 20px;
+    }
+    #special .container p{
+        width: 70%;
+        margin-left: 15%;
+        line-height: 28px;
+        text-indent: 2em;
+        margin-top: 25px;
+        font-size: 16px;
+    }
+    #special .container img{
+        margin-top: 70px;
+    }
 }
