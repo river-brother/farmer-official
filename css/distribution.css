@@ -247,6 +247,7 @@
     padding: 0;
     margin: 0;
     outline: none;
+    border: none;
 }
 
 #info .article .art-tit{
@@ -1378,7 +1379,6 @@
     }
 
     #info button{
-        border: 1px solid #2aabd2;
         color: #2aabd2;
     }
 
