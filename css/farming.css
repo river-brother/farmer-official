@@ -29,10 +29,14 @@
 
 .box{
     border-top: 1px solid #cccccc;
-    padding: 40px;
+    padding: 40px 0;
 }
 .box .sort-tit{
     color: #000000;
+}
+.box-gray-title{
+    text-align: left;
+    text-indent: 1em;
 }
 .box h2{
     text-align: center;
@@ -44,7 +48,7 @@
     margin-top: 25px;
 }
 .box p{
-    color: #c6c6c6;
+    color: #808080;
     font-size: 15px;
     width: 85%;
     text-indent: 2em;
@@ -57,9 +61,10 @@
     padding: 40px 0;
 }
 .cont p{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 35px;
     margin: 15px 0;
+    color: #808080;
 }
 .cont .row{
     margin: 30px 0;
@@ -72,15 +77,8 @@
 }
 
 @media (max-width: 480px) {
-    .con-header .sort-tit{
-        font-size: 22px;
-    }
-
     #banner .container{
-        top: 0;
-        width: 90%;
-        margin: 0;
-        padding: 0;
+        margin-left: -10%;
     }
     #banner h1{
         margin-top: 5%;
@@ -93,40 +91,15 @@
         letter-spacing: 1px;
     }
 
-    .jump{
-        height: 60px;
-    }
-    .jump h2{
-        font-size: 18px;
-        line-height: 65px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .jump .breadcrumb{
-        margin-top: 15px;
-    }
-
-    .problem{
-        font-size: 14px;
-        letter-spacing: 1px;
-        margin-top: 10px;
-    }
-    .problem span{
-        font-size: 22px;
-    }
-
 
     .box{
         padding: 20px;
     }
-    .box h2:nth-child(2){
+    .box h2{
         margin-top: 25px;
         font-size: 22px;
     }
-    .box h2:nth-child(4){
-        margin-top: 40px;
-        font-size: 22px;
-    }
+
     .box .main-pic{
         margin-top: 25px;
     }
@@ -134,6 +107,11 @@
         font-size: 14px;
         line-height: 26px;
         margin: 20px auto;
+    }
+
+    .box-gray-title{
+        text-align: left;
+        text-indent: 1em;
     }
 
 
@@ -154,5 +132,354 @@
         text-align: center;
         margin: 5px 0;
         line-height: 20px;
+    }
+}
+
+@media (min-width: 480px) {
+    #banner .container{
+        margin-left: -10%;
+    }
+
+    #banner h1{
+        margin-top: 8%;
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+    #banner p{
+        margin-top: 0;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+
+    .box{
+        padding: 30px 0;
+    }
+    .box h2{
+        margin-top: 35px;
+        font-size: 22px;
+    }
+
+    .box .main-pic{
+        margin-top: 25px;
+    }
+    .box p{
+        font-size: 14px;
+        line-height: 26px;
+        margin: 20px auto;
+    }
+
+    .box-gray-title{
+        text-align: left;
+        text-indent: 1em;
+    }
+
+
+    .cont{
+        padding: 30px 0;
+    }
+    .cont p{
+        font-size: 14px;
+        line-height: 25px;
+        margin: 15px 0;
+    }
+    .cont .row{
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    .cont .desc{
+        font-size: 12px;
+        margin: 7px 0;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+    #banner .container{
+        margin: 0 auto;
+    }
+    #banner h1{
+        margin-top: 8%;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    #banner p{
+        margin-top: 20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+
+    .box{
+        padding: 40px 0;
+    }
+    .box h2{
+        margin-top: 35px;
+        font-size: 22px;
+    }
+
+    .box .main-pic{
+        margin-top: 35px;
+    }
+    .box p{
+        font-size: 14px;
+        line-height: 26px;
+        margin: 20px auto;
+    }
+
+    .box-gray-title{
+        text-align: left;
+        text-indent: 1em;
+    }
+
+
+    .cont{
+        padding: 40px 0;
+    }
+    .cont p{
+        font-size: 14px;
+        line-height: 25px;
+        margin: 15px 0;
+    }
+    .cont .row{
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    .cont .desc{
+        font-size: 12px;
+        margin: 7px 0;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+    #banner h1{
+        margin-top: 8%;
+        font-size: 34px;
+        letter-spacing: 1px;
+    }
+    #banner p{
+        margin-top: 20px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+
+    .box{
+        padding: 40px 0;
+    }
+    .box h2{
+        margin-top: 45px;
+        font-size: 24px;
+    }
+
+    .box .main-pic{
+        margin-top: 45px;
+    }
+    .box p{
+        font-size: 16px;
+        line-height: 26px;
+        margin: 30px auto;
+    }
+
+    .box-gray-title{
+        text-align: left;
+        text-indent: 1em;
+    }
+
+
+    .cont{
+        padding: 40px 0;
+    }
+    .cont p{
+        font-size: 16px;
+        line-height: 25px;
+        margin: 15px 0;
+    }
+    .cont .row{
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    .cont .desc{
+        font-size: 14px;
+        margin: 7px 0;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #banner h1{
+        margin-top: 6%;
+        font-size: 34px;
+        letter-spacing: 1px;
+    }
+    #banner p{
+        margin-top: 40px;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .box{
+        padding: 40px 0;
+    }
+    .box h2{
+        margin-top: 45px;
+        font-size: 24px;
+    }
+
+    .box .main-pic{
+        margin-top: 45px;
+    }
+    .box p{
+        font-size: 16px;
+        line-height: 26px;
+        margin: 30px auto;
+    }
+
+    .box-gray-title{
+        text-align: left;
+        text-indent: 1em;
+    }
+
+
+    .cont{
+        padding: 50px 0;
+    }
+    .cont p{
+        font-size: 18px;
+        line-height: 25px;
+        margin: 15px 0;
+    }
+    .cont .row{
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    .cont .desc{
+        font-size: 16px;
+        margin: 7px 0;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 1440px) {
+    #banner h1{
+        margin-top: 10%;
+        font-size: 55px;
+        letter-spacing: 5px;
+    }
+    #banner p{
+        margin-top: 50px;
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+
+    .box{
+        padding: 40px 0;
+    }
+    .box h2{
+        margin-top: 45px;
+        font-size: 24px;
+    }
+
+    .box .main-pic{
+        margin-top: 45px;
+    }
+    .box p{
+        font-size: 16px;
+        line-height: 26px;
+        margin: 30px auto;
+    }
+
+    .box-gray-title{
+        text-align: left;
+        text-indent: 1em;
+    }
+
+
+    .cont{
+        padding: 50px 0;
+    }
+    .cont p{
+        font-size: 20px;
+        line-height: 25px;
+        margin: 15px 0;
+        color: #808080;
+    }
+    .cont .problem{
+        font-size: 22px;
+    }
+    .cont .row{
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    .cont .desc{
+        font-size: 16px;
+        margin: 7px 0;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 1920px){
+
+    #banner h1{
+        margin-top: 10%;
+        font-size: 55px;
+        letter-spacing: 5px;
+    }
+    #banner p{
+        margin-top: 5%;
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+
+
+    .box{
+        padding: 40px 0;
+    }
+    .box .sort-tit{
+        color: #000000;
+    }
+    .box h2{
+        text-align: center;
+        color: #6bb9e2;
+        margin-top: 45px;
+        font-size: 26px;
+    }
+    .box .main-pic{
+        margin-top: 25px;
+    }
+    .box p{
+        font-size: 15px;
+        width: 85%;
+        text-indent: 2em;
+        line-height: 38px;
+        margin: 40px auto;
+    }
+
+    .cont{
+        background: #f8f8f8;
+        padding: 40px 0;
+    }
+    .cont p{
+        font-size: 18px;
+        line-height: 35px;
+        margin: 15px 0;
+    }
+    .cont .row{
+        margin: 30px 0;
+        padding: 10px 0;
+    }
+    .cont .desc{
+        font-size: 16px;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 1920px){
+    #banner{
+        background-color: #f9f9f9;
     }
 }

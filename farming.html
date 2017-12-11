@@ -12,15 +12,19 @@
     <link rel="stylesheet" href="css/farming.css">
 
     <script src="js/jquery.min.js"></script>
+    <!--[if IE 8]>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.lazyload.min.js"></script>
-    <script>
-        $("img.lazy").lazyload({effect: "fadeIn"});
-    </script>
 </head>
 <body>
+
 <!--导航栏-->
-<nav class="navbar navbar-default" id="nav">
+<nav class="navbar navbar-default navbar-fixed-top" id="nav">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -40,15 +44,15 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="software.html">软件定制</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">软件定制 <span class="caret"></span></a>
+                       aria-expanded="false">产品 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="software.html">软件定制</a></li>
-                        <li><a href="distribution.html">分销系统</a></li>
-                        <li><a href="system.html">集成系统</a></li>
-                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="distribution.html">直销系统</a></li>
                         <li><a href="water.html">水利监控系统</a></li>
+                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="system.html">集成系统</a></li>
                     </ul>
                 </li>
 
@@ -63,9 +67,9 @@
                 </li>
 
                 <li><a href="about.html">关于我们</a></li>
-                <li class="hidden-sm"><a href="about.html#message">联系我们</a></li>
-                <li>
-                    <a href="javascript:;" class="tel"><span>客服专线：</span>136-6810-0743</a>
+                <li class="hidden-sm hidden-md"><a href="about.html#message">联系我们</a></li>
+                <li class="last">
+                    <a href="javascript:;">客服专线：<span>136-6810-0743</span></a>
                 </li>
             </ul>
 
@@ -75,10 +79,10 @@
 
 
 <div id="banner">
-    <img src="images/farming/banner.jpg" alt="banner" class="img-responsive lazy">
+    <img src="images/farming/banner.jpg" alt="banner" class="img-responsive center-block">
     <div class="container">
-        <h1>大田农业智能灌溉系统</h1>
-        <p>通过移动APP、微信、计算机等信息终端接收农田墒情信息、气象信息，并可远程控制灌溉设备。</p>
+        <h1><span class="hidden-xs">大田</span>农业智能灌溉系统</h1>
+        <p>通过<span class="hidden-xs">移动APP、微信、计算机等</span>信息终端接收农田墒情信息、气象信息，并可远程控制灌溉设备。</p>
     </div>
 </div>
 
@@ -95,6 +99,8 @@
 
 
 <div class="box container">
+    <div class="box-gray-title">农业灌溉</div>
+
     <div class="con-header">
         <h2 class="sort-tit">系统介绍</h2>
         <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
@@ -135,6 +141,16 @@
 </div>
 
 
+<div class="consult_contact">
+    <div class="consult_wrap"><a href="http://p.qiao.baidu.com/cps/chat?siteId=11482139&userId=24810486" target="_blank">
+        <div class="tip">Hello,欢迎来咨询~</div>
+        <img src="images/kf/ball.png" class="ball" alt="">
+        <img src="images/kf/kf.png" class="staff_img" alt="">
+        <img src="images/kf/bg_1.png" class="bg-1" alt="">
+        <img src="images/kf/bg_2.png" class="bg-2" alt="">
+        <img src="images/kf/bg_3.png" class="bg-3" alt=""></a>
+    </div>
+</div>
 <ul id="small">
     <li>
         <a href="javascript:;" class="tool" title="联系电话">
@@ -148,7 +164,6 @@
         </a>
     </li>
 </ul>
-
 <div class="container-fluid" id="bot">
     <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
 </div>

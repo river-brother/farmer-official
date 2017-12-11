@@ -10,18 +10,22 @@
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/sharing.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <script src="js/jquery.min.js"></script>
+    <!--[if IE 8]>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.lazyload.min.js"></script>
-    <script>
-        $("img.lazy").lazyload({effect: "fadeIn"});
-    </script>
 </head>
 <body>
 
 <!--导航栏-->
-<nav class="navbar navbar-default" id="nav">
+<nav class="navbar navbar-default navbar-fixed-top" id="nav">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -41,15 +45,15 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="software.html">软件定制</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">软件定制 <span class="caret"></span></a>
+                       aria-expanded="false">产品 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="software.html">软件定制</a></li>
-                        <li><a href="distribution.html">分销系统</a></li>
-                        <li><a href="system.html">集成系统</a></li>
-                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="distribution.html">直销系统</a></li>
                         <li><a href="water.html">水利监控系统</a></li>
+                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="system.html">集成系统</a></li>
                     </ul>
                 </li>
 
@@ -64,9 +68,9 @@
                 </li>
 
                 <li><a href="about.html">关于我们</a></li>
-                <li class="hidden-sm"><a href="about.html#message">联系我们</a></li>
-                <li>
-                    <a href="javascript:;" class="tel"><span>客服专线：</span>136-6810-0743</a>
+                <li class="hidden-sm hidden-md"><a href="about.html#message">联系我们</a></li>
+                <li class="last">
+                    <a href="javascript:;">客服专线：<span>136-6810-0743</span></a>
                 </li>
             </ul>
 
@@ -74,8 +78,8 @@
     </div>
 </nav>
 
-<div class="banner">
-    <img src="images/sharing/ben.jpg" alt="" class="img-responsive">
+<div id="banner">
+    <img src="images/sharing/ben.jpg" alt="" class="img-responsive center-block">
     <p>
         <span>通过蓝牙+wifi+3G/4G 多种物联网模式，架构共享线上平台。</span>
         <span class="hidden-xs">模块组成 手机端：APP/微信公众号/小程序 硬件设备：普通设备+定位模块+网络模块 定位模块： GPS/北斗双星导航，同步接收BDS、GPS卫星信号与wifi、LBS信号，具有更快的搜星和定位速度，更加快速精准锁定硬件设备。 网络模块：利用传感器等获取设备信息，并采用先进的NB-IoT/LoRa/GPRS技术，通过电信网络与互联网融合传递设备信息，进而进行互联网智能操作。 管理系统：设备监管+财务统计+使用情况 案例应用：共享单车、共享充电宝</span>
@@ -93,6 +97,9 @@
 </div>
 
 <div class="container" id="box1">
+
+    <div class="box-gray-title">共享经济</div>
+
     <div class="con-header">
         <h2 class="sort-tit">开发服务</h2>
         <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
@@ -252,6 +259,16 @@
 </div>
 
 
+<div class="consult_contact">
+    <div class="consult_wrap"><a href="http://p.qiao.baidu.com/cps/chat?siteId=11482139&userId=24810486" target="_blank">
+        <div class="tip">Hello,欢迎来咨询~</div>
+        <img src="images/kf/ball.png" class="ball" alt="">
+        <img src="images/kf/kf.png" class="staff_img" alt="">
+        <img src="images/kf/bg_1.png" class="bg-1" alt="">
+        <img src="images/kf/bg_2.png" class="bg-2" alt="">
+        <img src="images/kf/bg_3.png" class="bg-3" alt=""></a>
+    </div>
+</div>
 <ul id="small">
     <li>
         <a href="javascript:;" class="tool" title="联系电话">
