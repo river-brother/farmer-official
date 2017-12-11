@@ -20,6 +20,16 @@
     <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        //nav fixed top 相应调整
+        (function () {
+            var next = $("#nav").next();
+            var nav_height = $("#nav").outerHeight();
+            next.css({
+                'margin-top':nav_height+'px'
+            });
+        })();
+    </script>
 </head>
 <body>
 
