@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>分销系统</title>
+    <title>直销系统</title>
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
@@ -12,16 +12,19 @@
     <link rel="stylesheet" href="css/distribution.css">
 
     <script src="js/jquery.min.js"></script>
+    <!--[if IE 8]>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.lazyload.min.js"></script>
-    <script>
-        $("img.lazy").lazyload({effect: "fadeIn"});
-    </script>
 </head>
 <body>
 
 <!--导航栏-->
-<nav class="navbar navbar-default" id="nav">
+<nav class="navbar navbar-default navbar-fixed-top" id="nav">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -41,15 +44,15 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="software.html">软件定制</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">软件定制 <span class="caret"></span></a>
+                       aria-expanded="false">产品 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="software.html">软件定制</a></li>
-                        <li><a href="distribution.html">分销系统</a></li>
-                        <li><a href="system.html">集成系统</a></li>
-                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="distribution.html">直销系统</a></li>
                         <li><a href="water.html">水利监控系统</a></li>
+                        <li><a href="farming.html">农业灌溉</a></li>
+                        <li><a href="system.html">集成系统</a></li>
                     </ul>
                 </li>
 
@@ -64,9 +67,9 @@
                 </li>
 
                 <li><a href="about.html">关于我们</a></li>
-                <li class="hidden-sm"><a href="about.html#message">联系我们</a></li>
-                <li>
-                    <a href="javascript:;" class="tel"><span>客服专线：</span>136-6810-0743</a>
+                <li class="hidden-sm hidden-md"><a href="about.html#message">联系我们</a></li>
+                <li class="last">
+                    <a href="javascript:;">客服专线：<span>136-6810-0743</span></a>
                 </li>
             </ul>
 
@@ -76,9 +79,9 @@
 
 <!--banner图-->
 <div id="banner">
-    <img src="images/distribution/banner.jpg" alt="banner" class="img-responsive">
+    <img src="images/distribution/banner.jpg" alt="banner" class="img-responsive center-block">
     <div class="container">
-        <h1>打造专业的定制化小程序直销商城</h1>
+        <h1>打造专业定制化小程序直销商城</h1>
         <p>
             <span>适应时代，微商新模式</span>
             <span>数据化运营，剖析每个环节</span>
@@ -92,11 +95,14 @@
     </div>
     <ol class="breadcrumb pull-right">
         <li><a href="index.html">首页</a></li>
-        <li class="active">分销系统</li>
+        <li class="active">直销系统</li>
     </ol>
 </div>
 
 <div class="container" id="main">
+
+    <div class="box-gray-title">直销系统</div>
+
     <p class="problem">
         <span>我们的直销模式</span>
         适应当前互联网环境
@@ -104,7 +110,7 @@
 
     <div class="container">
         <p class="desc">
-            对于很多客户表面的要求以及形式上我们“看似”要满足的要求，很多其实都值得商榷。对待客户的需求，我们最需要做的是发掘更深处它们代表的是什么。不同的需求都是在特定场景下才需求满足。做产品时我们会考虑到需要服务怎么样的场景。
+            互联网直销模式是直接由生产商对接微商产品销售的一种营销方式。微商无需趸货，定价同一公开透明，微商收入为商品销售+奖金模式，金发放分局团队销售额制定；可以激发代理的目标感，刺激产品销量、团队扩张与管理。通过我们的工具和培训服务可以很容易把一个优秀的大微变成多个，把一个新加入的代理变成一个经验丰富的代理，把一个能力一般的会员管理人员变成经验丰富的会员管理人员，把一个普通的团队管理人员变成经验丰富的团队管理人员，从而提升了商家的运营结果和管理效率，我们希望可以成为商家的大脑和智囊。
         </p>
     </div>
 
@@ -136,7 +142,7 @@
                 <div class="media">
                     <div class="media-left media-middle">
                         <a href="#">
-                            <img class="media-object" src="images/distribution/gift.png" alt="...">
+                            <img class="media-object" src="images/distribution/fun.png" alt="...">
                         </a>
                     </div>
                     <div class="media-body">
@@ -150,7 +156,7 @@
                 <div class="media">
                     <div class="media-left media-middle">
                         <a href="#">
-                            <img class="media-object" src="images/distribution/gift.png" alt="...">
+                            <img class="media-object" src="images/distribution/data.png" alt="...">
                         </a>
                     </div>
                     <div class="media-body">
@@ -164,7 +170,7 @@
                 <div class="media">
                     <div class="media-left media-middle">
                         <a href="#">
-                            <img class="media-object" src="images/distribution/gift.png" alt="...">
+                            <img class="media-object" src="images/distribution/sc.png" alt="...">
                         </a>
                     </div>
                     <div class="media-body">
@@ -178,7 +184,7 @@
                 <div class="media">
                     <div class="media-left media-middle">
                         <a href="#">
-                            <img class="media-object" src="images/distribution/gift.png" alt="...">
+                            <img class="media-object" src="images/distribution/kh.png" alt="...">
                         </a>
                     </div>
                     <div class="media-body">
@@ -192,7 +198,7 @@
                 <div class="media">
                     <div class="media-left media-middle">
                         <a href="#">
-                            <img class="media-object" src="images/distribution/gift.png" alt="...">
+                            <img class="media-object" src="images/distribution/px.png" alt="...">
                         </a>
                     </div>
                     <div class="media-body">
@@ -229,7 +235,7 @@
         <img src="images/divider.png" alt="divide image" class="img-responsive center-block">
     </div>
 
-    <div style="width: 100%;height: 30px;"></div>
+    <div class="hidden-xs" style="width: 100%;height: 30px;"></div>
 
     <div class="row">
         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 f-box">
@@ -291,7 +297,7 @@
     <p class="problem">为什么选择<span>微信小程序商城</span></p>
     
     <div class="container">
-        <div class="row hide-xs">
+        <div class="row hide-xs c-first">
             <div class="col-md-1-5 col-md-1-5 col-lg-1-5 ch-box">
                 <img src="images/distribution/c1-1.png" alt="..." class="center-block">
                 <h3>生态社交资源</h3>
@@ -335,8 +341,8 @@
             </div>
         </div>
 
-        <div class="row show-xs">
-            <div class="col-xs-6 col-md-4">
+        <div class="row hidden-lg">
+            <div class="col-xs-6 col-sm-4 col-md-3">
                 <img src="images/distribution/icon1.png" alt="..." class="center-block">
                 <h3>生态社交资源</h3>
                 <p>
@@ -394,8 +400,13 @@
     </div>
 
     <div class="page">
-        <button type="button" class="btn btn-default pull-left"> &lt; </button>
-        <button type="button" class="btn btn-default pull-right"> &gt; </button>
+        <button type="button" class="btn btn-default pull-left">
+            <img src="images/distribution/btn-l.png" alt="left">
+
+        </button>
+        <button type="button" class="btn btn-default pull-right">
+            <img src="images/distribution/btn-r.png" alt="left">
+        </button>
     </div>
 
     <div class="container art">
@@ -409,7 +420,7 @@
                     <span class="year">2017</span>
                 </div>
                 <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 article">
-                    <p class="art-tit">阿里巴巴真做微商了！这次主动进朋友圈</p>
+                    <a class="art-tit" href="http://www.ebrun.com/20161019/197637.shtml" target="_blank">阿里巴巴真做微商了！这次主动进朋友圈</a>
                     <p class="i-con">
                         【亿邦动力网讯】10月19日消息，最近微商行业收到的冲击不少，如微信开始出面整治三级分销、就在微商整体环境有点“尴尬”的时候，阿里站出来说：我们要进军微商了...
                     </p>
@@ -427,7 +438,7 @@
                     <span class="year">2017</span>
                 </div>
                 <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 article">
-                    <p class="art-tit">小程序用户人群画像是什么？使用时长是多少？小程序行业发了首份生态白皮</p>
+                    <a class="art-tit" href="https://36kr.com/p/5105588.html" target="_blank">小程序用户人群画像是什么？使用时长是多少？小程序行业发了首份生态白皮</a>
                     <p class="i-con">
                         在这份白皮书中主要探讨了以下几个问题:
                         1.为什么小程序会出现？ 2.小程序的独有的优势和特点是什么？ 3.小程序行业又是什么样子？ 4.哪些群体的人群正在使用小程序？
@@ -448,7 +459,7 @@
                     <span class="year">2017</span>
                 </div>
                 <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 article">
-                    <p class="art-tit">考虑到线上流量日益高涨，利用微商模式进行商品的推广也算得上一笔不错的买卖，丁老板的算盘打得不错。</p>
+                    <a class="art-tit" href="http://36kr.com/p/5067173.html" target="_blank">丁磊也开始做微商了，最低788元成为网易考拉微店主 </a>
                     <p class="i-con">
                         近期，网易旗下的跨境电商平台网易考拉海购推出了“微店主招募计划”，在全国范围内招募个人店主，协助网易考拉销售平台上的海淘产品，该计划主要在微信上进行推广和实践，最后采用的付款方式也是微信以及银联支付，结算方式和传统微商差异不大。
                     </p>
@@ -459,6 +470,16 @@
     </div>
 </div>
 
+<div class="consult_contact">
+    <div class="consult_wrap"><a href="http://p.qiao.baidu.com/cps/chat?siteId=11482139&userId=24810486" target="_blank">
+        <div class="tip">Hello,欢迎来咨询~</div>
+        <img src="images/kf/ball.png" class="ball" alt="">
+        <img src="images/kf/kf.png" class="staff_img" alt="">
+        <img src="images/kf/bg_1.png" class="bg-1" alt="">
+        <img src="images/kf/bg_2.png" class="bg-2" alt="">
+        <img src="images/kf/bg_3.png" class="bg-3" alt=""></a>
+    </div>
+</div>
 <ul id="small">
     <li>
         <a href="javascript:;" class="tool" title="联系电话">
@@ -484,7 +505,7 @@
         $("#info .pull-left").click(function () {
             var index = $("#info .current").index();
             if(index>0){
-                row.eq(index).fadeOut().removeClass('current');
+                row.eq(index).hide().removeClass('current');
                 row.eq(index-1).fadeIn().addClass('current');
             }else{
                 return false;
@@ -493,7 +514,7 @@
         $("#info .pull-right").click(function () {
             var index = $("#info .current").index();
             if(index<row.length-1){
-                row.eq(index).fadeOut().removeClass('current');
+                row.eq(index).hide().removeClass('current');
                 row.eq(index+1).fadeIn().addClass('current');
             }else{
                 return false;

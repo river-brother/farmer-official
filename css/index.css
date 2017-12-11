@@ -1,8 +1,8 @@
 .small-tit{
 	text-align: center;
-	margin-top: 10px;
-	font-size: 16px;
-	color: rgb(124,124,126);
+	font-size: 20px;
+	color: #3e3e3e;
+	margin-top: 20px;
 }
 
 /*carousel*/
@@ -23,44 +23,57 @@
 	font-size: 38px;
 }
 #carousel .main-btn{
-	width: 300px;
-	height: 55px;
+	width: 390px;
+	height: 60px;
+	margin-top: 25%;
 }
-#carousel .main-btn button{
-	width: 130px;
-	height: 55px;
-	line-height: 52px;
-	border: 1px solid #f0f0f0;
+#carousel .main-btn a{
+	width: 170px;
+	height: 60px;
+	line-height: 60px;
+	border: 1px solid #ffffff;
 	background-color: rgba(255,255,255,0.13);
-	color: #f0f0f0;
-	font-size: 17px;
+	color: #ffffff;
+	font-size: 22px;
 	text-align: center;
+	padding: 0;
+	border-radius: 2px;
 }
-#carousel .main-btn button.current{
+#carousel .main-btn a.current{
 	background-color: rgb(23,101,182);
 	border: 1px solid rgb(23,101,182);
 }
 
+/* 轮播控制原点 */
+#carousel .carousel-indicators li{
+	width: 18px;
+	height: 18px;
+	background-color: rgba(255,255,255,0.3);
+	margin-left: 10px;
+	border: none;
+}
+#carousel .carousel-indicators li.active{
+	background-color: rgb(23,101,182);
+	border: none;
+}
+#carousel .carousel-indicators li:first-child{
+	margin-left: 0;
+}
 
 /*main-content*/
 #main-content{
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding: 50px 0;
 }
 #main-content .con-con > div{
-	margin-top: 30px;
+	margin-top: 40px;
 }
 #main-content .con-con .small-tit{
 	text-align: center;
 	margin-top: 10px;
 }
-#main-content .con-con a:hover{
-	text-decoration: none;
-}
 #main-content .con-con .box-tit{
-	font-size: 21px;
+	font-size: 20px;
 	padding: 5px 0;
-	font-weight: bold;
 	text-align: center;
 	color: #000000;
 }
@@ -68,7 +81,7 @@
 	font-size: 16px;
 	text-align: center;
 	color: #767676;
-	padding: 5px 0;
+	padding: 8px 0;
 }
 #main-content .con-con .tell{
 	font-size: 16px;
@@ -80,7 +93,7 @@
 
 /*content1*/
 #content1{
-	padding-top: 50px;
+	padding: 60px;
 	background-color: rgb(249,249,249);
 }
 
@@ -92,24 +105,23 @@
 
 /*service*/
 #service{
-	padding: 50px 0;
+	padding: 60px 0;
 }
 #service .media-heading{
 	padding-top: 7px;
 	font-weight: bold;
 }
 #service .row > div{
-	margin: 40px 0;
+	margin: 30px 0;
 }
-
 #service .media-heading{
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: bold;
-	color: #000000;
+	color: #101010;
 }
 #service .media-body{
 	font-size: 12px;
-	color: #787878;
+	color: #5d5d5d;
 }
 #service .media-body p{
 	width: 80%;
@@ -117,24 +129,56 @@
 
 /*example*/
 #example{
-	padding: 50px 0;
+	padding: 60px 0;
 	background-color: rgb(249,249,249);
-}
-#example .con-con .small-tit{
-	text-align: center;
-	margin-top: 10px;
 }
 #example .row > div{
 	padding: 50px 0;
 }
 #example .row div a{
-	text-align: center;
 	display: block;
-	margin-top: 10px;
+	margin-top: 12px;
 	font-size: 16px;
-	color: #000;
+	color: #242424;
 }
+#example .container{
+	position: relative;
+	margin-top: 30px;
+}
+#example .prev{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 10;
+	cursor: pointer;
+	display: none;
 
+	transform: translate(-20%,-50%);
+	-webkit-transform: translate(-20%,-50%);
+	-moz-transform: translate(-20%,-50%);
+	-o-transform: translate(-20%,-50%);
+	-ms-transform: translate(-20%,-50%);
+}
+#example .next{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	z-index: 10;
+	cursor: pointer;
+	display: none;
+
+	transform: translate(20%,-50%);
+	-webkit-transform: translate(20%,-50%);
+	-moz-transform: translate(20%,-50%);
+	-o-transform: translate(20%,-50%);
+	-ms-transform: translate(20%,-50%);
+}
+#example .row:hover > .prev{
+	display: inline-block;
+}
+#example .row:hover > .next{
+	display: inline-block;
+}
 /*help*/
 #help{
 	position: relative;
@@ -146,34 +190,34 @@
 	top: 20%;
 	left: 0;
 	display: block;
-	font-size: 44px;
+	font-size: 48px;
 	letter-spacing: 10px;
 	color: #ffffff;
 }
 #help .t2{
 	width: 100%;
 	position: absolute;
-	top: 35%;
+	top: 42%;
 	left: 0;
 	display: block;
-	font-size: 28px;
+	font-size: 24px;
 	color: #ffffff;
 }
 
 
 /*contact*/
 #contact{
-	padding: 50px 0;
-	overflow: hidden;
+	padding: 60px 0;
 }
 #contact .icon-info{
 	width: 100%;
 	text-align: left;
 	padding: 15px 0;
-	margin-top: 5px;
+	margin-top: 0;
 }
 #contact .row h4{
-	font-weight: bold;
+	color: #272727;
+	font-size: 20px;
 }
 #contact .icon-info img{
 	display: inline-block;
@@ -191,9 +235,8 @@
 }
 #contact input{
 	width: 100%;
-	height: 40px;
+	height: 48px;
 	text-indent: 1em;
-	letter-spacing: 2px;
 	border: 1px solid #cccccc;
 	outline: none;
 }
@@ -207,14 +250,19 @@
 	resize: none;
 	outline: none;
 	border: 1px solid #cccccc;
+	outline: none;
 }
 #contact textarea:focus{
 	border: 1px solid #000000;
 }
+#contact .pull-right{
+	padding-top: 15px;
+}
 #submit{
 	margin-top: 12px;
-	padding: 7px 25px;
+	padding: 10px 40px;
 	border-radius: 4px;
+	font-size: 18px;
 	border: 1px solid rgb(23,101,182);
 	background-color: rgb(23,101,182);
 	color: #f0f0f0;
@@ -222,12 +270,21 @@
 
 
 
+
+
+
+
+
 /*媒体查询*/
 @media (max-width: 480px){
+	.small-tit{
+		font-size: 18px;
+	}
+
 	#carousel .b-bot h2{
 		margin-top: 5%;
-		font-size: 16px;
-		line-height: 25px;
+		font-size: 18px;
+		line-height: 24px;
 		letter-spacing: 1px;
 		width: 80%;
 		margin-left: 10%;
@@ -235,9 +292,10 @@
 	#carousel .main-btn{
 		width: 180px;
 		height: 30px;
-		margin-top: 5%;
+		margin-top: 3%;
 	}
-	#carousel .main-btn button{
+
+	#carousel .main-btn a{
 		width: 80px;
 		height: 30px;
 		line-height: 28px;
@@ -245,12 +303,11 @@
 	}
 
 
+
+
 	#main-content{
-		padding: 20px 0 20px 0;
+		padding: 20px 0;
 		margin-top: 5px;
-	}
-	#main-content .sort-tit{
-		margin-top: 10px;
 	}
 	#main-content .con-con .box-tit{
 		padding: 4px 0;
@@ -268,7 +325,7 @@
 
 
 	#content1{
-		padding-top: 20px;
+		padding: 20px 0 0 0;
 	}
 	#content1 .content1-img{
 		top: 15px;
@@ -298,19 +355,22 @@
 		margin-top: 6px;
 		font-size: 12px;
 	}
+	#example .prev, #example .next{
+		width: 35px;
+	}
 
 
 
 	#help p.t1{
-		top: 8%;
+		top: 10%;
 		left: 0;
-		font-size: 17px;
+		font-size: 18px;
 		letter-spacing: 2px;
 	}
 	#help p.t2{
-		top: 40%;
+		top: 45%;
 		left: 0;
-		font-size: 12px;
+		font-size: 14px;
 		letter-spacing: 1px;
 	}
 
@@ -325,35 +385,50 @@
 	#contact .icon-info{
 		width: 100%;
 		text-align: center;
-		padding: 3px 0 0 75px;
+		padding: 8px 0 0 75px;
 		margin-top: 5px;
 	}
 	#contact .icon-info span{
 		text-align: left;
 	}
-	#contact form{
-		margin-top: 25px;
-	}
 	#tel{
 		margin-top: 15px;
 	}
-	#contact textarea{
-		padding: 1em;
+	#name{
 		margin-top: 15px;
+	}
+	#contact input{
+		height: 36px;
+		line-height: 36px;
+		font-size: 12px;
+		letter-spacing: 0;
+	}
+	#contact textarea{
+		margin-top: 15px;
+		font-size: 12px;
+		letter-spacing: 0;
 	}
 	#submit{
 		display: block;
 		margin: 15px auto;
+		padding: 6px 25px;
+		font-size: 12px;
 	}
 }
 
 
+
+
 @media (min-width: 480px){
+	.small-tit{
+		font-size: 20px;
+	}
 	#carousel .b-bot h2{
 		margin-top: 5%;
-		font-size: 22px;
-		line-height: 32px;
+		font-size: 20px;
 		letter-spacing: 2px;
+		height: 3.2em;
+		line-height: 1.6em;
 		width: 80%;
 		margin-left: 10%;
 	}
@@ -362,16 +437,16 @@
 		height: 36px;
 		margin-top: 3%;
 	}
-	#carousel .main-btn button{
+	#carousel .main-btn a{
 		width: 95px;
 		height: 36px;
-		line-height: 34px;
+		line-height: 36px;
 		font-size: 14px;
 	}
 
 
 	#main-content{
-		padding: 25px 0;
+		padding: 30px 0;
 	}
 	#main-content .sort-tit{
 		margin-top: 10px;
@@ -389,6 +464,7 @@
 	#main-content .con-con > div{
 		margin-top: 20px;
 	}
+
 
 
 	#content1{
@@ -413,7 +489,7 @@
 
 
 	#example{
-		padding: 20px 0;
+		padding: 25px 0;
 	}
 	#example .row > div{
 		padding: 20px 0;
@@ -423,56 +499,74 @@
 		display: block;
 		padding: 5px 0;
 	}
+	#example .prev, #example .next{
+		width: 38px;
+		top: 40%;
+	}
 
 
 	#help p.t1{
-		top: 8%;
+		top: 15%;
 		left: 0;
-		font-size: 19px;
+		font-size: 24px;
 		letter-spacing: 2px;
 	}
 	#help p.t2{
-		top: 40%;
+		top: 42%;
 		left: 0;
-		font-size: 14px;
+		font-size: 16px;
 		letter-spacing: 1px;
 	}
 
 
 	#contact{
-		padding: 20px 0 10px 0;
+		padding: 30px 0;
 	}
 	#contact .row h4{
 		text-align: center;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 	#contact .icon-info{
 		width: 100%;
 		text-align: left;
 		padding: 3px 0 0 32%;
-		margin-top: 5px;
-	}
-	#contact form{
-		margin-top: 25px;
-	}
-	#tel{
-		margin-top: 15px;
+		margin-top: 20px;
 	}
 	#contact textarea{
 		padding: 1em;
 		margin-top: 15px;
+		font-size: 14px;
+	}
+	#tel{
+		margin-top: 15px;
+	}
+	#name{
+		margin-top: 15px;
+	}
+	#contact input{
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px;
+		letter-spacing: 0;
 	}
 	#submit{
 		display: block;
 		margin: 15px auto;
+		padding: 8px 25px;
+		font-size: 14px;
 	}
 }
 
 
 @media (min-width: 768px){
-
+	.small-tit{
+		font-size: 22px;
+	}
 	#carousel .b-bot h2{
-		margin-top: 7%;
-		font-size: 24px;
+		margin-top: 6%;
+		font-size: 28px;
 		letter-spacing: 2px;
 		width: 70%;
 		margin-left: 15%;
@@ -482,11 +576,11 @@
 		height: 40px;
 		margin-top: 3%;
 	}
-	#carousel .main-btn button{
+	#carousel .main-btn a{
 		width: 110px;
 		height: 40px;
 		line-height: 38px;
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	#main-content{
@@ -515,12 +609,14 @@
 	}
 
 
+
 	#service{
 		padding: 30px 0;
 	}
 	#service .row{
 		display: block;
 	}
+
 
 
 	#example{
@@ -533,6 +629,10 @@
 		text-align: center;
 		display: block;
 		padding: 5px 0;
+	}
+	#example .prev, #example .next{
+		width: 40px;
+		top: 40%;
 	}
 
 
@@ -556,6 +656,13 @@
 	}
 	#contact .row h4{
 		text-align: left;
+		margin-top: 25px;
+	}
+	#tel{
+		margin-top: 15px;
+	}
+	#name{
+		margin-top: 15px;
 	}
 	#contact .icon-info{
 		width: 100%;
@@ -565,44 +672,49 @@
 	#contact form{
 		margin-top: 20px;
 	}
-	#tel{
-		margin-top: 0;
-	}
 	#contact textarea{
 		padding: 1em;
 		margin-top: 15px;
+		font-size: 14px;
 	}
 	#submit{
 		display: inline-block;
+		margin: 15px auto;
+		padding: 10px 30px;
+		font-size: 14px;
 	}
 }
 
 
 @media (min-width: 992px){
 
+	.small-tit{
+		font-size: 24px;
+	}
 	#carousel .b-bot h2{
-		margin-top: 10%;
-		font-size: 26px;
+		margin-top: 6%;
+		font-size: 28px;
 		letter-spacing: 2px;
+		width: 70%;
+		margin-left: 15%;
 	}
 	#carousel .main-btn{
-		width: 300px;
-		height: 42px;
-		margin-top: 5%;
+		width: 330px;
+		height: 45px;
+		margin-top: 3%;
 	}
-	#carousel .main-btn button{
-		width: 110px;
-		height: 42px;
-		line-height: 42px;
+	#carousel .main-btn a{
+		width: 130px;
+		height: 45px;
+		line-height: 43px;
 		font-size: 16px;
 	}
 
-
 	#main-content{
-		padding: 35px 0;
+		padding: 40px 0;
 	}
 	#main-content .con-con .box-tit{
-		padding: 2px 0;
+		padding: 3px 0;
 	}
 	#main-content .con-con .box-desc{
 		font-size: 14px;
@@ -617,23 +729,25 @@
 
 
 	#content1{
-		padding-top: 35px;
+		padding-top: 40px;
 	}
 	#content1 .content1-img{
-		top: 28px;
+		top: 24px;
 	}
+
 
 
 	#service{
-		padding: 35px 0;
+		padding: 40px 0;
 	}
 	#service .row{
 		display: block;
 	}
 
 
+
 	#example{
-		padding: 35px 0;
+		padding: 40px 0;
 	}
 	#example .row > div{
 		padding: 20px 0;
@@ -643,28 +757,39 @@
 		display: block;
 		padding: 5px 0;
 	}
+	#example .prev, #example .next{
+		width: 40px;
+		top: 40%;
+	}
 
 
 
 	#help p.t1{
 		top: 20%;
 		left: 0;
-		font-size: 28px;
+		font-size: 30px;
 		letter-spacing: 3px;
 	}
 	#help p.t2{
 		top: 45%;
 		left: 0;
 		font-size: 18px;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 	}
 
 
 	#contact{
-		padding: 35px 0;
+		padding: 40px 0;
 	}
 	#contact .row h4{
 		text-align: left;
+		margin-top: 25px;
+	}
+	#tel{
+		margin-top: 15px;
+	}
+	#name{
+		margin-top: 15px;
 	}
 	#contact .icon-info{
 		width: 100%;
@@ -674,36 +799,43 @@
 	#contact form{
 		margin-top: 20px;
 	}
-	#tel{
-		margin-top: 0;
-	}
 	#contact textarea{
 		padding: 1em;
 		margin-top: 15px;
+		font-size: 14px;
 	}
 	#submit{
 		display: inline-block;
+		margin: 15px auto;
+		padding: 10px 30px;
+		font-size: 14px;
 	}
 
 }
 
 
 @media (min-width: 1200px){
+	.small-tit{
+		font-size: 24px;
+	}
+	#main-content,#service,#example,#content1{
+		padding: 50px 0;
+	}
 	#carousel .b-bot h2{
 		margin-top: 10%;
 		font-size: 32px;
-		letter-spacing: 2px;
+		letter-spacing: 3px;
 	}
 	#carousel .main-btn{
-		width: 340px;
-		height: 52px;
-		margin-top: 5%;
+		width: 360px;
+		height: 50px;
+		margin-top: 3%;
 	}
-	#carousel .main-btn button{
-		width: 120px;
-		height: 52px;
-		line-height: 52px;
-		font-size: 17px;
+	#carousel .main-btn a{
+		width: 135px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 18px;
 	}
 
 
@@ -719,10 +851,25 @@
 		font-size: 24px;
 		letter-spacing: 2px;
 	}
+
+
+	#example .prev,#example .next{
+		top: 46%;
+		width: auto;
+	}
 }
 
 
 @media (min-width: 1440px){
+	#main-content,#service,#example,#content1{
+		padding: 60px 0;
+	}
+
+	#example .prev,#example .next{
+		top: 46%;
+		width: auto;
+	}
+
 
 	#carousel .b-bot h2{
 		margin-top: 10%;
@@ -730,15 +877,15 @@
 		letter-spacing: 3px;
 	}
 	#carousel .main-btn{
-		width: 340px;
+		width: 360px;
 		height: 55px;
 		margin-top: 5%;
 	}
-	#carousel .main-btn button{
-		width: 120px;
+	#carousel .main-btn a{
+		width: 135px;
 		height: 55px;
 		line-height: 55px;
-		font-size: 17px;
+		font-size: 18px;
 	}
 
 
@@ -755,15 +902,52 @@
 		letter-spacing: 2px;
 	}
 
+
+
+	/*contact*/
+	#contact .icon-info{
+		width: 100%;
+		text-align: left;
+		padding: 15px 0;
+		margin-top: 0;
+	}
+	#contact .row h4{
+		font-size: 20px;
+	}
+	#contact .icon-info img{
+		display: inline-block;
+		width: 15%;
+		max-width: 34px;
+	}
+	#contact .icon-info span{
+		display: inline-block;
+		width: 82%;
+		margin-left: 3px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		vertical-align: middle;
+	}
+	#contact input{
+		width: 100%;
+		height: 48px;
+	}
+	#contact textarea{
+		width: 100%;
+		margin-top: 20px;
+	}
+	#contact .pull-right{
+		padding-top: 15px;
+	}
+	#submit{
+		margin-top: 12px;
+		padding: 10px 40px;
+		font-size: 18px;
+	}
+
 }
 
-
 @media (min-width: 1920px){
-	html,body{
-		width: 1920px;
-		margin: 0 auto;
-		overflow-x: hidden;
-	}
 
 	#carousel .b-bot h2{
 		letter-spacing: 5px;
@@ -784,4 +968,12 @@
 	}
 
 
+	#carousel{
+		background-color: rgb(148,148,148);
+	}
+	#help{
+		background-color: rgb(35,42,52);
+	}
+
 }
+

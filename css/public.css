@@ -16,8 +16,9 @@ li{
 /* 分割标题 */
 .con-header .sort-tit{
     text-align: center;
-    font-weight: bold;
-    font-size: 26px;
+    font-size: 28px;
+    color: #242424;
+    margin-top: 20px;
 }
 .con-header img{
     padding: 5px 0;
@@ -26,23 +27,27 @@ li{
 
 /*nav*/
 #nav{
-    padding: 15px 0;
+    padding: 20px 0;
     margin:0;
 }
-#nav .tel{
+#nav .navbar-nav li a{
+    color: #3d3d3d;
+    margin: 0 5px;
+}
+#nav .last{
+    padding-left: 20px;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+#nav .last span{
     color:#1765b6;
     font-size: 24px;
-    line-height: 11px;
+    line-height: 14px;
     font-family: Arial;
-}
-#nav .tel span{
-    font-size: 16px;
-    color: #949494;
-    font-family: sans-serif;
 }
 #nav .logo{
     display: inline-block;
-    margin-top: -13px;
+    margin-top: -12px;
     box-sizing: border-box;
 }
 
@@ -52,56 +57,195 @@ li{
     height: 80px;
 }
 .jump h2{
-    font-size: 24px;
+    font-size: 26px;
     display: inline-block;
     line-height: 85px;
     margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    color: #2c2c2c;
 }
 .jump .breadcrumb{
     display: inline-block;
     background-color: transparent;
     margin-top: 25px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .jump .breadcrumb li a{
-    color: #333333;
+    color: #6f6f6f;
 }
 .jump .breadcrumb .active{
     color: #206BB9;
 }
 
+.box-gray-title{
+    font-size: 28px;
+    color: #8c8c8c;
+}
 
 .problem{
-    font-weight: 500;
-    font-size: 22px;
+    font-size: 24px;
     letter-spacing: 2px;
     text-align: center;
     margin-top: 10px;
+    color: #242424;
 }
 .problem span{
     color: #4BAEDE;
-    font-size: 32px;
+    font-size: 34px;
 }
 
 
 @media (max-width: 480px){
+    /* 分割标题 */
+    .con-header .sort-tit{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+
+    .jump{
+        height: 60px;
+    }
+    .jump h2{
+        font-size: 18px;
+        line-height: 65px;
+        padding-left: 10px;
+    }
+    .jump .breadcrumb{
+        margin-top: 15px;
+    }
+
+    .box-gray-title{
+        font-size: 22px;
+        text-align: center;
+    }
+
+
+    .problem{
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+    .problem span{
+        font-size: 22px;
+    }
+
+    .box-gray-title{
+        text-align: left;
+        text-indent: 1em;
+    }
+
 
 }
 
 @media (min-width: 480px){
+    .con-header .sort-tit{
+        font-size: 24px;
+        margin-top: 20px;
+    }
 
+    .jump{
+        height: 65px;
+    }
+    .jump h2{
+        font-size: 18px;
+        line-height: 65px;
+        padding-left: 10px;
+    }
+    .jump .breadcrumb{
+        margin-top: 15px;
+    }
+
+    .box-gray-title{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .problem{
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-top: 15px;
+    }
+    .problem span{
+        font-size: 24px;
+    }
 }
 
 @media (min-width: 768px){
+    /* 分割标题 */
+    .con-header .sort-tit{
+        font-size: 26px;
+        margin-top: 25px;
+    }
 
+    .jump{
+        height: 70px;
+    }
+    .jump h2{
+        font-size: 20px;
+        line-height: 70px;
+        padding-left: 10px;
+    }
+    .jump .breadcrumb{
+        margin-top: 20px;
+    }
+
+    .box-gray-title{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .problem{
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-top: 15px;
+    }
+    .problem span{
+        font-size: 26px;
+    }
 }
 
 @media (min-width: 992px){
+    /* 分割标题 */
+    .con-header .sort-tit{
+        font-size: 28px;
+        margin-top: 25px;
+    }
 
+
+    .jump{
+        height: 70px;
+    }
+    .jump h2{
+        font-size: 20px;
+        line-height: 72px;
+        padding-left: 10px;
+    }
+    .jump .breadcrumb{
+        margin-top: 20px;
+    }
+
+    .box-gray-title{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .problem{
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-top: 15px;
+    }
+    .problem span{
+        font-size: 28px;
+    }
 }
 
 @media (min-width: 1200px){
+    /* 分割标题 */
+    .con-header .sort-tit{
+        font-size: 30px;
+        margin-top: 25px;
+    }
 
 }
 
@@ -116,6 +260,7 @@ li{
     .navbar-nav .dropdown-menu{
         position: absolute;
         left: 50%;
+
         transform: translate(-50%,0);
         -moz-transform: translate(-50%,0);
         -webkit-transform: translate(-50%,0);
@@ -140,10 +285,51 @@ li{
     .navbar-nav li a{
         padding: 10px;
     }
-}
-@media (min-width: 1920px){
 
+
+    /* 页面的导航 banner图下面的 */
+    .jump{
+        height: 80px;
+    }
+    .jump h2{
+        font-size: 26px;
+        display: inline-block;
+        line-height: 85px;
+        margin: 0;
+        color: #2c2c2c;
+    }
+    .jump .breadcrumb{
+        display: inline-block;
+        background-color: transparent;
+        margin-top: 25px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .jump .breadcrumb li a{
+        color: #6f6f6f;
+    }
+    .jump .breadcrumb .active{
+        color: #206BB9;
+    }
+
+    .box-gray-title{
+        font-size: 28px;
+        color: #8c8c8c;
+    }
+
+    .problem{
+        font-size: 24px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-top: 10px;
+        color: #242424;
+    }
+    .problem span{
+        color: #4BAEDE;
+        font-size: 34px;
+    }
 }
+
 
 /* 右侧小按钮 */
 #small{
@@ -196,6 +382,96 @@ li{
 }
 
 
+
+.consult_contact{
+    position: fixed;
+    bottom: 25%;
+    right: 0;
+    width: 114px;
+    height: 114px;
+    cursor: pointer;
+}
+.consult_wrap{
+    position: relative;
+    width: 114px;
+    height: 114px;
+}
+.consult_wrap .tip{
+    position: absolute;
+    right: 95px;
+    top: 45px;
+    display: none;
+    width: 150px;
+    height: 24px;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    background: #3091f2;
+    color: #fff;
+    -webkit-transition: display 1s ease;
+    transition: display 1s ease;
+}
+.consult_wrap .tip:after{
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #3091f2;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.consult_contact img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+.consult_contact .staff_img{
+    z-index: 999;
+}
+@keyframes ballRotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.consult_contact  .ball{
+    top: 20px;
+    width: auto;
+    transform-origin: 0 38px;
+    animation: ballRotate 2.5s infinite linear;
+    z-index: 9999;
+}
+@keyframes bg2Animation {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.consult_contact .bg-2{
+    animation: bg2Animation 2.5s infinite linear;
+}
+.consult_contact:hover .tip{
+    display: block;
+}
+
+
+
 /* bot */
 #bot{
     background-color: #f1f1f1;
@@ -208,27 +484,4 @@ li{
     text-align: center;
     letter-spacing: 1px;
     line-height: 24px;
-}
-
-::-webkit-scrollbar
-{
-    width: 8px;
-    height: 8px;
-}
-::-webkit-scrollbar-track-piece
-{
-    background-color: #cccccc;
-    -webkit-border-radius: 6px;
-}
-::-webkit-scrollbar-thumb:vertical
-{
-    height: 5px;
-    background-color: #999999;
-    -webkit-border-radius: 6px;
-}
-::-webkit-scrollbar-thumb:horizontal
-{
-    width: 5px;
-    background-color: #cccccc;
-    -webkit-border-radius: 6px;
 }

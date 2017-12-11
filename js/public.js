@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+    //nav fixed top 相应调整
+    (function () {
+        var next = $("#nav").next();
+        var nav_height = $("#nav").outerHeight();
+        next.css({
+            'margin-top':nav_height+'px'
+        });
+    })();
+
     $(window).scroll(function () {
         var top = $("html").scrollTop();
         var winHeight = $(window).height();
