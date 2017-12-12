@@ -20,6 +20,16 @@
     <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        //nav fixed top 相应调整
+        (function () {
+            var next = $("#nav").next();
+            var nav_height = $("#nav").outerHeight();
+            next.css({
+                'margin-top':nav_height+'px'
+            });
+        })();
+    </script>
 </head>
 <body>
 
@@ -224,7 +234,7 @@
     </li>
 </ul>
 <div class="container-fluid" id="bot">
-    <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备14028253号-6</h5>
+    <h5>Copyright&copy;2013-2017 WolongData.com All Rights Reserved.蜀ICP备17041941号-1</h5>
 </div>
 
 <script src="js/public.js"></script>
