@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    //nav fixed top 相应调整
+    //nav fixed top
     (function () {
         var next = $("#nav").next();
         var nav_height = $("#nav").outerHeight();
