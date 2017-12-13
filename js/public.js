@@ -10,7 +10,7 @@ $(document).ready(function () {
     })();
 
     $(window).scroll(function () {
-        var top = $("html").scrollTop();
+        var top = $("html,body").scrollTop();
         var winHeight = $(window).height();
 
         if(top>=winHeight*0.4){
