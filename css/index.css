@@ -221,8 +221,6 @@
 }
 #contact .icon-info img{
 	display: inline-block;
-	width: 15%;
-	max-width: 34px;
 }
 #contact .icon-info span{
 	display: inline-block;
@@ -916,8 +914,6 @@
 	}
 	#contact .icon-info img{
 		display: inline-block;
-		width: 15%;
-		max-width: 34px;
 	}
 	#contact .icon-info span{
 		display: inline-block;
