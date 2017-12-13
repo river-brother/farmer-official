@@ -133,7 +133,7 @@
 #study .container{
     padding-right: 5%;
     padding-left: 5%;
-    background: url("../images/distribution/study.png") no-repeat 80% 20% padding-box;
+    background: url("../images/distribution/study.png") no-repeat 80% 20%;
 }
 #study .s-fir{
     margin-top: 5%;
@@ -1265,7 +1265,7 @@
     #study .container{
         padding-right: 5%;
         padding-left: 5%;
-        background: url("../images/distribution/study.png") no-repeat 80% 20% padding-box;
+        background: url("../images/distribution/study.png") no-repeat 80% 20%;
     }
     #study .s-fir{
         margin-top: 5%;

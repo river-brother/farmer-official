@@ -32,7 +32,7 @@
 
 #sys{
     padding: 40px 0;
-    background: url("../images/sljk/sys-banner.png")no-repeat;
+    background: url("../images/sljk/sys-banner.png") no-repeat;
     background-size: cover;
 }
 #sys .sort-tit{
