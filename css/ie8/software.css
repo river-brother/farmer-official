@@ -22,6 +22,9 @@ body{
     float: left;
 }
 
+#box1 .dev{
+    display: none;!important;
+}
 
 
 /*客服按钮*/

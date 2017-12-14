@@ -10,7 +10,12 @@ body{
     padding-left: 20%;
 }
 
-
+#sys{
+    max-width: 1920px;
+    width: 1920px;
+    display: block;
+    margin: 0 auto;
+}
 
 /*客服按钮*/
 .consult_wrap{

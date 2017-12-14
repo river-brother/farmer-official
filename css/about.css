@@ -210,8 +210,6 @@
 }
 #location .info img{
     display: inline-block;
-    width: 15%;
-    max-width: 34px;
 }
 #location .info span{
     display: inline-block;
@@ -894,10 +892,6 @@
     }
     #location .info{
         padding: 18px 0;
-    }
-    #location .info img{
-        width: 15%;
-        max-width: 34px;
     }
     #location h4{
         font-weight: bold;
