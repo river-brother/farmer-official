@@ -107,6 +107,9 @@
 #service{
 	padding: 60px 0;
 }
+#service .media-object{
+	cursor: auto;
+}
 #service .media-heading{
 	padding-top: 7px;
 	font-weight: bold;
