@@ -99,6 +99,9 @@
 #advantage{
     padding: 60px 0;
 }
+#advantage .media-object{
+    cursor: auto;
+}
 #advantage .gray{
     color: #242424;
     text-align: center;
@@ -194,7 +197,7 @@
     top: 40%;
     left: 12%;
     width: 75%;
-    color: #b2b3b6;
+    color: #808080;
 }
 #choose .ch-box > div p{
     text-align: center;
@@ -1329,7 +1332,6 @@
         top: 40%;
         left: 12%;
         width: 75%;
-        color: #b2b3b6;
     }
     #choose .ch-box > div p{
         text-align: center;
